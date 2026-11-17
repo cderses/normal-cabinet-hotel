@@ -1391,7 +1391,7 @@ body.past-hero .cb-fab { opacity: 1; pointer-events: auto; transform: none; }
   .hero-sub { max-width: 36ch; }
   .hl-1 { font-size: clamp(26px, 2.6vw, 40px); }
 
-  .rail { grid-template-columns: 1.35fr 1fr 1fr 0.62fr auto; }
+  .rail { grid-template-columns: 1.45fr 1fr 1fr 0.55fr 200px; }
   .rail-go { grid-column: auto; min-height: 100%; padding: 0 30px; }
   .rail-cell { padding: 16px 20px; justify-content: center; }
   .rail-mark { display: block; }
