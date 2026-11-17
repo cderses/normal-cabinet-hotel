@@ -437,7 +437,7 @@ blockquote { margin: 0; }
 .link-arrow:hover { border-color: currentColor; gap: 10px; }
 
 /* ── booking rail ───────────────────────────────────────────────────── */
-.booking { background: var(--paper); padding: 0 var(--pad); }
+.booking { background: var(--paper); padding: 18px var(--pad) 0; }
 .booking .wrap { padding: 0; }
 .rail {
   position: relative;
@@ -515,12 +515,13 @@ blockquote { margin: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  min-height: 54px;
+  gap: 8px;
+  min-height: 50px;
   background: var(--terra);
   color: #fff;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 600;
+  white-space: nowrap;
   transition: background 0.22s var(--ease);
 }
 .rail-go:hover { background: var(--terra-deep); }
@@ -1438,7 +1439,7 @@ body.pick-open { overflow: hidden; }
   .hero-foot { gap: 22px; }
   .hl-1 { font-size: clamp(20px, 1.7vw, 26px); }
 
-  .rail { grid-template-columns: 1.35fr 1fr 1fr 0.6fr 200px; }
+  .rail { grid-template-columns: 1.05fr 1fr 1fr 0.55fr 208px; }
   .rail-site { grid-column: auto; }
   .rail-cell { padding: 14px 18px; justify-content: center; border-top: 0; border-left: 1px solid var(--line-soft); }
   .rail-cell:first-child { border-left: 0; }
