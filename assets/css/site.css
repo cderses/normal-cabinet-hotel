@@ -1438,9 +1438,11 @@ body.pick-open { overflow: hidden; }
   .hero-foot { gap: 22px; }
   .hl-1 { font-size: clamp(20px, 1.7vw, 26px); }
 
-  .rail { grid-template-columns: 1.45fr 1fr 1fr 0.55fr 190px; }
+  .rail { grid-template-columns: 1.35fr 1fr 1fr 0.6fr 200px; }
+  .rail-site { grid-column: auto; }
+  .rail-cell { padding: 14px 18px; justify-content: center; border-top: 0; border-left: 1px solid var(--line-soft); }
+  .rail-cell:first-child { border-left: 0; }
   .rail-go { grid-column: auto; min-height: 100%; padding: 0 26px; }
-  .rail-cell { padding: 14px 20px; justify-content: center; }
   .rail-mark { display: block; }
   .rail-foot { padding-top: 12px; }
 
