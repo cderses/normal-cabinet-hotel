@@ -843,7 +843,7 @@ blockquote { margin: 0; }
   border-top: 0;
   background: #eeeae2;
 }
-.map { height: clamp(250px, 32vw, 400px); width: 100%; z-index: 0; background: #eeeae2; }
+.map { height: clamp(250px, 32vw, 400px); width: 100%; z-index: 0; background: #f0ece4; }
 .map-fallback {
   position: absolute;
   inset: 0;
@@ -912,9 +912,9 @@ blockquote { margin: 0; }
 .loc-rows dt { font-family: var(--mono); font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
 .loc-rows dd { margin: 0; font-size: 12.5px; line-height: 1.6; color: var(--ink-2); }
 
-/* leaflet skin — quiet, single warm tone */
-.leaflet-container { font-family: var(--sans); background: #eeeae2; }
-.leaflet-tile-pane { filter: grayscale(1) sepia(0.16) contrast(0.9) brightness(1.06); }
+/* leaflet skin — the basemap washed down to warm paper */
+.leaflet-container { font-family: var(--sans); background: #f0ece4; }
+.leaflet-tile-pane { opacity: 0.66; filter: grayscale(1) sepia(0.18) contrast(0.88) brightness(1.06); }
 .leaflet-control-zoom { border: 0 !important; box-shadow: none !important; margin: 0 10px 20px 0 !important; }
 .leaflet-control-zoom a {
   width: 26px !important;

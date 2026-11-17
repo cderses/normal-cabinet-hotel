@@ -318,25 +318,11 @@
       keyboard: true
     });
     L.control.zoom({ position: "bottomright" }).addTo(map);
-    /* Carto Positron — quiet light basemap; falls back to OSM if it cannot load */
-    var tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      maxZoom: 20,
-      subdomains: "abcd",
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'
+    /* OSM tiles washed to warm paper in CSS — quiet, keyless, and reliable */
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
     }).addTo(map);
-    var tileErrors = 0;
-    var swapped = false;
-    tiles.on("tileerror", function () {
-      tileErrors++;
-      if (tileErrors >= 6 && !swapped) {
-        swapped = true;
-        map.removeLayer(tiles);
-        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          maxZoom: 19,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
-        }).addTo(map);
-      }
-    });
     map.attributionControl.setPrefix("");
     layers.gyodong = buildLayer("gyodong");
     layers.dongdaegu = buildLayer("dongdaegu");

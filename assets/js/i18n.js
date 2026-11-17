@@ -80,7 +80,7 @@ window.I18N = {
 
     "sites.lede": "같은 마감, 다른 동네. 지점을 바꾸면 사진과 지도, 주차 안내가 함께 바뀝니다.",
     "locate.lede": "건물 위치, 주차장 진입, 역에서 걷는 시간.",
-    "locate.mapNote": "검정 = 건물, P = 주차장. 지도 © OpenStreetMap · CARTO.",
+    "locate.mapNote": "검정 = 건물, P = 주차장. 지도 © OpenStreetMap 기여자.",
     "locate.addrT": "ADDRESS",
     "locate.copy": "주소 복사",
     "locate.copied": "복사됨",
@@ -305,7 +305,7 @@ window.I18N = {
 
     "sites.lede": "Same finishes, another neighbourhood. Switch sites and the photographs, map and parking notes change with it.",
     "locate.lede": "The building, the way into the car park, the walk from the station.",
-    "locate.mapNote": "Black is the building, P is the parking. Map © OpenStreetMap · CARTO.",
+    "locate.mapNote": "Black is the building, P is the parking. Map © OpenStreetMap contributors.",
     "locate.addrT": "ADDRESS",
     "locate.copy": "Copy address",
     "locate.copied": "Copied",
@@ -530,7 +530,7 @@ window.I18N = {
 
     "sites.lede": "相同的质感，另一个街区。切换门店，照片、地图与停车说明一起切换。",
     "locate.lede": "楼的位置，停车场的入口，从车站走过来的时间。",
-    "locate.mapNote": "黑色为建筑，P 为停车场。地图 © OpenStreetMap · CARTO。",
+    "locate.mapNote": "黑色为建筑，P 为停车场。地图 © OpenStreetMap 贡献者。",
     "locate.addrT": "ADDRESS",
     "locate.copy": "复制地址",
     "locate.copied": "已复制",
