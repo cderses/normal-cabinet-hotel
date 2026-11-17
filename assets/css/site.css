@@ -1384,7 +1384,6 @@ body.past-hero .cb-fab { opacity: 1; pointer-events: auto; transform: none; }
   .hdr-index { display: block; }
   .hdr-book { height: 36px; padding: 0 16px; }
 
-  .hero { min-height: 94svh; }
   .hero-body { padding-top: 180px; padding-bottom: 132px; }
   .hero-rail { display: flex; }
   .hero-top { top: 104px; }
