@@ -172,7 +172,7 @@ window.I18N = {
     "gal.h2": "room by room.",
     "gal.lede": "퀸베드룸, 트윈베드룸, 그리고 2층 라운지. 사진을 눌러 크게 볼 수 있습니다.",
 
-    "guide.eyebrow": "Local guide",
+    "guide.eyebrow": "C-06 / NEXT DOOR",
     "guide.h1": "Daegu, from",
     "guide.h2": "your doorstep.",
     "guide.lede": "두 지점에서 걸어 나가면 닿는 곳들. 교동은 골목과 시장, 동대구역은 역 너머의 동네 — 지점별 가이드를 준비해 두었습니다.",
@@ -198,7 +198,7 @@ window.I18N = {
     "info.k5": "예약",
     "info.v5": "동대구역점은 에어비앤비에서 객실별로 예약하실 수 있고, 교동점은 실시간 빈 방 페이지에서 확인 후 에어비앤비로 예약합니다.",
     "info.k6": "문의",
-    "info.chat": "스테이 가이드 챗봇에게 묻기",
+    "info.chat": "캐비닛지기에게 묻기",
 
     "ft.sloganT": "Slogan",
     "ft.slogan": "평범한 물건들로, 더 나은 공간.",
@@ -420,7 +420,7 @@ window.I18N = {
     "info.k5": "Booking",
     "info.v5": "At Dongdaegu Station you book room by room on Airbnb; at Gyodong you check live availability first, then book on Airbnb.",
     "info.k6": "Contact",
-    "info.chat": "Ask the stay guide",
+    "info.chat": "Ask the Keeper",
 
     "ft.sloganT": "Slogan",
     "ft.slogan": "Ordinary objects, better spaces.",
@@ -642,7 +642,7 @@ window.I18N = {
     "info.k5": "预订",
     "info.v5": "东大邱站店可在 Airbnb 按房间预订；校洞店请先查看实时空房页面，再通过 Airbnb 预订。",
     "info.k6": "咨询",
-    "info.chat": "询问住宿指南",
+    "info.chat": "询问柜管家",
 
     "ft.sloganT": "品牌",
     "ft.slogan": "寻常之物，成就更好的空间。",
