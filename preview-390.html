@@ -12,6 +12,12 @@
 </style>
 </head>
 <body>
-<div class="frame"><iframe src="./index.html" title="mobile preview" scrolling="yes"></iframe></div>
+<div class="frame"><iframe id="f" src="./index.html" title="mobile preview" scrolling="yes"></iframe></div>
+<script>
+  var p = new URLSearchParams(location.search);
+  var h = p.get("h") || "";
+  var lang = p.get("lang") || "ko";
+  document.getElementById("f").src = "./index.html?lang=" + lang + (h ? "#" + h : "");
+</script>
 </body>
 </html>
