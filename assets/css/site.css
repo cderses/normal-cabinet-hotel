@@ -273,7 +273,7 @@ html[lang="en"] .ft-wit .loc { display: none; }
   font-size: 10.5px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--muted);
 }
-.site-figs { display: grid; gap: 8px; margin-bottom: 24px; grid-template-columns: 1fr 1fr; }
+.site-figs { display: grid; gap: 8px; margin-bottom: 24px; grid-template-columns: 1fr; }
 .site-figs figure { margin: 0; position: relative; overflow: hidden; background: var(--paper-3); }
 .site-figs img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease); }
 .site-figs figure:hover img { transform: scale(1.03); }
@@ -539,7 +539,7 @@ html[lang="en"] .ft-wit .loc { display: none; }
   .site-block .site-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 56px; align-items: start; }
   .site-block.flip .site-grid { grid-template-columns: 0.92fr 1.08fr; }
   .site-block.flip .site-figs { order: 2; }
-  .site-figs { margin-bottom: 0; grid-template-columns: 1fr 1fr; }
+  .site-figs { margin-bottom: 0; grid-template-columns: 1fr; }
   .mosaic { margin-bottom: 0; grid-template-columns: repeat(2, 1fr); }
   .mosaic figure.wide { grid-column: span 2; }
   .mosaic figure.tall { aspect-ratio: 3 / 4; }
