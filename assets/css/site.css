@@ -1284,7 +1284,7 @@ body.past-hero .cb-fab { opacity: 1; pointer-events: auto; transform: none; }
   background: var(--paper);
   border: 1px solid var(--line);
   box-shadow: 0 -16px 50px -20px rgba(18, 20, 22, 0.4);
-  transform: translateY(102%);
+  transform: translateY(115%);
   transition: transform 0.4s var(--ease-out);
   overflow: hidden;
 }
