@@ -25,7 +25,7 @@
   var f = document.getElementById("f");
   f.style.width = w + "px";
   f.style.height = h + "px";
-  f.src = "./index.html?lang=" + lang + (hash ? "#" + hash : "");
+  f.src = "./index.html?lang=" + lang + "&cb=" + Date.now() + (hash ? "#" + hash : "");
 </script>
 </body>
 </html>
