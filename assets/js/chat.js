@@ -19,7 +19,7 @@
 
   var DATA = {
     ko: {
-      greet: "안녕하세요, 캐비닛지기입니다. 교동점엔 최대 4인 객실이 세 개 있고, 동대구역점은 역에서 도보 18분이에요. 열쇠·주차·주변 이야기, 무엇이든 물어보세요.",
+      greet: "안녕하세요, 캐비닛지기입니다. 교동점엔 최대 4인 객실이 세 개 있고, 동대구역점은 역에서 도보 27분이에요. 열쇠·주차·주변 이야기, 무엇이든 물어보세요.",
       chips: [
         { id: "checkin", label: "체크인 · 체크아웃" },
         { id: "selfcheckin", label: "셀프 체크인 · 짐 보관" },
@@ -46,7 +46,7 @@
             links: [{ label: "실시간 빈 방 · 예약", url: L.BOOK_G }]
           },
           parking: {
-            text: "교동점은 건물 인근 공영주차장을 이용하시게 됩니다. 정확한 위치와 요금은 예약 후 메시지로 안내드릴게요."
+            text: "교동점은 건물 안에 주차할 수 없어요. 바로 옆 교동공영주차장(교동2길 11)이 도보 1분 거리에 있고, 요금과 운영 시간은 현장 안내를 따릅니다. 골목이 좁아 짐이 많으면 건물 앞에서 먼저 내리는 편이 좋아요."
           },
           directions: {
             text: "주소는 대구 중구 교동2길 29-11입니다. 중앙로역 3번 출구에서 도보 10분(0.6km), 대구역에서 도보 10분(0.6km), 반월당역에서 도보 22분(1.4km)이에요. 동성로와 교동 골목, 서문시장까지 걸어서 닿습니다.",
@@ -77,10 +77,10 @@
             text: "동대구역점은 키패드 셀프 체크인으로 출입합니다. 비밀번호는 체크인 당일 예약 메시지로 안내드려요. 짐은 2층 계단 옆 셀프 짐 보관함을 이용하실 수 있고, 이용 방법은 현장 안내를 따라 주세요."
           },
           parking: {
-            text: "건물 안에는 전용 주차 공간이 없고, 건물 뒤편 노상 공영주차장을 이용하시면 됩니다. 1일 4,000원이며, 유료 운영은 평일 09:00~17:00, 그 외 시간은 무료예요. 건물 앞 도로는 평일 단속 구간입니다."
+            text: "건물 안에는 전용 주차 공간이 없고, 건물 뒤편 노상 공영주차장을 이용하시면 됩니다. 1일 4,000원이며, 유료 운영은 평일 09:00~17:00, 그 외 시간과 주말은 무료예요. 자리 확보는 보장되지 않고, 건물 앞 도로는 평일 단속 구간입니다. 정확한 진입 위치는 예약 메시지로 안내드려요."
           },
           directions: {
-            text: "주소는 대구 동구 효목로 50입니다. 동대구역(KTX·SRT·지하철 1호선·복합환승센터)에서 도보 18분, 버스 413번으로는 3정거장(약 5분)이에요. 신세계백화점 대구점까지 도보 약 10분입니다.",
+            text: "주소는 대구 동구 효목로 50입니다. 동대구역(KTX·SRT·지하철 1호선·복합환승센터)에서 도보 27분(1.7km)이고, 1호선으로 한 정거장(동구청역) 이동해 2번 출구에서 걸으면 17분이에요. 효목시장은 도보 9분 거리입니다.",
             links: [
               { label: "네이버지도", url: L.D_NAVER },
               { label: "카카오맵", url: L.D_KAKAO },
@@ -106,7 +106,7 @@
     },
 
     en: {
-      greet: "Hello — I'm the Keeper at Normal Cabinet. Gyodong has three rooms that sleep four, and Dongdaegu Station is 18 minutes on foot from the transfer centre. Keys, parking, the neighbourhood — ask me anything.",
+      greet: "Hello — I'm the Keeper at Normal Cabinet. Gyodong has three rooms that sleep four, and Dongdaegu Station is 27 minutes on foot from the transfer centre. Keys, parking, the neighbourhood — ask me anything.",
       chips: [
         { id: "checkin", label: "Check-in / out" },
         { id: "selfcheckin", label: "Self check-in · luggage" },
@@ -133,7 +133,7 @@
             links: [{ label: "Live availability · Book", url: L.BOOK_G }]
           },
           parking: {
-            text: "At Gyodong you will use a nearby public car park. We will send the exact location and rates in your booking message."
+            text: "There is no parking inside the building at Gyodong. The Gyo-dong public car park (11, Gyodong 2-gil) is one minute away on foot; rates and hours follow what is posted on site. The alley is narrow, so with heavy luggage it is easier to stop in front of the building first."
           },
           directions: {
             text: "The address is 29-11, Gyodong 2-gil, Jung-gu, Daegu. 10 minutes on foot from Jungangno Stn. exit 3 (0.6 km), 10 minutes from Daegu Stn. (0.6 km) and 22 minutes from Banwoldang Stn. (1.4 km). Dongseongno, the Gyodong alleys and Seomun Market are all within walking distance.",
@@ -165,10 +165,10 @@
             text: "You enter with a keypad at Dongdaegu Station; the code arrives in your booking message on the day of arrival. Self-service luggage lockers are on the second floor beside the stairs — follow the on-site instructions."
           },
           parking: {
-            text: "There is no private parking on site. Use the public street parking behind the building: ₩4,000 a day, paid on weekdays 09:00–17:00 and free outside those hours. The road in front is a weekday tow-away zone."
+            text: "There is no private parking on site. Use the public street parking behind the building: ₩4,000 a day, paid on weekdays 09:00–17:00 and free outside those hours and at weekends. A space is not guaranteed, and the road in front is a weekday tow-away zone. We send the exact entrance in your booking message."
           },
           directions: {
-            text: "The address is 50, Hyomok-ro, Dong-gu, Daegu. It is 18 minutes on foot from Dongdaegu Station (KTX, SRT, Line 1, transfer centre), or three stops on bus 413 (about 5 minutes). Shinsegae Department Store is about 10 minutes on foot.",
+            text: "The address is 50, Hyomok-ro, Dong-gu, Daegu. It is 27 minutes on foot (1.7 km) from Dongdaegu Station (KTX, SRT, Line 1, transfer centre), or one stop on Line 1 to Dong-gu Office Station and 17 minutes from exit 2. Hyomok Market is 9 minutes on foot.",
             links: [
               { label: "Naver Map", url: L.D_NAVER },
               { label: "Kakao Map", url: L.D_KAKAO },
@@ -194,7 +194,7 @@
     },
 
     zh: {
-      greet: "您好，我是 Normal Cabinet 的柜管家。校洞店有三间最多可住四人的客房，东大邱站店距综合换乘中心步行 18 分钟。钥匙、停车、周边的事，都可以问我。",
+      greet: "您好，我是 Normal Cabinet 的柜管家。校洞店有三间最多可住四人的客房，东大邱站店距综合换乘中心步行 27 分钟。钥匙、停车、周边的事，都可以问我。",
       chips: [
         { id: "checkin", label: "入住 · 退房时间" },
         { id: "selfcheckin", label: "自助入住 · 行李" },
@@ -221,7 +221,7 @@
             links: [{ label: "实时空房 · 预订", url: L.BOOK_G }]
           },
           parking: {
-            text: "校洞店使用建筑附近的公共停车场。确切位置与费用将在预订后通过消息告知。"
+            text: "校洞店楼内不可停车。隔壁的校洞公共停车场（校洞2街 11）步行 1 分钟即可到达，费用与开放时间以现场公示为准。巷子较窄，行李较多时建议先在楼前短暂停靠。"
           },
           directions: {
             text: "地址为大邱中区校洞2街 29-11。中央路站 3 号出口步行 10 分钟（0.6 公里），大邱站步行 10 分钟（0.6 公里），半月堂站步行 22 分钟（1.4 公里）。东城路、校洞巷子与西门市场均可步行到达。",
@@ -252,10 +252,10 @@
             text: "东大邱站店使用密码锁自助入住，密码将在入住当天通过预订消息发送。行李可使用二层楼梯旁的自助行李柜，请按现场指引使用。"
           },
           parking: {
-            text: "楼内没有专用停车位，请使用楼后的路边公共停车场：每日 4,000 韩元，平日 09:00~17:00 收费，其余时间免费。楼前道路平日为管制路段。"
+            text: "楼内没有专用停车位，请使用楼后的路边公共停车场：每日 4,000 韩元，平日 09:00~17:00 收费，其余时间与周末免费。车位不保证，楼前道路平日为管制路段。确切入口会在预订消息中告知。"
           },
           directions: {
-            text: "地址为大邱东区孝木路 50。从东大邱站（KTX、SRT、1 号线、综合换乘中心）步行 18 分钟，或乘 413 路公交 3 站（约 5 分钟）。到新世界百货步行约 10 分钟。",
+            text: "地址为大邱东区孝木路 50。从东大邱站（KTX、SRT、1 号线、综合换乘中心）步行 27 分钟（1.7 公里），或乘 1 号线一站到东区厅站，从 2 号出口步行 17 分钟。孝木市场步行 9 分钟。",
             links: [
               { label: "Naver 地图", url: L.D_NAVER },
               { label: "Kakao 地图", url: L.D_KAKAO },
