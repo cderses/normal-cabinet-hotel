@@ -679,3 +679,327 @@ html[lang="en"] .ft-wit .loc { display: none; }
 @media (min-width: 1180px) {
   .gal { columns: 4; }
 }
+
+/* ==========================================================================
+   v4 — cabinet index · booking bar · room spec sheet · mobile desk
+   ========================================================================== */
+
+/* ── quiet brand line ───────────────────────────────────────────────────── */
+.quiet {
+  margin: 0 0 36px;
+  padding: 30px 0 28px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.quiet-line {
+  font-size: clamp(21px, 5.4vw, 30px);
+  line-height: 1.44;
+  letter-spacing: -0.032em;
+  font-weight: 600;
+  color: var(--ink);
+  max-width: 22ch;
+}
+.quiet-sub {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+}
+.quiet-sub .en-fixed {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+.quiet-sub .loc {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink-soft);
+}
+html[lang="en"] .quiet-sub .loc { display: none; }
+
+/* ── booking bar ────────────────────────────────────────────────────────── */
+.bbar-wrap {
+  position: relative;
+  z-index: 25;
+  margin-top: -30px;
+}
+.bbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 38px rgba(30, 22, 18, 0.13);
+}
+.bb-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 11px 14px;
+  border-top: 1px solid var(--line-soft);
+  min-width: 0;
+}
+.bb-field-branch {
+  grid-column: 1 / -1;
+  border-top: 0;
+  gap: 7px;
+}
+.bb-k {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1;
+}
+.bbar input[type="date"],
+.bbar select {
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  padding: 0;
+  width: 100%;
+  min-width: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.bbar select {
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 9px) 8px, calc(100% - 4px) 8px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 18px;
+}
+.bb-field-guests {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 0;
+}
+.bb-field-guests select { width: auto; min-width: 56px; text-align: right; padding-right: 18px; }
+.bb-seg { display: flex; gap: 4px; flex-wrap: wrap; }
+.bb-seg button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink-soft);
+  background: transparent;
+  transition: 0.18s var(--ease);
+  white-space: nowrap;
+}
+.bb-seg button[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.bb-seg button i {
+  font-style: normal;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--terra);
+}
+.bb-seg button[aria-pressed="true"] i { color: #e2a68f; }
+.bbar-go {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  background: var(--terra);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-align: center;
+  transition: background 0.2s var(--ease);
+}
+.bbar-go:hover { background: var(--terra-deep); }
+.bbar-note {
+  margin-top: 11px;
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  letter-spacing: -0.005em;
+}
+.bbar-note::before { content: "·"; color: var(--terra); margin-right: 6px; }
+
+@media (min-width: 860px) {
+  .bbar-wrap { margin-top: -46px; }
+  .bbar {
+    grid-template-columns: 1.2fr 0.92fr 0.92fr 0.62fr auto;
+    align-items: stretch;
+  }
+  .bb-field,
+  .bb-field-branch,
+  .bb-field-guests {
+    grid-column: auto;
+    border-top: 0;
+    border-left: 1px solid var(--line-soft);
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+  }
+  .bb-field-branch { border-left: 0; }
+  .bb-field-guests { border-left: 0; }
+  .bb-field-guests select { width: 100%; text-align: left; padding-right: 18px; }
+  .bbar-go { grid-column: auto; min-height: 100%; padding: 0 26px; min-width: 148px; }
+  .bbar input[type="date"],
+  .bbar select { font-size: 14px; }
+  .bbar-note { margin-top: 12px; padding-left: 2px; font-size: 12px; }
+}
+
+/* ── room spec sheet ───────────────────────────────────────────────────── */
+.specs { display: grid; gap: 16px; }
+.spec {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 20px 18px 18px;
+}
+.spec-hd {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--ink);
+}
+.spec-no {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--terra);
+  font-variant-numeric: tabular-nums;
+  flex: none;
+}
+.spec-hd b { font-size: 17px; letter-spacing: -0.03em; }
+.spec-hd small {
+  margin-left: auto;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.4;
+}
+.spec-list { margin: 0; padding: 0; }
+.spec-list > div {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+  align-items: start;
+}
+.spec-list > div:last-child { border-bottom: 0; }
+.spec-list dt {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.6;
+  padding-top: 2px;
+}
+.spec-list dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.62;
+  color: var(--ink-soft);
+  letter-spacing: -0.005em;
+}
+.spec-cta {
+  margin-top: 14px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--terra);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+.spec-cta svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 1.9; }
+.spec-cta:hover { border-color: var(--terra); }
+.spec-note {
+  margin-top: 22px;
+  padding-left: 14px;
+  border-left: 2px solid var(--terra);
+  font-size: 13.5px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: var(--ink-soft);
+  max-width: 58ch;
+}
+@media (min-width: 860px) {
+  .specs { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .spec { padding: 26px 24px 22px; }
+  .spec-hd b { font-size: 19px; }
+  .spec-list > div { grid-template-columns: 96px 1fr; gap: 16px; padding: 11px 0; }
+  .spec-list dd { font-size: 13.5px; }
+  .spec-note { margin-top: 26px; font-size: 14px; }
+}
+
+/* ── mobile desk ───────────────────────────────────────────────────────── */
+.mbar { display: none; }
+@media (max-width: 859px) {
+  .mbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 85;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(246, 243, 238, 0.96);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    backdrop-filter: saturate(160%) blur(14px);
+    border-top: 1px solid var(--line);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .mbar a,
+  .mbar button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 52px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    border-left: 1px solid var(--line-soft);
+  }
+  .mbar > :first-child { border-left: 0; }
+  .mbar svg { width: 18px; height: 18px; stroke: var(--ink-soft); fill: none; stroke-width: 1.5; }
+  .mbar a:active,
+  .mbar button:active { background: rgba(30, 30, 30, 0.05); }
+  body { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
+  .cb-fab { bottom: calc(66px + env(safe-area-inset-bottom)); }
+  .ft { padding-bottom: 30px; }
+  .quiet { margin-bottom: 28px; padding: 24px 0 22px; }
+}

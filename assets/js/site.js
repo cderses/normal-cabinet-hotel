@@ -183,6 +183,75 @@
     });
   });
 
+  /* ── booking bar ──────────────────────────────────────────── */
+  var bbForm = document.getElementById("bbForm");
+  if (bbForm) {
+    var bbBranch = "dongdaegu";
+    var bbIn = document.getElementById("bbIn");
+    var bbOut = document.getElementById("bbOut");
+    var bbGuests = document.getElementById("bbGuests");
+    var bbGo = document.getElementById("bbGo");
+    var bbNote = document.getElementById("bbNote");
+    var bbBtns = bbForm.querySelectorAll("[data-bb]");
+
+    function iso(d) {
+      var m = d.getMonth() + 1, day = d.getDate();
+      return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+    }
+    var now = new Date();
+    var tmr = new Date(now.getTime() + 864e5);
+    if (bbIn && !bbIn.value) { bbIn.value = iso(now); bbIn.min = iso(now); }
+    if (bbOut && !bbOut.value) { bbOut.value = iso(tmr); bbOut.min = iso(tmr); }
+
+    if (bbIn) {
+      bbIn.addEventListener("change", function () {
+        bbOut.min = bbIn.value;
+        if (!bbOut.value || bbOut.value <= bbIn.value) {
+          var n = new Date(bbIn.value + "T12:00:00");
+          n.setDate(n.getDate() + 1);
+          bbOut.value = iso(n);
+        }
+      });
+    }
+
+    function bbDict() { return I18N[lang] || I18N.ko; }
+
+    function bbRefresh() {
+      var d = bbDict();
+      bbBtns.forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-bb") === bbBranch ? "true" : "false");
+      });
+      var gyo = bbBranch === "gyodong";
+      if (bbGo) bbGo.textContent = d[gyo ? "bb.goGyo" : "bb.goDgd"] || "";
+      if (bbNote) bbNote.textContent = d[gyo ? "bb.noteGyo" : "bb.noteDgd"] || "";
+      if (bbGuests) bbGuests.disabled = false;
+    }
+
+    bbBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        bbBranch = b.getAttribute("data-bb");
+        bbRefresh();
+      });
+    });
+
+    bbForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var url;
+      if (bbBranch === "gyodong") {
+        url = "https://cderses.github.io/normal-cabinet-gyodong/?lang=" + encodeURIComponent(lang);
+      } else {
+        url = "https://www.airbnb.co.kr/rooms/1662251362905057666" +
+          "?check_in=" + encodeURIComponent(bbIn.value) +
+          "&check_out=" + encodeURIComponent(bbOut.value) +
+          "&adults=" + encodeURIComponent(bbGuests.value);
+      }
+      window.open(url, "_blank", "noopener");
+    });
+
+    document.addEventListener("nc:lang", bbRefresh);
+    bbRefresh();
+  }
+
   /* ── start ────────────────────────────────────────────────── */
   setLang(detectLang(), false);
   applyContact();

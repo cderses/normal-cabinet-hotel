@@ -10,7 +10,6 @@
 <meta property="og:description" content="효목동에서 걷고 달리고 먹는 32곳 — 3개 언어, 지도 링크 포함." />
 <meta property="og:type" content="website" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F5F4F0'/%3E%3Crect x='5' y='7' width='22' height='2.6' fill='%2318181B'/%3E%3Crect x='5' y='13' width='22' height='2.6' fill='%2318181B'/%3E%3Crect x='5' y='19' width='14' height='2.6' fill='%23B45342'/%3E%3C/svg%3E" />
-<link rel="preload" as="image" href="assets/hero.jpg" />
 <link rel="preload" href="assets/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin />
 <style>
   @font-face{
@@ -98,8 +97,8 @@
   }
   .chips li:first-child{padding-left:2px}
   .chips li:last-child{border-right:0}
-  .hero-art{position:relative;margin:30px 0 0;overflow:hidden;background:#DBD3C7}
-  .hero-art img{width:100%;height:clamp(320px,56vh,540px);object-fit:cover;object-position:center 30%}
+  .hero-art{position:relative;margin:30px 0 0;overflow:hidden;background:#EFEAE1}
+  .hero-art .plate{display:block;width:100%;height:clamp(300px,52vh,500px)}
   .hero-art::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(24,24,27,.12);pointer-events:none}
   .art-cap{
     position:absolute;left:0;bottom:0;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;
@@ -218,8 +217,58 @@
       <p class="lede" data-i18n="lede"></p>
       <ul class="chips" id="chips"></ul>
     </div>
-    <div class="hero-art">
-      <img src="assets/hero.jpg" width="1000" height="1500" alt="테라코타 벽돌 호텔과 스틸 캐노피, 뒤로 철도 고가 — 노멀캐비넷 동대구역점 큐레이션 일러스트" fetchpriority="high" />
+    <div class="hero-art" role="img" aria-label="얇은 아치 라인과 브러시드 스틸 키카드로 만든 노멀캐비넷 에디토리얼 그래픽">
+      <svg class="plate" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="ncPaper" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F3EFE8" />
+            <stop offset="1" stop-color="#E4DED2" />
+          </linearGradient>
+          <linearGradient id="ncSteel" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#EDEEEF" />
+            <stop offset="0.55" stop-color="#D7D9DB" />
+            <stop offset="1" stop-color="#C6C9CC" />
+          </linearGradient>
+        </defs>
+
+        <rect width="1600" height="520" fill="url(#ncPaper)" />
+
+        <!-- receding arches, drawn as thin lines -->
+        <g fill="none" stroke="#C0C3C8" stroke-width="1.6">
+          <path d="M510 470 A90 90 0 0 1 690 470" />
+          <path d="M450 470 A150 150 0 0 1 750 470" />
+          <path d="M390 470 A210 210 0 0 1 810 470" />
+        </g>
+        <path d="M510 470 A90 90 0 0 1 690 470 Z" fill="#DFD8CB" opacity="0.55" />
+        <rect x="472" y="458" width="13" height="13" fill="#B45342" />
+
+        <!-- floor line + ticks -->
+        <line x1="120" y1="470" x2="1480" y2="470" stroke="#B9BCC0" stroke-width="1.4" />
+        <g stroke="#B9BCC0" stroke-width="1.4">
+          <line x1="880" y1="462" x2="880" y2="478" />
+          <line x1="1180" y1="462" x2="1180" y2="478" />
+          <line x1="1420" y1="462" x2="1420" y2="478" />
+        </g>
+        <line x1="1300" y1="96" x2="1300" y2="470" stroke="#CBCED1" stroke-width="1.2" opacity="0.8" />
+
+        <!-- brushed steel keycard -->
+        <g transform="translate(842 176) rotate(-6 170 105)">
+          <rect x="6" y="10" width="340" height="212" rx="16" fill="#18181B" opacity="0.1" />
+          <rect width="340" height="212" rx="16" fill="#18181B" />
+          <rect x="12" y="12" width="316" height="188" rx="10" fill="none" stroke="#F5F4F0" stroke-opacity="0.16" />
+          <rect x="30" y="128" width="188" height="4" fill="url(#ncSteel)" />
+          <rect x="30" y="150" width="104" height="4" fill="#F5F4F0" fill-opacity="0.22" />
+          <text x="30" y="72" fill="#F5F4F0" font-family="'Inter Tight', Helvetica, Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="-0.4">normal cabinet</text>
+          <text x="30" y="96" fill="#A9ACB0" font-family="'Inter Tight', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="4.4">DONGDAEGU STATION</text>
+          <text x="30" y="180" fill="#8E9195" font-family="'Inter Tight', Helvetica, Arial, sans-serif" font-size="9" letter-spacing="3.6">EST. 2026</text>
+          <rect x="268" y="30" width="42" height="30" rx="4" fill="#E6E7E8" opacity="0.92" />
+          <circle cx="54" cy="163" r="3" fill="#B45342" />
+        </g>
+
+        <!-- micro caption -->
+        <text x="120" y="112" fill="#8A8C90" font-family="'Inter Tight', Helvetica, Arial, sans-serif" font-size="10.5" letter-spacing="4.2">CABINET INDEX · PLATE 01</text>
+        <text x="120" y="132" fill="#18181B" font-family="'Inter Tight', Helvetica, Arial, sans-serif" font-size="10.5" letter-spacing="4.2" opacity="0.5">ARCH / KEYCARD</text>
+      </svg>
       <span class="art-cap" data-i18n="artCap">Ordinary objects, better spaces</span>
     </div>
     <p class="base">

@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 <link rel="preload" as="image" href="assets/img/hero-brand-1086.jpg" />
-<link rel="stylesheet" href="assets/css/site.css?v=20261118v2" />
+<link rel="stylesheet" href="assets/css/site.css?v=20261118v3" />
 </head>
 <body>
 
@@ -70,6 +70,45 @@
   </div>
 </section>
 
+<!-- ══ booking bar — straddles the bottom of the hero ══ -->
+<div class="bbar-wrap" id="booking">
+  <div class="wrap">
+    <form class="bbar" id="bbForm" aria-label="예약">
+      <div class="bb-field bb-field-branch">
+        <span class="bb-k" data-i18n="bb.branch">지점</span>
+        <div class="bb-seg" role="group" aria-label="Branch">
+          <button type="button" data-bb="dongdaegu" aria-pressed="true">
+            <span data-i18n="bb.dgd">동대구역점</span>
+          </button>
+          <button type="button" data-bb="gyodong" aria-pressed="false">
+            <span data-i18n="bb.gyo">교동점</span>
+            <i data-i18n="bb.soon">준비 중</i>
+          </button>
+        </div>
+      </div>
+      <label class="bb-field">
+        <span class="bb-k" data-i18n="bb.in">체크인</span>
+        <input type="date" id="bbIn" name="check_in" />
+      </label>
+      <label class="bb-field">
+        <span class="bb-k" data-i18n="bb.out">체크아웃</span>
+        <input type="date" id="bbOut" name="check_out" />
+      </label>
+      <label class="bb-field bb-field-guests">
+        <span class="bb-k" data-i18n="bb.guests">인원</span>
+        <select id="bbGuests" name="guests" aria-label="Guests">
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+      <button type="submit" class="bbar-go" id="bbGo">빈 방 보기</button>
+    </form>
+    <p class="bbar-note" id="bbNote" data-i18n="bb.noteDgd">동대구역점 — 날짜를 넣으면 에어비앤비에서 빈 방을 확인합니다.</p>
+  </div>
+</div>
+
 <!-- ══ statement band ══ -->
 <section class="band" id="statement">
   <div class="wrap">
@@ -82,9 +121,16 @@
 <section class="sec" id="brand">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow" data-i18n="brand.eyebrow">Brand concept</div>
+      <div class="eyebrow" data-i18n="brand.eyebrow">C-01 / BRAND</div>
       <h2><span data-i18n="brand.h1">Ordinary, but</span> <em data-i18n="brand.h2">aesthetic.</em></h2>
       <p class="lede" data-i18n="brand.concept">평범함 속에 감각적인 취향과 무드를 담은 라이프스타일 스테이.</p>
+    </div>
+    <div class="quiet rv">
+      <p class="quiet-line" data-i18n="brand.quiet">대구에는 갈 곳은 많지만, 자고 싶은 곳은 많지 않았다.</p>
+      <p class="quiet-sub">
+        <span class="en-fixed" data-i18n="brand.quietEn">NOT SO NORMAL.</span>
+        <span class="loc" data-i18n="brand.quietKo">이름만 노멀합니다.</span>
+      </p>
     </div>
     <div class="intro rv">
       <figure class="intro-fig">
@@ -110,7 +156,7 @@
 <section class="sec sec-paper2" id="branches">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow" data-i18n="sites.eyebrow">Two sites</div>
+      <div class="eyebrow" data-i18n="sites.eyebrow">C-02 / SITES</div>
       <h2><span data-i18n="sites.h1">Daegu today.</span> <em data-i18n="sites.h2">Seoul &amp; Busan next.</em></h2>
       <p class="lede" data-i18n="sites.lede">대구의 두 지점은 프런트 없이 운영됩니다. 서울과 부산도 같은 마감으로, 새로운 동네에서 이어집니다. 예약은 에어비앤비에서 바로 하실 수 있습니다.</p>
     </div>
@@ -162,6 +208,7 @@
             <div class="roomtypes">
               <span data-i18n="gyo.r1">프라이빗 더블</span>
               <span data-i18n="gyo.r2">2인 기준</span>
+              <span data-i18n="gyo.r4">최대 4인 · 3실</span>
               <span data-i18n="gyo.r3">객실별 체크인 시간 상이</span>
             </div>
             <div class="site-cta">
@@ -262,7 +309,7 @@
 <section class="sec sec-dark" id="stay">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow" data-i18n="stay.eyebrow">The stay</div>
+      <div class="eyebrow" data-i18n="stay.eyebrow">C-03 / STAYS</div>
       <h2><span data-i18n="stay.h1">Stay in a mood</span> <em data-i18n="stay.h2">you love.</em></h2>
       <p class="lede" data-i18n="stay.lede">도착 전 안내 메시지, 키패드 셀프 체크인, 공용 라운지. 필요한 것은 미리 준비해 두고, 사람은 최소한으로.</p>
       <p class="wit"><span class="en-fixed" data-i18n="wit.pretty">For those with a soft spot for pretty spaces.</span></p>
@@ -317,11 +364,68 @@
   </div>
 </section>
 
+<!-- ══ room spec sheet ══ -->
+<section class="sec sec-paper2" id="rooms">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow" data-i18n="rooms.eyebrow">C-04 / ROOMS</div>
+      <h2><span data-i18n="rooms.h1">The room,</span> <em data-i18n="rooms.h2">in writing.</em></h2>
+      <p class="lede" data-i18n="rooms.lede">예약 전에 확인하고 싶은 것들을 표로 적어 두었습니다. 침대, 인원, 욕실, 체크인 시간까지.</p>
+    </div>
+    <div class="specs rv">
+      <article class="spec" data-site="gyodong">
+        <header class="spec-hd">
+          <span class="spec-no">01</span>
+          <b data-i18n="rooms.gyoT">교동점</b>
+          <small data-i18n="rooms.gyoS">Gyodong · 25 Rooms</small>
+        </header>
+        <dl class="spec-list">
+          <div><dt data-i18n="rooms.kRoom">객실</dt><dd data-i18n="rooms.gyoRoom">프라이빗 더블 · 2인 기준 · 25실</dd></div>
+          <div><dt data-i18n="rooms.kSleeps">최대 인원</dt><dd data-i18n="rooms.gyoSleeps">4인 — 그중 3실</dd></div>
+          <div><dt data-i18n="rooms.kBed">침대</dt><dd data-i18n="rooms.gyoBed">퀸사이즈 침대 2개 (4인실)</dd></div>
+          <div><dt data-i18n="rooms.kBath">욕실</dt><dd data-i18n="rooms.gyoBath">화장실 1.5개 — 샤워 전용 1 · 변기와 샤워 1 (4인실)</dd></div>
+          <div><dt data-i18n="rooms.kTime">체크인 / 아웃</dt><dd data-i18n="rooms.gyoTime">객실마다 다릅니다 · 예약 메시지로 안내</dd></div>
+          <div><dt data-i18n="rooms.kSelf">출입</dt><dd data-i18n="rooms.gyoSelf">키패드 셀프 체크인 · 프런트 없음</dd></div>
+          <div><dt data-i18n="rooms.kWay">오는 길</dt><dd data-i18n="rooms.gyoWay">중앙로역 3번 출구 도보 10분 · 대구역 도보 10분</dd></div>
+          <div><dt data-i18n="rooms.kNo">제공하지 않음</dt><dd data-i18n="rooms.gyoNo">대실 없음 · 숙박 전용</dd></div>
+        </dl>
+        <a class="spec-cta" href="https://cderses.github.io/normal-cabinet-gyodong/" target="_blank" rel="noopener">
+          <span data-i18n="rooms.gyoCta">실시간 워크인 보기</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="spec" data-site="dongdaegu">
+        <header class="spec-hd">
+          <span class="spec-no">02</span>
+          <b data-i18n="rooms.dgdT">동대구역점</b>
+          <small data-i18n="rooms.dgdS">Dongdaegu Station · 22 Rooms</small>
+        </header>
+        <dl class="spec-list">
+          <div><dt data-i18n="rooms.kRoom">객실</dt><dd data-i18n="rooms.dgdRoom">스튜디오 · 더블 / 퀸 베드 · 1~2인</dd></div>
+          <div><dt data-i18n="rooms.kBed">침대</dt><dd data-i18n="rooms.dgdBed">더블 / 퀸 1개</dd></div>
+          <div><dt data-i18n="rooms.kBath">욕실</dt><dd data-i18n="rooms.dgdBath">객실마다 전용 욕실</dd></div>
+          <div><dt data-i18n="rooms.kTime">체크인 / 아웃</dt><dd data-i18n="rooms.dgdTime">체크인 15:00 · 체크아웃 12:00</dd></div>
+          <div><dt data-i18n="rooms.kSelf">출입</dt><dd data-i18n="rooms.dgdSelf">키패드 셀프 체크인 · 프런트 없음</dd></div>
+          <div><dt data-i18n="rooms.kWay">오는 길</dt><dd data-i18n="rooms.dgdWay">동대구역 복합환승센터 도보 18분</dd></div>
+          <div><dt data-i18n="rooms.kRef">참고</dt><dd data-i18n="rooms.dgdRef">엘리베이터 없음(2~4층) · 건물 뒤 노상 공영주차장</dd></div>
+          <div><dt data-i18n="rooms.kNo">제공하지 않음</dt><dd data-i18n="rooms.dgdNo">대실 없음 · 숙박 전용 · 프런트 없음</dd></div>
+        </dl>
+        <a class="spec-cta" href="https://www.airbnb.co.kr/rooms/1662251362905057666" target="_blank" rel="noopener">
+          <span data-i18n="rooms.dgdCta">에어비앤비에서 예약</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+    </div>
+    <p class="spec-note rv" data-i18n="rooms.note">객실마다 배치와 소품은 조금씩 다를 수 있지만, 노멀캐비넷의 무드는 같습니다.</p>
+  </div>
+</section>
+
 <!-- ══ gallery ══ -->
 <section class="sec" id="gallery">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow" data-i18n="gal.eyebrow">Gallery</div>
+      <div class="eyebrow" data-i18n="gal.eyebrow">C-05 / GALLERY</div>
       <h2><span data-i18n="gal.h1">Dongdaegu Station,</span> <em data-i18n="gal.h2">room by room.</em></h2>
       <p class="lede" data-i18n="gal.lede">퀸베드룸, 트윈베드룸, 그리고 2층 라운지. 사진을 눌러 크게 볼 수 있습니다.</p>
       <p class="wit"><span class="en-fixed" data-i18n="wit.photo">Take pictures. Make yourself at home.</span></p>
@@ -354,7 +458,7 @@
 <section class="sec sec-paper2" id="daegu">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow" data-i18n="guide.eyebrow">Local guide</div>
+      <div class="eyebrow" data-i18n="guide.eyebrow">C-06 / NEXT DOOR</div>
       <h2><span data-i18n="guide.h1">Daegu, from</span> <em data-i18n="guide.h2">your doorstep.</em></h2>
       <p class="lede" data-i18n="guide.lede">두 지점에서 걸어 나가면 닿는 곳들. 교동은 골목과 시장, 동대구역은 역 너머의 동네 — 지점별 가이드를 준비해 두었습니다.</p>
     </div>
@@ -383,7 +487,7 @@
 <section class="sec" id="info">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow" data-i18n="info.eyebrow">Good to know</div>
+      <div class="eyebrow" data-i18n="info.eyebrow">C-07 / INFO</div>
       <h2><span data-i18n="info.h1">Before you book,</span> <em data-i18n="info.h2">a few details.</em></h2>
     </div>
     <div class="rows rv">
@@ -476,16 +580,32 @@
   </div>
 </div>
 
+<!-- mobile desk -->
+<nav class="mbar" id="mbar" aria-label="빠른 이동">
+  <a href="#branches">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V7l8-4 8 4v13"/><path d="M9 20v-6h6v6"/></svg>
+    <span data-i18n="mbar.sites">지점</span>
+  </a>
+  <a href="#daegu">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18c3-1.6 4.5-4.2 4.5-8.4V5.4"/><path d="M12 18c3-1.6 4.5-4.2 4.5-6M7.5 9h9"/><circle cx="19" cy="9" r="2"/></svg>
+    <span data-i18n="mbar.guide">큐레이션</span>
+  </a>
+  <button type="button" data-open-chat>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H8l-4 3v-6.2A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/></svg>
+    <span data-i18n="mbar.keeper">캐비닛지기</span>
+  </button>
+</nav>
+
 <!-- chatbot -->
-<button class="cb-fab" id="cbFab" type="button" data-open-chat aria-label="Stay guide chatbot">
+<button class="cb-fab" id="cbFab" type="button" data-open-chat aria-label="캐비닛지기">
   <span class="dot" aria-hidden="true"></span>
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H8l-4 3v-6.2A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg>
 </button>
 
-<section class="cb" id="cb" role="dialog" aria-modal="false" aria-label="Stay guide">
+<section class="cb" id="cb" role="dialog" aria-modal="false" aria-label="캐비닛지기">
   <header class="cb-hd">
     <span class="av" aria-hidden="true">nc</span>
-    <span class="t"><b data-i18n="cb.title">스테이 가이드</b><span>NORMAL CABINET</span></span>
+    <span class="t"><b data-i18n="cb.title">캐비닛지기</b><span>NORMAL CABINET</span></span>
     <button type="button" class="cb-x" id="cbClose" aria-label="Close">×</button>
   </header>
   <div class="cb-branch" role="group" aria-label="Branch">
@@ -504,8 +624,8 @@
   </div>
 </section>
 
-<script src="assets/js/i18n.js?v=20261118v2"></script>
-<script src="assets/js/site.js?v=20261117v3"></script>
-<script src="assets/js/chat.js?v=20261117v3"></script>
+<script src="assets/js/i18n.js?v=20261118v3"></script>
+<script src="assets/js/site.js?v=20261118v3"></script>
+<script src="assets/js/chat.js?v=20261118v3"></script>
 </body>
 </html>

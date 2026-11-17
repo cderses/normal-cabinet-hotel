@@ -13,18 +13,21 @@
     BOOK_D: "https://www.airbnb.co.kr/rooms/1662251362905057666",
     BOOK_D2: "https://www.airbnb.co.kr/rooms/1679661627721861120",
     GUIDE_G: "https://cderses.github.io/normal-cabinet-gyodong/curation/",
-    GUIDE_D: "https://www.airbnb.com/s/guidebooks?refinement_paths%5B%5D=/guidebooks/6994868"
+    GUIDE_D: "https://cderses.github.io/normal-cabinet-hotel/curation-dongdaegu/",
+    GUIDEBOOK_D: "https://www.airbnb.com/s/guidebooks?refinement_paths%5B%5D=/guidebooks/6994868"
   };
 
   var DATA = {
     ko: {
-      greet: "안녕하세요, 노멀캐비넷 스테이 가이드입니다. 지점을 고르고 궁금한 항목을 눌러 주세요.",
+      greet: "안녕하세요, 캐비닛지기입니다. 교동점엔 최대 4인 객실이 세 개 있고, 동대구역점은 역에서 도보 18분이에요. 열쇠·주차·주변 이야기, 무엇이든 물어보세요.",
       chips: [
         { id: "checkin", label: "체크인 · 체크아웃" },
         { id: "selfcheckin", label: "셀프 체크인 · 짐 보관" },
+        { id: "rooms", label: "객실 스펙" },
         { id: "parking", label: "주차" },
         { id: "directions", label: "위치 · 오시는 길" },
-        { id: "booking", label: "예약 방법" }
+        { id: "booking", label: "예약 방법" },
+        { id: "guide", label: "주변 큐레이션" }
       ],
       mapLinks: { naver: "네이버지도", kakao: "카카오맵", google: "Google 지도" },
       fallback:
@@ -37,6 +40,10 @@
           },
           selfcheckin: {
             text: "교동점은 프런트 없이 키패드로 출입하는 무인 스테이입니다. 출입 비밀번호는 체크인 당일 예약 메시지로만 보내드려요. 체크인 전·체크아웃 후 짐 보관은 예약 메시지로 문의해 주시면 당일 상황에 맞춰 안내드립니다."
+          },
+          rooms: {
+            text: "교동점은 2인 기준 프라이빗 룸 25실이고, 그중 세 실은 최대 4인까지 묵을 수 있어요. 퀸사이즈 침대 두 개에 화장실이 1.5개 — 샤워만 있는 욕실 하나와 변기·샤워가 함께 있는 욕실 하나입니다. 넷이 오시면 이 방으로 안내드릴게요.",
+            links: [{ label: "실시간 빈 방 · 예약", url: L.BOOK_G }]
           },
           parking: {
             text: "교동점은 건물 인근 공영주차장을 이용하시게 됩니다. 정확한 위치와 요금은 예약 후 메시지로 안내드릴게요."
@@ -60,7 +67,11 @@
         },
         dongdaegu: {
           checkin: {
-            text: "동대구역점은 객실별로 오후 2시~4시 체크인, 오전 11시~오후 1시 체크아웃입니다. 예를 들어 201·202호는 오후 2시 체크인 / 오전 11시 체크아웃, 203·204호처럼 늦은 체크아웃 객실은 오후 4시 체크인 / 오후 1시 체크아웃이에요. 정확한 시간은 예약하신 객실 안내를 확인해 주세요."
+            text: "동대구역점은 체크인 15:00, 체크아웃 12:00이 기준입니다. 일부 객실은 예약 안내 메시지에 적힌 시간이 조금 다를 수 있어요. 체크인은 키패드로 하시면 됩니다."
+          },
+          rooms: {
+            text: "동대구역점은 스튜디오 형태의 더블·퀸 객실로, 1~2인 숙박에 맞춰져 있어요. 체크인 15:00, 체크아웃 12:00이고 키패드로 바로 들어오시면 됩니다. 엘리베이터는 없고 객실은 2~4층이에요.",
+            links: [{ label: "에어비앤비에서 보기", url: L.BOOK_D }]
           },
           selfcheckin: {
             text: "동대구역점은 키패드 셀프 체크인으로 출입합니다. 비밀번호는 체크인 당일 예약 메시지로 안내드려요. 짐은 2층 계단 옆 셀프 짐 보관함을 이용하실 수 있고, 이용 방법은 현장 안내를 따라 주세요."
@@ -69,7 +80,7 @@
             text: "건물 안에는 전용 주차 공간이 없고, 건물 뒤편 노상 공영주차장을 이용하시면 됩니다. 1일 4,000원이며, 유료 운영은 평일 09:00~17:00, 그 외 시간은 무료예요. 건물 앞 도로는 평일 단속 구간입니다."
           },
           directions: {
-            text: "주소는 대구 동구 효목로 50입니다. 동대구역(KTX·SRT·지하철 1호선·복합환승센터)에서 버스 413번으로 3정거장(약 5분), 걸어서는 27분(1.7km)이에요. 신세계백화점 대구점까지 도보 약 10분입니다.",
+            text: "주소는 대구 동구 효목로 50입니다. 동대구역(KTX·SRT·지하철 1호선·복합환승센터)에서 도보 18분, 버스 413번으로는 3정거장(약 5분)이에요. 신세계백화점 대구점까지 도보 약 10분입니다.",
             links: [
               { label: "네이버지도", url: L.D_NAVER },
               { label: "카카오맵", url: L.D_KAKAO },
@@ -84,21 +95,26 @@
             ]
           },
           guide: {
-            text: "동대구역 주변에서 호스트가 고른 곳들을 에어비앤비 가이드북에 담았어요 — 막창·고깃집, 브런치 카페, 떡볶이와 만두 노포까지.",
-            links: [{ label: "가이드북 열기", url: L.GUIDE_D }]
+            text: "동대구역 주변에서 호스트가 고른 32곳을 큐레이션 페이지에 담았어요 — 효목동 시장 골목, 막창, 역 뒤 카페, 금호강 러닝까지. 에어비앤비 가이드북도 함께 보실 수 있어요.",
+            links: [
+              { label: "동대구역 큐레이션 열기", url: L.GUIDE_D },
+              { label: "에어비앤비 가이드북", url: L.GUIDEBOOK_D }
+            ]
           }
         }
       }
     },
 
     en: {
-      greet: "Hello — this is the Normal Cabinet stay guide. Choose a site, then tap a question.",
+      greet: "Hello — I'm the Keeper at Normal Cabinet. Gyodong has three rooms that sleep four, and Dongdaegu Station is 18 minutes on foot from the transfer centre. Keys, parking, the neighbourhood — ask me anything.",
       chips: [
         { id: "checkin", label: "Check-in / out" },
         { id: "selfcheckin", label: "Self check-in · luggage" },
+        { id: "rooms", label: "Rooms & beds" },
         { id: "parking", label: "Parking" },
         { id: "directions", label: "Location · directions" },
-        { id: "booking", label: "How to book" }
+        { id: "booking", label: "How to book" },
+        { id: "guide", label: "Neighbourhood" }
       ],
       mapLinks: { naver: "Naver Map", kakao: "Kakao Map", google: "Google Maps" },
       fallback:
@@ -111,6 +127,10 @@
           },
           selfcheckin: {
             text: "Gyodong runs without a front desk — you enter with a keypad, and the code is sent only in your booking message on the day of arrival. For luggage before check-in or after check-out, ask in your booking message and we will advise for that day."
+          },
+          rooms: {
+            text: "Gyodong has 25 private doubles for two, and three of them take up to four guests: two queen beds and 1.5 bathrooms — one shower room, and one with a toilet and shower. If you are four, that is the room we will give you.",
+            links: [{ label: "Live availability · Book", url: L.BOOK_G }]
           },
           parking: {
             text: "At Gyodong you will use a nearby public car park. We will send the exact location and rates in your booking message."
@@ -134,8 +154,12 @@
         },
         dongdaegu: {
           checkin: {
-            text: "At Dongdaegu Station, check-in is between 2 and 4 pm and check-out between 11 am and 1 pm, room by room. Rooms 201 and 202, for example, check in at 2 pm and out at 11 am; late-check-out rooms such as 203 and 204 check in at 4 pm and out at 1 pm. Your room's exact times are in its listing.",
+            text: "At Dongdaegu Station check-in is 15:00 and check-out 12:00. A few rooms run on slightly different times — your booking message gives the exact ones. You enter with a keypad.",
             links: []
+          },
+          rooms: {
+            text: "Dongdaegu Station is studio rooms with a double or queen bed, made for one or two guests. Check-in 15:00, check-out 12:00, and you let yourself in with a keypad. There is no elevator; rooms are on floors 2–4.",
+            links: [{ label: "See rooms on Airbnb", url: L.BOOK_D }]
           },
           selfcheckin: {
             text: "You enter with a keypad at Dongdaegu Station; the code arrives in your booking message on the day of arrival. Self-service luggage lockers are on the second floor beside the stairs — follow the on-site instructions."
@@ -144,7 +168,7 @@
             text: "There is no private parking on site. Use the public street parking behind the building: ₩4,000 a day, paid on weekdays 09:00–17:00 and free outside those hours. The road in front is a weekday tow-away zone."
           },
           directions: {
-            text: "The address is 50, Hyomok-ro, Dong-gu, Daegu. From Dongdaegu Station (KTX, SRT, Line 1, bus terminal) take bus 413 for three stops (about 5 minutes), or walk 27 minutes (1.7 km). Shinsegae Department Store is about 10 minutes on foot.",
+            text: "The address is 50, Hyomok-ro, Dong-gu, Daegu. It is 18 minutes on foot from Dongdaegu Station (KTX, SRT, Line 1, transfer centre), or three stops on bus 413 (about 5 minutes). Shinsegae Department Store is about 10 minutes on foot.",
             links: [
               { label: "Naver Map", url: L.D_NAVER },
               { label: "Kakao Map", url: L.D_KAKAO },
@@ -159,21 +183,26 @@
             ]
           },
           guide: {
-            text: "The host's picks around Dongdaegu Station are in the Airbnb guidebook — makchang and beef joints, a brunch café, tteokbokki and dumpling spots.",
-            links: [{ label: "Open the guidebook", url: L.GUIDE_D }]
+            text: "The 32 places we picked around Dongdaegu Station are on the curation page — the Hyomok-dong market alleys, makchang, the cafés behind the station, running along the Geumho. The Airbnb guidebook is there too.",
+            links: [
+              { label: "Open the Dongdaegu guide", url: L.GUIDE_D },
+              { label: "Airbnb guidebook", url: L.GUIDEBOOK_D }
+            ]
           }
         }
       }
     },
 
     zh: {
-      greet: "您好，这里是 Normal Cabinet 住宿指南。请先选择门店，再点击想了解的问题。",
+      greet: "您好，我是 Normal Cabinet 的柜管家。校洞店有三间最多可住四人的客房，东大邱站店距综合换乘中心步行 18 分钟。钥匙、停车、周边的事，都可以问我。",
       chips: [
         { id: "checkin", label: "入住 · 退房时间" },
         { id: "selfcheckin", label: "自助入住 · 行李" },
+        { id: "rooms", label: "客房与床位" },
         { id: "parking", label: "停车" },
         { id: "directions", label: "位置 · 交通" },
-        { id: "booking", label: "预订方式" }
+        { id: "booking", label: "预订方式" },
+        { id: "guide", label: "周边指南" }
       ],
       mapLinks: { naver: "Naver 地图", kakao: "Kakao 地图", google: "Google 地图" },
       fallback:
@@ -186,6 +215,10 @@
           },
           selfcheckin: {
             text: "校洞店没有前台，使用密码锁出入，密码仅在入住当天通过预订消息发送。入住前或退房后的行李寄存，请在预订消息中咨询，我们会按当天情况告知。"
+          },
+          rooms: {
+            text: "校洞店有 25 间限两人的独立双人房，其中三间最多可住四人：两张 queen 床，1.5 个卫生间——一间仅淋浴，一间含马桶与淋浴。四位入住时会为您安排这样的客房。",
+            links: [{ label: "实时空房 · 预订", url: L.BOOK_G }]
           },
           parking: {
             text: "校洞店使用建筑附近的公共停车场。确切位置与费用将在预订后通过消息告知。"
@@ -209,7 +242,11 @@
         },
         dongdaegu: {
           checkin: {
-            text: "东大邱站店的入住时间为 14:00~16:00，退房时间为 11:00~13:00，因客房而异。例如 201·202 号为 14:00 入住 / 11:00 退房；203·204 号等延迟退房客房为 16:00 入住 / 13:00 退房。确切时间请查看您预订客房的说明。"
+            text: "东大邱站店以 15:00 入住、12:00 退房为准，个别客房时间略有不同，以预订消息为准。出入使用密码锁。"
+          },
+          rooms: {
+            text: "东大邱站店为 Studio 房型，配双人床或 queen 床，适合 1~2 人。入住 15:00、退房 12:00，使用密码锁自助入住。无电梯，客房在 2~4 层。",
+            links: [{ label: "在 Airbnb 查看客房", url: L.BOOK_D }]
           },
           selfcheckin: {
             text: "东大邱站店使用密码锁自助入住，密码将在入住当天通过预订消息发送。行李可使用二层楼梯旁的自助行李柜，请按现场指引使用。"
@@ -218,7 +255,7 @@
             text: "楼内没有专用停车位，请使用楼后的路边公共停车场：每日 4,000 韩元，平日 09:00~17:00 收费，其余时间免费。楼前道路平日为管制路段。"
           },
           directions: {
-            text: "地址为大邱东区孝木路 50。从东大邱站（KTX、SRT、1 号线、综合换乘中心）乘 413 路公交 3 站（约 5 分钟），步行 27 分钟（1.7 公里）。到新世界百货步行约 10 分钟。",
+            text: "地址为大邱东区孝木路 50。从东大邱站（KTX、SRT、1 号线、综合换乘中心）步行 18 分钟，或乘 413 路公交 3 站（约 5 分钟）。到新世界百货步行约 10 分钟。",
             links: [
               { label: "Naver 地图", url: L.D_NAVER },
               { label: "Kakao 地图", url: L.D_KAKAO },
@@ -233,8 +270,11 @@
             ]
           },
           guide: {
-            text: "房东在东大邱站周边挑选的地方，已整理在 Airbnb 指南中——烤小肠与烤肉店、早午餐咖啡馆、辣炒年糕与饺子老店。",
-            links: [{ label: "打开指南", url: L.GUIDE_D }]
+            text: "东大邱站周边由房东挑选的 32 个地方整理在精选页面——孝木洞市场小巷、烤小肠、车站后巷的咖啡，到琴湖江跑步。也可查看 Airbnb 指南。",
+            links: [
+              { label: "打开东大邱站精选", url: L.GUIDE_D },
+              { label: "Airbnb 指南", url: L.GUIDEBOOK_D }
+            ]
           }
         }
       }
@@ -247,7 +287,8 @@
     selfcheckin: ["셀프", "키패드", "도어락", "비밀번호", "출입", "짐", "보관", "캐리어", "self", "keypad", "code", "door", "luggage", "bag", "locker", "自助", "密码", "行李", "寄存"],
     parking: ["주차", "파킹", "차", "parking", "park", "car", "停车", "车位"],
     directions: ["위치", "주소", "오시는", "가는", "지도", "역", "교통", "버스", "지하철", "location", "address", "direction", "map", "station", "bus", "subway", "train", "位置", "地址", "交通", "地图", "地铁", "公交"],
-    booking: ["예약", "에어비앤비", "부킹", "가격", "요금", "book", "airbnb", "reserve", "price", "rate", "预订", "价格", "房价"]
+    booking: ["예약", "에어비앤비", "부킹", "가격", "요금", "book", "airbnb", "reserve", "price", "rate", "预订", "价格", "房价"],
+    rooms: ["객실", "침대", "화장실", "욕실", "4인", "인원", "room", "bed", "bathroom", "sleeps", "客房", "床", "浴室", "人数"]
   };
 
   var BRANCH_KEYS = {
