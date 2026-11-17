@@ -84,7 +84,7 @@
             ]
           },
           guide: {
-            text: "동대구역 주변에서 호스트가 골라 담은 장소들을 에어비앤비 가이드북에 정리해 두었습니다.",
+            text: "동대구역 주변에서 호스트가 고른 곳들을 에어비앤비 가이드북에 담았어요 — 막창·고깃집, 브런치 카페, 떡볶이와 만두 노포까지.",
             links: [{ label: "가이드북 열기", url: L.GUIDE_D }]
           }
         }
@@ -159,7 +159,7 @@
             ]
           },
           guide: {
-            text: "The host's picks around Dongdaegu Station are in the Airbnb guidebook.",
+            text: "The host's picks around Dongdaegu Station are in the Airbnb guidebook — makchang and beef joints, a brunch café, tteokbokki and dumpling spots.",
             links: [{ label: "Open the guidebook", url: L.GUIDE_D }]
           }
         }
@@ -233,7 +233,7 @@
             ]
           },
           guide: {
-            text: "房东在东大邱站周边挑选的地方，已整理在 Airbnb 指南中。",
+            text: "房东在东大邱站周边挑选的地方，已整理在 Airbnb 指南中——烤小肠与烤肉店、早午餐咖啡馆、辣炒年糕与饺子老店。",
             links: [{ label: "打开指南", url: L.GUIDE_D }]
           }
         }

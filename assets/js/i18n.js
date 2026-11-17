@@ -116,7 +116,7 @@ window.I18N = {
     "guide.g1t": "교동점 · 대구여행 큐레이션",
     "guide.g1": "막창·뭉티기·찜갈비부터 카페와 바, 러닝 코스까지 — 교동에서 걸어 나가며 고른 36곳.",
     "guide.g2t": "동대구역점 · 에어비앤비 가이드북",
-    "guide.g2": "동대구역 주변에서 호스트가 골라 담은 장소들. 에어비앤비 가이드북에서 바로 확인하세요.",
+    "guide.g2": "동대구역 주변에서 호스트가 고른 곳 — 막창·고깃집부터 브런치 카페, 떡볶이와 만두 노포까지. 에어비앤비 가이드북에서 바로 확인하세요.",
     "guide.open": "가이드 열기 →",
 
     "info.eyebrow": "Good to know",
@@ -274,7 +274,7 @@ window.I18N = {
     "guide.g1t": "Gyodong · Daegu curation",
     "guide.g1": "Makchang, raw beef and braised ribs, cafés and bars, running routes — 36 places picked on foot from Gyodong.",
     "guide.g2t": "Dongdaegu Station · Airbnb guidebook",
-    "guide.g2": "The host's picks around Dongdaegu Station, in the Airbnb guidebook.",
+    "guide.g2": "The host's picks around Dongdaegu Station — makchang and beef joints, a brunch café, tteokbokki and dumpling spots — in the Airbnb guidebook.",
     "guide.open": "Open guide →",
 
     "info.eyebrow": "Good to know",
@@ -432,7 +432,7 @@ window.I18N = {
     "guide.g1t": "校洞店 · 大邱旅行精选",
     "guide.g1": "从烤小肠、生牛肉、炖排骨到咖啡馆与酒吧、跑步路线——从校洞步行挑选的 36 个地方。",
     "guide.g2t": "东大邱站店 · Airbnb 指南",
-    "guide.g2": "房东在东大邱站周边挑选的地方，可在 Airbnb 指南中直接查看。",
+    "guide.g2": "房东在东大邱站周边挑选的地方——烤小肠与烤肉店、早午餐咖啡馆、辣炒年糕与饺子老店。可在 Airbnb 指南中直接查看。",
     "guide.open": "打开指南 →",
 
     "info.eyebrow": "实用信息",
