@@ -561,6 +561,12 @@ html[lang="en"] .ft-wit .loc { display: none; }
 
 /* hero — split editorial layout on desktop */
 @media (min-width: 860px) {
+  .hdr { color: var(--ink); }
+  .hdr::before { opacity: 0; }
+  .hdr .lang { border-color: var(--line); }
+  .hdr .lang button[aria-pressed="true"] { background: var(--ink); }
+  .hdr .lang button[aria-pressed="true"] span { color: var(--paper); }
+  .hdr .brand span { color: var(--muted); }
   .hero {
     display: grid; grid-template-columns: 47% 53%;
     background: var(--paper); color: var(--ink); min-height: 100svh;
