@@ -329,7 +329,7 @@ html[lang="en"] .ft-wit .loc { display: none; }
 /* lightbox */
 .lb {
   position: fixed; inset: 0; z-index: 120; display: none; place-items: center;
-  background: rgba(18, 16, 14, 0.94); padding: 18px;
+  background: rgba(18, 16, 14, 0.985); padding: 18px;
 }
 .lb[open], .lb.on { display: grid; }
 .lb img { max-width: 100%; max-height: 84svh; object-fit: contain; }
