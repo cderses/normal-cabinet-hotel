@@ -648,7 +648,7 @@ blockquote { margin: 0; }
 /* key card — flips */
 .keycard {
   position: absolute;
-  right: 16px;
+  left: 16px;
   bottom: 16px;
   width: 168px;
   height: 106px;
