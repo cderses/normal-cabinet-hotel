@@ -203,11 +203,6 @@ html[lang="en"] .ft-wit .loc { display: none; }
   color: rgba(246, 243, 238, 0.66); font-weight: 600;
 }
 .hero-facts b { display: block; font-size: 15px; letter-spacing: -0.01em; color: #f6f3ee; margin-bottom: 2px; font-weight: 600; }
-.hero-scroll {
-  position: absolute; right: var(--pad); bottom: 20px; writing-mode: vertical-rl;
-  font-size: 9.5px; letter-spacing: 0.26em; text-transform: uppercase;
-  color: rgba(246, 243, 238, 0.5);
-}
 
 /* ── buttons ────────────────────────────────────────────────────────────── */
 .btn {
