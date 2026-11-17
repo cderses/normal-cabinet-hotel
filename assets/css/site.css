@@ -614,7 +614,7 @@ blockquote { margin: 0; }
 .sec-head .lede { margin-top: 4px; }
 
 /* ── brand ──────────────────────────────────────────────────────────── */
-.brand { background: var(--paper); }
+.sec.brand { background: var(--paper); }
 .brand-grid {
   display: grid;
   grid-template-columns: 1fr;
