@@ -132,7 +132,7 @@ blockquote { margin: 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(14, 17, 19, 0.5), rgba(14, 17, 19, 0));
+  background: linear-gradient(180deg, rgba(10, 13, 15, 0.74) 0%, rgba(10, 13, 15, 0.3) 46%, rgba(10, 13, 15, 0) 100%);
   transition: opacity 0.4s var(--ease);
   pointer-events: none;
 }
@@ -161,6 +161,8 @@ blockquote { margin: 0; }
   font-weight: 700;
   letter-spacing: -0.045em;
 }
+.hdr:not(.scrolled) .brand-name,
+.hdr:not(.scrolled) .nav a { text-shadow: 0 1px 16px rgba(8, 10, 12, 0.5); }
 .brand-name i { font-style: normal; color: var(--terra); }
 .brand-sub {
   margin-top: 6px;
@@ -330,8 +332,9 @@ blockquote { margin: 0; }
 .hero-foot {
   display: flex;
   flex-direction: column;
-  gap: 26px;
-  max-width: 760px;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 620px;
 }
 .hero-sub {
   font-size: 14.5px;
@@ -364,18 +367,20 @@ blockquote { margin: 0; }
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
   border-top: 1px solid rgba(243, 239, 231, 0.22);
-  background: rgba(12, 15, 17, 0.18);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
 }
 .hero-strip li {
-  padding: 14px var(--pad) 15px;
+  padding: 14px 18px 15px;
   border-bottom: 1px solid rgba(243, 239, 231, 0.14);
   display: flex;
   align-items: baseline;
   gap: 9px;
 }
+.hero-strip li:first-child { padding-left: 0; }
 .hero-strip li:nth-child(even) { border-left: 1px solid rgba(243, 239, 231, 0.14); }
 .hero-strip b {
   font-family: var(--display);
@@ -1370,12 +1375,12 @@ blockquote { margin: 0; }
   .hdr-index { display: block; }
   .hdr-book { height: 36px; padding: 0 16px; }
 
+  .hero { min-height: 94svh; }
   .hero-body { padding-top: 180px; padding-bottom: 132px; }
   .hero-rail { display: flex; }
   .hero-top { top: 104px; }
-  .hero-foot { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 40px; max-width: none; }
-  .hero-sub { max-width: 34ch; }
-  .hero-actions { flex: none; }
+  .hero-foot { gap: 26px; }
+  .hero-sub { max-width: 36ch; }
   .hl-1 { font-size: clamp(26px, 2.6vw, 40px); }
 
   .rail { grid-template-columns: 1.35fr 1fr 1fr 0.62fr auto; }
