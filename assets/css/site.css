@@ -1004,7 +1004,7 @@ a.bbar-go:hover { background: var(--terra-deep); }
   .ft { padding-bottom: 30px; }
   .quiet { margin-bottom: 28px; padding: 24px 0 22px; }
   /* keep the hero facts clear of the fixed desk and the chat button */
-  .hero-inner { padding-bottom: 132px; }
+  .hero-inner { padding-bottom: 144px; }
 }
 
 /* nav breathing room between 860 and 1080 where six items get tight */
