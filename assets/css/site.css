@@ -963,15 +963,15 @@ blockquote { margin: 0; }
   letter-spacing: 0.12em;
   color: var(--ink);
 }
-.mk-park { transform: translate(-7px, -7px); }
+.mk-park { transform: translate(-9px, -9px); }
 .mk-park b {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   background: var(--paper);
   border: 1px solid var(--terra);
   color: var(--terra);
-  font-size: 7.5px;
-  box-shadow: none;
+  font-size: 9px;
+  box-shadow: 0 0 0 2px rgba(243, 239, 231, 0.9);
 }
 
 /* ── stay ───────────────────────────────────────────────────────────── */

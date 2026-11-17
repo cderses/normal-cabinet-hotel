@@ -68,6 +68,7 @@
   ];
   var DGD_201 = "https://www.airbnb.co.kr/rooms/1662251362905057666";
   var activeSite = "gyodong";
+  var I18NKEY = { gyodong: "gyo", dongdaegu: "dgd" };
 
   /* ── language ─────────────────────────────────────────────── */
   function detectLang() {
@@ -102,6 +103,10 @@
     if (d["meta.title"]) document.title = d["meta.title"];
     var md = document.querySelector('meta[name="description"]');
     if (md && d["meta.desc"]) md.setAttribute("content", d["meta.desc"]);
+    var bb = document.getElementById("bbForm");
+    if (bb) bb.setAttribute("aria-label", d["nav.book"] || "Booking");
+    var mp = document.getElementById("map");
+    if (mp) mp.setAttribute("aria-label", d["map.aria"] || "Site map");
   }
 
   function setLang(l, store) {
@@ -267,15 +272,17 @@
         iconAnchor: [0, 0]
       })
     }).addTo(g);
-    L.circle([s.park.lat, s.park.lng], {
-      radius: s.park.r,
-      color: "#b4553c",
-      weight: 1,
-      opacity: 0.55,
-      dashArray: s.park.approx ? "3 3" : null,
-      fillColor: "#b4553c",
-      fillOpacity: 0.08
-    }).addTo(g);
+    if (s.park.approx) {
+      L.circle([s.park.lat, s.park.lng], {
+        radius: s.park.r,
+        color: "#b4553c",
+        weight: 1,
+        opacity: 0.5,
+        dashArray: "3 3",
+        fillColor: "#b4553c",
+        fillOpacity: 0.06
+      }).addTo(g);
+    }
     L.marker([s.park.lat, s.park.lng], {
       title: "PARKING",
       icon: L.divIcon({
@@ -432,8 +439,9 @@
     if (mapName) mapName.textContent = s.code;
     if (mapCoord) mapCoord.textContent = s.coord;
     if (locAddr) {
-      locAddr.setAttribute("data-i18n", key + ".addr");
-      locAddr.textContent = dict()[key + ".addr"] || s.addrKo;
+      var pfx = I18NKEY[key] || "gyo";
+      locAddr.setAttribute("data-i18n", pfx + ".addr");
+      locAddr.textContent = dict()[pfx + ".addr"] || s.addrKo;
     }
     if (copyBtn) resetCopy();
     if (map) focusMap(key, true);

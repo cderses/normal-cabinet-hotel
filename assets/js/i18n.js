@@ -86,6 +86,7 @@ window.I18N = {
     "locate.copied": "복사됨",
     "locate.parkT": "PARKING",
     "locate.transitT": "GETTING HERE",
+    "map.aria": "노멀캐비넷 지점 위치 지도",
     "map.fallback": "지도를 불러오지 못했습니다. 아래 주소와 지도 링크로 확인해 주세요.",
 
     "park.gyoA": "교동공영주차장 · 교동2길 11 · 도보 약 1분",
@@ -311,6 +312,7 @@ window.I18N = {
     "locate.copied": "Copied",
     "locate.parkT": "PARKING",
     "locate.transitT": "GETTING HERE",
+    "map.aria": "Normal Cabinet site map",
     "map.fallback": "The map could not load. Please use the addresses and map links below.",
 
     "park.gyoA": "Gyo-dong public car park · 11, Gyodong 2-gil · about 1 min on foot",
@@ -536,6 +538,7 @@ window.I18N = {
     "locate.copied": "已复制",
     "locate.parkT": "PARKING",
     "locate.transitT": "GETTING HERE",
+    "map.aria": "Normal Cabinet 门店位置地图",
     "map.fallback": "地图未能加载。请使用下方地址与地图链接确认。",
 
     "park.gyoA": "校洞公共停车场 · 校洞2街 11 · 步行约 1 分钟",

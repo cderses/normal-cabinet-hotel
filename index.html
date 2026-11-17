@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" />
 <link rel="preload" as="image" href="assets/img/brand/hero-1600.jpg" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<link rel="stylesheet" href="assets/css/site.css?v=20261118v21" />
+<link rel="stylesheet" href="assets/css/site.css?v=20261118v22" />
 </head>
 <body>
 
@@ -365,8 +365,8 @@
           <p class="loc-addr" id="locAddr" data-i18n="gyo.addr">대구광역시 중구 교동2길 29-11</p>
           <div class="fn-grid">
             <button class="btn-fn" type="button" id="copyAddr">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11"/><path d="M15 5H5v10"/></svg>
               <span data-i18n="locate.copy">주소 복사</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11"/><path d="M15 5H5v10"/></svg>
             </button>
             <a class="btn-fn" id="linkNaver" href="https://map.naver.com/p/search/%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EA%B5%90%EB%8F%992%EA%B8%B8%2029-11" target="_blank" rel="noopener">
               <span data-i18n="link.naver">네이버지도</span>
@@ -747,7 +747,7 @@
 
 <!-- room picker · 동대구역점 -->
 <div class="pick" id="pick" hidden>
-  <button class="pick-scrim" id="pickScrim" type="button" aria-label="Close" tabindex="-1"></button>
+  <div class="pick-scrim" id="pickScrim" aria-hidden="true"></div>
   <section class="pick-panel" role="dialog" aria-modal="true" aria-labelledby="pickTitle">
     <header class="pick-hd">
       <div>
@@ -763,8 +763,8 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script src="assets/js/i18n.js?v=20261118v11"></script>
-<script src="assets/js/site.js?v=20261118v12"></script>
+<script src="assets/js/i18n.js?v=20261118v12"></script>
+<script src="assets/js/site.js?v=20261118v13"></script>
 <script src="assets/js/chat.js?v=20261118v6"></script>
 </body>
 </html>
