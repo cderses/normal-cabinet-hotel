@@ -133,7 +133,7 @@ ul { margin: 0; padding: 0; list-style: none; }
     linear-gradient(90deg, rgba(18, 16, 14, 0.72) 0%, rgba(18, 16, 14, 0.34) 46%, rgba(18, 16, 14, 0) 72%),
     linear-gradient(0deg, rgba(18, 16, 14, 0.9) 0%, rgba(18, 16, 14, 0.4) 36%, rgba(18, 16, 14, 0.04) 68%);
 }
-.hero-inner { width: 100%; padding: 0 var(--pad) 46px; max-width: var(--max); margin: 0 auto; }
+.hero-inner { width: 100%; padding: 0 var(--pad) 84px; max-width: var(--max); margin: 0 auto; }
 .hero-mark {
   display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 700;
   letter-spacing: 0.26em; text-transform: uppercase; color: rgba(246, 243, 238, 0.82);
