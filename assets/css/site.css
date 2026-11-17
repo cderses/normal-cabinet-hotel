@@ -1522,6 +1522,7 @@ body.pick-open { overflow: hidden; }
 /* small screens */
 @media (max-width: 619px) {
   .hero-top { flex-direction: column; gap: 6px; }
+  .rail-cell-guests { grid-column: 1 / -1; border-left: 0; }
 }
 @media (max-width: 479px) {
   .hl-2, .hl-3 { font-size: 12.6vw; }
