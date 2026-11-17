@@ -121,6 +121,7 @@
     if (hdr) {
       var trigger = heroEl ? Math.min(window.innerHeight * 0.7, 640) : 80;
       hdr.classList.toggle("scrolled", y > trigger);
+      document.body.classList.toggle("past-hero", y > trigger + 40);
     }
     if (progress) {
       var max = document.documentElement.scrollHeight - window.innerHeight;
