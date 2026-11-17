@@ -147,7 +147,7 @@ window.I18N = {
     "ft.walkin": "교동점 · 빈 방 확인",
     "ft.guideT": "Guide",
     "ft.g1": "교동 큐레이션",
-    "ft.g2": "동대구역 가이드북",
+    "ft.g2": "동대구역점 가이드북",
     "ft.kakao": "오픈카카오톡",
 
     "cb.title": "스테이 가이드",
