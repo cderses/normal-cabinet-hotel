@@ -276,8 +276,8 @@ html[lang="en"] .ft-wit .loc { display: none; }
 .city-tabs::-webkit-scrollbar { display: none; }
 .city-tabs button {
   position: relative; flex: none; padding: 11px 15px 13px;
-  font-size: 10.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--muted); transition: color 0.22s var(--ease);
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.2em; text-indent: 0.2em;
+  text-transform: uppercase; color: var(--muted); transition: color 0.22s var(--ease);
 }
 .city-tabs button:hover { color: var(--ink-soft); }
 .city-tabs button::after {
@@ -325,7 +325,6 @@ html[lang="en"] .ft-wit .loc { display: none; }
   margin-top: 10px; max-width: 30ch; font-size: 12.5px; line-height: 1.62;
   letter-spacing: -0.005em; color: rgba(246, 243, 238, 0.56);
 }
-.city-row-next.one { grid-template-columns: 1fr; }
 
 /* ── branch blocks ──────────────────────────────────────────────────────── */
 .site-block { border-top: 1px solid var(--line); padding-top: 26px; margin-top: 48px; }

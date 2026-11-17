@@ -159,7 +159,6 @@
   var cityTabs = document.querySelectorAll("[data-city-tab]");
   var cityRows = document.querySelectorAll("[data-city-row]");
   var teasers = document.querySelectorAll(".teaser[data-city]");
-  var nextRow = document.querySelector(".city-row-next");
 
   function filterCity(city) {
     cityTabs.forEach(function (b) {
@@ -173,9 +172,6 @@
     teasers.forEach(function (t) {
       t.hidden = city !== "all" && t.getAttribute("data-city") !== city;
     });
-    if (nextRow) {
-      nextRow.classList.toggle("one", city === "seoul" || city === "busan");
-    }
     document.querySelectorAll("#branches .rv").forEach(function (el) {
       el.classList.add("in");
     });
