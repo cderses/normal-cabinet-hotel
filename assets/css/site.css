@@ -830,7 +830,8 @@ html[lang="en"] .quiet-sub .loc { display: none; }
   text-align: center;
   transition: background 0.2s var(--ease);
 }
-.bbar-go:hover { background: var(--terra-deep); }
+a.bbar-go { text-decoration: none; }
+a.bbar-go:hover { background: var(--terra-deep); }
 .bbar-note {
   margin-top: 11px;
   font-size: 11.5px;

@@ -222,9 +222,20 @@
         b.setAttribute("aria-pressed", b.getAttribute("data-bb") === bbBranch ? "true" : "false");
       });
       var gyo = bbBranch === "gyodong";
-      if (bbGo) bbGo.textContent = d[gyo ? "bb.goGyo" : "bb.goDgd"] || "";
+      var url;
+      if (gyo) {
+        url = "https://cderses.github.io/normal-cabinet-gyodong/?lang=" + encodeURIComponent(lang);
+      } else {
+        url = "https://www.airbnb.co.kr/rooms/1662251362905057666" +
+          "?check_in=" + encodeURIComponent(bbIn.value) +
+          "&check_out=" + encodeURIComponent(bbOut.value) +
+          "&adults=" + encodeURIComponent(bbGuests.value);
+      }
+      if (bbGo) {
+        bbGo.textContent = d[gyo ? "bb.goGyo" : "bb.goDgd"] || "";
+        bbGo.setAttribute("href", url);
+      }
       if (bbNote) bbNote.textContent = d[gyo ? "bb.noteGyo" : "bb.noteDgd"] || "";
-      if (bbGuests) bbGuests.disabled = false;
     }
 
     bbBtns.forEach(function (b) {
@@ -234,18 +245,13 @@
       });
     });
 
+    /* the go control is a real link, so a click is a normal navigation */
     bbForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      var url;
-      if (bbBranch === "gyodong") {
-        url = "https://cderses.github.io/normal-cabinet-gyodong/?lang=" + encodeURIComponent(lang);
-      } else {
-        url = "https://www.airbnb.co.kr/rooms/1662251362905057666" +
-          "?check_in=" + encodeURIComponent(bbIn.value) +
-          "&check_out=" + encodeURIComponent(bbOut.value) +
-          "&adults=" + encodeURIComponent(bbGuests.value);
-      }
-      window.open(url, "_blank", "noopener");
+      if (bbGo) bbGo.click();
+    });
+    [bbIn, bbOut, bbGuests].forEach(function (el) {
+      if (el) el.addEventListener("change", bbRefresh);
     });
 
     document.addEventListener("nc:lang", bbRefresh);
