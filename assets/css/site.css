@@ -1003,3 +1003,9 @@ html[lang="en"] .quiet-sub .loc { display: none; }
   .ft { padding-bottom: 30px; }
   .quiet { margin-bottom: 28px; padding: 24px 0 22px; }
 }
+
+/* nav breathing room between 860 and 1080 where six items get tight */
+@media (min-width: 860px) and (max-width: 1080px) {
+  .nav { gap: 16px; margin-left: 22px; }
+  .nav a { font-size: 11.5px; }
+}
