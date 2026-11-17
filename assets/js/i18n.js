@@ -178,7 +178,7 @@ window.I18N = {
     "hero.f3v": "Self",
     "hero.f3": "Check-in",
     "hero.f4v": "Stay only",
-    "hero.f4": "Stay only",
+    "hero.f4": "No hourly rooms",
 
     "brand.eyebrow": "Brand concept",
     "brand.concept": "A lifestyle stay where everyday simplicity meets thoughtful design and aesthetic charm.",
@@ -317,8 +317,8 @@ window.I18N = {
   },
 
   zh: {
-    "meta.title": "NORMAL CABINET HOTEL · EST. 2026 — 诺默卡比内特酒店",
-    "meta.desc": "诺默卡比内特酒店 — 用寻常之物营造更好空间的精品住宿。大邱校洞店 25 间客房 · 东大邱站店 22 间客房。自助入住，可在 Airbnb 预订。",
+    "meta.title": "NORMAL CABINET HOTEL · EST. 2026 — 大邱",
+    "meta.desc": "Normal Cabinet Hotel — 用寻常之物营造更好空间的精品住宿。大邱校洞店 25 间客房 · 东大邱站店 22 间客房。自助入住，可在 Airbnb 预订。",
     "nav.sites": "门店",
     "nav.stay": "住宿",
     "nav.gallery": "图库",
