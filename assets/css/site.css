@@ -1473,6 +1473,10 @@ body.past-hero .cb-fab { opacity: 1; pointer-events: auto; transform: none; }
 }
 
 /* small screens */
+@media (max-width: 619px) {
+  .hero-coord { display: none; }
+  .hero-top { flex-direction: column; gap: 6px; }
+}
 @media (max-width: 479px) {
   .hl-2, .hl-3 { font-size: 15.4vw; }
   .hero-body { padding-top: 128px; }
