@@ -155,6 +155,38 @@
     });
   }
 
+  /* ── city filter (All / Daegu / Seoul / Busan) ─────────────── */
+  var cityTabs = document.querySelectorAll("[data-city-tab]");
+  var cityRows = document.querySelectorAll("[data-city-row]");
+  var teasers = document.querySelectorAll(".teaser[data-city]");
+  var nextRow = document.querySelector(".city-row-next");
+
+  function filterCity(city) {
+    cityTabs.forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-city-tab") === city ? "true" : "false");
+    });
+    cityRows.forEach(function (row) {
+      var key = row.getAttribute("data-city-row");
+      var show = city === "all" || key === city || (key === "next" && (city === "seoul" || city === "busan"));
+      row.hidden = !show;
+    });
+    teasers.forEach(function (t) {
+      t.hidden = city !== "all" && t.getAttribute("data-city") !== city;
+    });
+    if (nextRow) {
+      nextRow.classList.toggle("one", city === "seoul" || city === "busan");
+    }
+    document.querySelectorAll("#branches .rv").forEach(function (el) {
+      el.classList.add("in");
+    });
+  }
+
+  cityTabs.forEach(function (b) {
+    b.addEventListener("click", function () {
+      filterCity(b.getAttribute("data-city-tab"));
+    });
+  });
+
   /* ── start ────────────────────────────────────────────────── */
   setLang(detectLang(), false);
   applyContact();

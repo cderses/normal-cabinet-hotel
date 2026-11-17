@@ -29,8 +29,8 @@
   --line: rgba(30, 30, 30, 0.13);
   --line-soft: rgba(30, 30, 30, 0.07);
   --airbnb: #ff385c;
-  --sans: "Inter Tight", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, "Noto Sans KR",
+  --sans: "Inter Tight", "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR",
     "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --max: 1180px;
@@ -47,8 +47,11 @@ body {
   color: var(--ink);
   font-family: var(--sans);
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.66;
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   word-break: keep-all;
   overflow-x: hidden;
 }
@@ -144,10 +147,12 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: clamp(38px, 11.4vw, 92px); line-height: 0.94; letter-spacing: -0.045em;
   font-weight: 700; max-width: 15ch; text-wrap: balance;
 }
+.hero h1 span { display: block; }
 .hero h1 em { font-style: normal; display: block; color: #f0c9b5; }
 .hero-sub {
-  margin-top: 18px; max-width: 40ch; font-size: 14.5px; line-height: 1.66;
-  color: rgba(246, 243, 238, 0.82);
+  margin-top: 20px; max-width: 34ch; font-size: 15px; line-height: 1.62;
+  letter-spacing: -0.005em; color: rgba(246, 243, 238, 0.86);
+  font-weight: 500;
 }
 .hero-slogan {
   font-size: 10px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase;
@@ -244,9 +249,15 @@ html[lang="en"] .ft-wit .loc { display: none; }
 }
 .eyebrow::before { content: ""; width: 18px; height: 1px; background: currentColor; }
 .sec-dark .eyebrow { color: #e2a68f; }
-.sec h2 { font-size: clamp(27px, 6.4vw, 44px); letter-spacing: -0.04em; max-width: 22ch; }
+.sec h2 {
+  font-size: clamp(27px, 6.2vw, 44px); letter-spacing: -0.042em; max-width: 22ch;
+  text-wrap: balance; font-weight: 700;
+}
 .sec h2 em { font-style: normal; color: var(--terra); }
-.lede { font-size: 14.5px; color: var(--ink-soft); max-width: 56ch; line-height: 1.72; }
+.lede {
+  font-size: 14.5px; color: var(--ink-soft); max-width: 54ch; line-height: 1.74;
+  letter-spacing: -0.008em; text-wrap: pretty;
+}
 .sec-dark .lede { color: rgba(246, 243, 238, 0.72); }
 
 /* statement strip */
@@ -255,6 +266,66 @@ html[lang="en"] .ft-wit .loc { display: none; }
 .strip div + div { padding-left: 18px; border-left: 1px solid var(--line); }
 .strip b { display: block; font-size: 26px; letter-spacing: -0.04em; font-weight: 700; }
 .strip span { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+
+/* ── city filter ────────────────────────────────────────────────────────── */
+.city-tabs {
+  display: flex; gap: 4px; overflow-x: auto; margin: 0 0 34px;
+  border-bottom: 1px solid var(--line); padding-bottom: 0;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
+}
+.city-tabs::-webkit-scrollbar { display: none; }
+.city-tabs button {
+  position: relative; flex: none; padding: 11px 15px 13px;
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--muted); transition: color 0.22s var(--ease);
+}
+.city-tabs button:hover { color: var(--ink-soft); }
+.city-tabs button::after {
+  content: ""; position: absolute; left: 12px; right: 12px; bottom: -1px; height: 2px;
+  background: var(--terra); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.28s var(--ease);
+}
+.city-tabs button[aria-pressed="true"] { color: var(--ink); }
+.city-tabs button[aria-pressed="true"]::after { transform: scaleX(1); }
+
+.city-row + .city-row { margin-top: 64px; }
+.city-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 4px 14px; border-top: 2px solid var(--ink); padding: 12px 0 0; margin-bottom: 4px;
+}
+.city-head h3 {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--ink);
+}
+.city-head span {
+  font-size: 9.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--muted);
+}
+.city-row-next { display: grid; gap: 10px; }
+.teaser {
+  position: relative; display: flex; flex-direction: column; overflow: hidden;
+  min-height: 216px; padding: 26px 24px 24px; background: var(--ink); color: var(--paper);
+  border-top: 2px solid var(--ink); transition: background 0.3s var(--ease);
+}
+.teaser:hover { background: #232221; }
+.teaser-motif { display: flex; flex-direction: column; gap: 6px; margin-bottom: auto; }
+.teaser-motif i { display: block; height: 2px; width: 44px; background: rgba(246, 243, 238, 0.22); }
+.teaser-motif i:nth-child(2) { width: 44px; }
+.teaser-motif i.short { width: 26px; background: var(--terra); }
+.teaser-body { margin-top: 34px; }
+.teaser-cs {
+  font-size: 9.5px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
+  color: #e2a68f;
+}
+.teaser h3 {
+  font-size: clamp(30px, 7.4vw, 40px); font-weight: 700; letter-spacing: -0.045em;
+  margin-top: 8px; color: #f6f3ee;
+}
+.teaser-note {
+  margin-top: 10px; max-width: 30ch; font-size: 12.5px; line-height: 1.62;
+  letter-spacing: -0.005em; color: rgba(246, 243, 238, 0.56);
+}
+.city-row-next.one { grid-template-columns: 1fr; }
 
 /* ── branch blocks ──────────────────────────────────────────────────────── */
 .site-block { border-top: 1px solid var(--line); padding-top: 26px; margin-top: 48px; }
@@ -530,6 +601,13 @@ html[lang="en"] .ft-wit .loc { display: none; }
   .strip div + div { padding-left: 26px; }
   .strip div { padding: 26px 0 22px; }
   .strip b { font-size: 34px; }
+  .city-tabs { margin-bottom: 40px; }
+  .city-tabs button { padding: 13px 18px 15px; font-size: 11px; }
+  .city-row + .city-row { margin-top: 96px; }
+  .city-head { padding-top: 14px; }
+  .city-row-next { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .teaser { min-height: 300px; padding: 32px 30px 30px; }
+  .teaser h3 { font-size: 40px; }
   .site-block { padding-top: 40px; margin-top: 72px; }
   .site-block .site-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 56px; align-items: start; }
   .site-block.flip .site-grid { grid-template-columns: 0.92fr 1.08fr; }
