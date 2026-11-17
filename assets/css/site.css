@@ -171,7 +171,7 @@ blockquote { margin: 0; }
   font-weight: 500;
   letter-spacing: 0.22em;
   color: currentColor;
-  opacity: 0.62;
+  opacity: 0.7;
 }
 .nav { display: none; gap: 30px; margin-left: 28px; }
 .nav a {
@@ -225,6 +225,8 @@ blockquote { margin: 0; }
 .hdr.scrolled .lang button + button { border-left-color: var(--line); }
 .lang button[aria-pressed="true"] { background: currentColor; opacity: 1; }
 .lang button[aria-pressed="true"] span { color: var(--paper); }
+.hdr:not(.scrolled) .lang button[aria-pressed="true"] { background: var(--paper); }
+.hdr:not(.scrolled) .lang button[aria-pressed="true"] span { color: var(--ink); }
 .hdr.scrolled .lang button[aria-pressed="true"] span { color: var(--paper); }
 .lang button span { display: block; }
 .hdr-book {

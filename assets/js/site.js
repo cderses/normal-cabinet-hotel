@@ -272,8 +272,8 @@
       if (k !== key && map.hasLayer(layers[k])) map.removeLayer(layers[k]);
     });
     var opts = { animate: !!animate, duration: 0.6 };
-    if (animate) map.flyTo([s.lat - 0.0006, s.lng], s.zoom, { duration: 0.9 });
-    else map.setView([s.lat - 0.0006, s.lng], s.zoom, { animate: false });
+    if (animate) map.flyTo([s.lat, s.lng], s.zoom, { duration: 0.9 });
+    else map.setView([s.lat, s.lng], s.zoom, { animate: false });
     if (mapName) mapName.textContent = s.code;
     if (mapCoord) mapCoord.textContent = s.coord;
   }
