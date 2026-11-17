@@ -964,6 +964,7 @@ blockquote { margin: 0; }
   border: 1px solid var(--line);
 }
 .mk-park b { background: var(--terra); width: 22px; height: 22px; font-size: 9px; }
+.mk-park i { order: -1; margin-right: 6px; }
 .mk-park i { background: rgba(251, 248, 242, 0.94); }
 .mk-park.is-off { opacity: 0.55; }
 

@@ -29,7 +29,7 @@
       lng: 128.640262,
       zoom: 17,
       coord: "35.8776°N 128.6403°E",
-      park: { lat: 35.87779, lng: 128.63986, r: 52, approx: true },
+      park: { lat: 35.87779, lng: 128.63986, r: 44, approx: true },
       naver: "https://map.naver.com/p/search/%EB%8C%80%EA%B5%AC%20%EB%8F%99%EA%B5%AC%20%ED%9A%A8%EB%AA%A9%EB%A1%9C%2050",
       kakao: "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%8F%99%EA%B5%AC%20%ED%9A%A8%EB%AA%A9%EB%A1%9C%2050",
       google: "https://www.google.com/maps/search/?api=1&query=%EB%8C%80%EA%B5%AC%20%EB%8F%99%EA%B5%AC%20%ED%9A%A8%EB%AA%A9%EB%A1%9C%2050"
