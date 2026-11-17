@@ -104,7 +104,7 @@ window.CURATION = {
     },
 
     {
-      c: 2, b: "h", n: { ko: "베르 (브런치카페)", en: "Beleu, brunch cafe (베르)", zh: "贝르 早午餐咖啡 (Beleu)" },
+      c: 2, b: "h", n: { ko: "베르 (브런치카페)", en: "Beleu, brunch cafe (베르)", zh: "贝雷 早午餐咖啡 (Beleu)" },
       w: { ko: "차 5분 / 도보 26분", en: "5 min by car / 26 min walk", zh: "车程 5 分钟 / 步行 26 分钟" }, d: "1.7km",
       a: "대구 동구 화랑로11길 69-14",
       h: { ko: "영업시간 지도 미표기 · 방문 전 확인", en: "Hours not listed on maps — check before going", zh: "地图无营业时间 · 访问前确认" },
@@ -331,7 +331,7 @@ window.CURATION = {
       meta: { ko: "차 이동 중심 · 07:00–20:00 · 미술관은 월요일 휴관", en: "mostly by car · 07:00–20:00 · museum closed Monday", zh: "以车程为主 · 07:00–20:00 · 美术馆周一休" },
       steps: [
         { t: "07:00", q: "동촌유원지", n: { ko: "동촌유원지 러닝", en: "A run at Dongchon (동촌유원지)", zh: "东村游园地跑步 (동촌유원지)" }, m: { ko: "차 5분 — 해맞이다리 왕복 5km, 평지", en: "5 min by car — 5 km return over the bridge, flat", zh: "车程5分钟——过桥往返5公里，全程平地" } },
-        { t: "09:00", q: "베르 대구", n: { ko: "베르 브런치", en: "Brunch at Beleu (베르)", zh: "贝르 早午餐 (베르)" }, m: { ko: "차 5분 — 작은 골목 카페, 영업 확인", en: "5 min by car — a small alley cafe, check it is open", zh: "车程5分钟——小巷咖啡，先确认营业" } },
+        { t: "09:00", q: "베르 대구", n: { ko: "베르 브런치", en: "Brunch at Beleu (베르)", zh: "贝雷 早午餐 (베르)" }, m: { ko: "차 5분 — 작은 골목 카페, 영업 확인", en: "5 min by car — a small alley cafe, check it is open", zh: "车程5分钟——小巷咖啡，先确认营业" } },
         { t: "11:00", q: "봉무공원", n: { ko: "봉무공원 산책", en: "A walk in Bongmu Park (봉무공원)", zh: "凤舞公园散步 (봉무공원)" }, m: { ko: "차 12분 — 완만한 순환로", en: "12 min by car — a gentle loop", zh: "车程12分钟——缓坡环路" } },
         { t: "13:00", q: "이시아폴리스", n: { ko: "이시아폴리스 점심 · 쇼핑", en: "Lunch and shops at Esiapolis (이시아폴리스)", zh: "Esiapolis 午餐 · 购物 (이시아폴리스)" }, m: { ko: "차 5분 — 한 건물에서 해결", en: "5 min by car — everything under one roof", zh: "车程5分钟——一栋楼里解决" } },
         { t: "16:00", q: "대구간송미술관", n: { ko: "대구간송미술관", en: "Daegu Kansong Art Museum (대구간송미술관)", zh: "大邱涧松美术馆 (대구간송미술관)" }, m: { ko: "차 15분 — 17:00 입장 마감", en: "15 min by car — last entry 17:00", zh: "车程15分钟——17点停止入场" } },
