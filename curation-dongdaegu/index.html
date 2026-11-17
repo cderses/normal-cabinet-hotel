@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#F5F4F0" />
+<title>대구여행 큐레이션 · 노멀캐비넷 동대구역점</title>
+<meta name="description" content="호텔 노멀캐비넷 동대구역점이 고른 대구 32곳 — 효목동 막창과 시장, 역 뒤 골목 카페, 금호강·신천 러닝, 앞산과 간송, 약국·마트·빨래방. 거리·영업시간·지도 링크까지 한 장에. 한국어 / English / 中文." />
+<meta property="og:title" content="대구여행 큐레이션 · normal cabinet. 동대구역점" />
+<meta property="og:description" content="효목동에서 걷고 달리고 먹는 32곳 — 3개 언어, 지도 링크 포함." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F5F4F0'/%3E%3Crect x='5' y='7' width='22' height='2.6' fill='%2318181B'/%3E%3Crect x='5' y='13' width='22' height='2.6' fill='%2318181B'/%3E%3Crect x='5' y='19' width='14' height='2.6' fill='%23B45342'/%3E%3C/svg%3E" />
+<link rel="preload" as="image" href="assets/hero.jpg" />
+<link rel="preload" href="assets/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin />
+<style>
+  @font-face{
+    font-family:"Inter Tight";font-style:normal;font-weight:100 900;font-display:swap;
+    src:url("assets/fonts/inter-tight.woff2") format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+00B0,U+00B7,U+00D7,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026,U+2032,U+2033;
+  }
+  :root{
+    --paper:#F5F4F0;
+    --card:#FCFBF8;
+    --ink:#18181B;
+    --ink-soft:#3F3F44;
+    --muted:#8A8C90;
+    --steel:#E6E7E8;
+    --steel-2:#D5D7DA;
+    --hairline:#C4C7CC;
+    --terra:#B45342;
+    --terra-deep:#9E4435;
+    --line:rgba(24,24,27,.14);
+    --line-soft:rgba(24,24,27,.075);
+    --hdr:56px;
+    --tabs:46px;
+    --max:1080px;
+    --sans:"Inter Tight",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);line-height:1.5;font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    word-break:keep-all;
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+
+  /* ── header ── */
+  .hdr{
+    position:sticky;top:0;z-index:60;height:var(--hdr);
+    display:flex;align-items:center;gap:14px;
+    padding:0 22px;background:rgba(245,244,240,.9);
+    backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);
+    border-bottom:1px solid var(--hairline);
+  }
+  .mark{display:flex;flex-direction:column;line-height:.92;letter-spacing:-.045em;font-weight:700;font-size:13.5px;flex:none}
+  .mark span{display:flex;align-items:flex-end}
+  .mark i{display:inline-block;width:4px;height:4px;background:var(--ink);margin-left:2px;margin-bottom:1px}
+  .hdr-coords{font-size:10px;font-weight:500;letter-spacing:.08em;color:var(--muted);white-space:nowrap;flex:none;font-variant-numeric:tabular-nums}
+  .lang{margin-left:auto;display:flex;gap:2px;border:1px solid var(--hairline);border-radius:999px;padding:3px;flex:none;background:rgba(255,255,255,.6)}
+  .lang button{padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.03em;color:var(--muted);transition:.18s}
+  .lang button[aria-pressed="true"]{background:var(--ink);color:#F5F4F0}
+
+  /* ── tabs ── */
+  .tabs{
+    position:sticky;top:var(--hdr);z-index:50;
+    display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;
+    padding:9px 22px;background:rgba(245,244,240,.93);
+    backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);
+    border-bottom:1px solid var(--hairline);
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{
+    flex:none;padding:6px 12px;border-radius:2px;font-size:12.5px;font-weight:600;
+    color:var(--ink-soft);border:1px solid transparent;background:transparent;transition:.16s;white-space:nowrap;
+  }
+  .tab[aria-selected="true"]{background:var(--ink);color:#F5F4F0}
+  .tab .n{font-size:10px;opacity:.45;margin-left:5px;font-variant-numeric:tabular-nums}
+
+  /* ── hero ── */
+  .hero{padding:34px 0 0}
+  .masthead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600;border-bottom:1px solid var(--hairline);padding-bottom:10px}
+  .eyebrow{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--terra);font-weight:700;margin:26px 0 16px}
+  .hero h1{
+    margin:0;font-size:clamp(40px,10.5vw,74px);line-height:.98;letter-spacing:-.045em;font-weight:700;
+  }
+  .hero h1 em{font-style:normal;color:var(--terra)}
+  .lede{margin:18px 0 0;font-size:15px;line-height:1.65;color:var(--ink-soft);max-width:46ch}
+  .chips{display:flex;flex-wrap:wrap;gap:0;margin:22px 0 0;padding:0;list-style:none;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+  .chips li{
+    font-size:11px;font-weight:600;letter-spacing:.05em;padding:9px 16px;color:var(--ink-soft);
+    border-right:1px solid var(--hairline);text-transform:uppercase;font-variant-numeric:tabular-nums;
+  }
+  .chips li:first-child{padding-left:2px}
+  .chips li:last-child{border-right:0}
+  .hero-art{position:relative;margin:30px 0 0;overflow:hidden;background:#DBD3C7}
+  .hero-art img{width:100%;height:clamp(320px,56vh,540px);object-fit:cover;object-position:center 30%}
+  .hero-art::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(24,24,27,.12);pointer-events:none}
+  .art-cap{
+    position:absolute;left:0;bottom:0;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:#F5F4F0;background:rgba(24,24,27,.82);padding:7px 14px;font-weight:600;
+  }
+  .base{
+    display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+    margin:0;padding:14px 22px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--hairline);
+  }
+  .base b{color:var(--ink);font-weight:600;font-size:12.5px}
+  .base span{display:inline-flex;align-items:center;gap:6px}
+  .base .dot{width:3px;height:3px;background:var(--terra);border-radius:50%;flex:none}
+
+  /* ── sections ── */
+  .sec{padding:52px 0 8px;scroll-margin-top:calc(var(--hdr) + var(--tabs) + 8px)}
+  .sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:22px;padding-top:16px;border-top:1px solid var(--ink)}
+  .sec-num{font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--terra);padding-top:8px;flex:none;font-variant-numeric:tabular-nums}
+  .sec-tt{flex:1;min-width:0}
+  .sec-tt h2{margin:0;font-size:clamp(21px,5.4vw,27px);letter-spacing:-.03em;font-weight:700;line-height:1.18}
+  .sec-tt p{margin:6px 0 0;font-size:12.5px;color:var(--muted);line-height:1.5}
+  .sec-art{width:72px;height:72px;overflow:hidden;flex:none;outline:1px solid var(--hairline);outline-offset:-1px}
+  .sec-art img{width:100%;height:100%;object-fit:cover}
+  .sec-note{font-size:11px;color:var(--muted);margin:0 0 14px}
+
+  .grid{display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+  .card{
+    position:relative;background:var(--card);border:1px solid var(--hairline);border-radius:2px;
+    padding:18px 18px 16px;display:flex;flex-direction:column;transition:border-color .16s,box-shadow .16s;
+  }
+  .card:hover{border-color:var(--ink);box-shadow:0 12px 30px -22px rgba(24,24,27,.45)}
+  .card-link{position:absolute;inset:0;border-radius:2px;z-index:1}
+  .card-link:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .card-top{display:flex;align-items:center;gap:8px;margin-bottom:12px;min-height:18px}
+  .badge{font-size:9px;font-weight:700;letter-spacing:.14em;padding:3px 8px 2px;white-space:nowrap;text-transform:uppercase}
+  .badge.f{background:var(--ink);color:#F5F4F0}
+  .badge.h{color:var(--terra);border:1px solid var(--terra)}
+  .badge.p{color:var(--ink-soft);border:1px solid var(--hairline)}
+  .walk{margin-left:auto;font-size:10.5px;font-weight:600;color:var(--muted);display:inline-flex;align-items:center;gap:4px;white-space:nowrap;letter-spacing:.02em}
+  .walk svg{width:10px;height:10px;flex:none;opacity:.7}
+  .card h3{margin:0 0 5px;font-size:17px;font-weight:600;letter-spacing:-.02em;line-height:1.3}
+  .card .sub{font-size:10px;letter-spacing:.09em;color:var(--muted);margin:0 0 9px;font-weight:600;text-transform:uppercase}
+  .card p.desc{margin:0 0 12px;font-size:13px;line-height:1.6;color:var(--ink-soft)}
+  .meta{display:flex;flex-direction:column;gap:3px;margin:0 0 11px;padding:10px 0 0;border-top:1px solid var(--line-soft)}
+  .meta .row{display:flex;gap:8px;font-size:11.5px;line-height:1.45}
+  .meta .k{flex:none;width:34px;color:var(--muted);font-weight:600;letter-spacing:.06em;font-size:9.5px;padding-top:2px;text-transform:uppercase}
+  .meta .v{color:var(--ink-soft)}
+  .tip{font-size:11.5px;line-height:1.5;color:var(--terra-deep);font-weight:500;margin:0 0 13px}
+  .tip b{font-weight:700;letter-spacing:.1em;font-size:9px;vertical-align:1px;margin-right:5px;text-transform:uppercase}
+  .maprow{display:flex;gap:0;margin-top:auto;position:relative;z-index:2;border:1px solid var(--hairline)}
+  .mapbtn{
+    flex:1;display:inline-flex;align-items:center;justify-content:center;gap:5px;
+    padding:8px 6px;font-size:11px;font-weight:600;color:var(--ink-soft);text-decoration:none;transition:.16s;white-space:nowrap;
+  }
+  .mapbtn + .mapbtn{border-left:1px solid var(--hairline)}
+  .mapbtn svg{width:10px;height:10px;opacity:.7;flex:none}
+  .mapbtn:hover{background:var(--ink);color:#F5F4F0;border-color:var(--ink)}
+
+  /* ── routes ── */
+  .routes{margin-top:56px;padding:0 0 8px}
+  .routes .sec-head{border-top:1px solid var(--ink)}
+  .routes-art{margin:0 0 24px;overflow:hidden;position:relative;background:#E7E3DB}
+  .routes-art img{width:100%;height:clamp(150px,26vh,230px);object-fit:cover}
+  .routes-art::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(24,24,27,.12);pointer-events:none}
+  .rgrid{display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:860px){.rgrid{grid-template-columns:repeat(3,1fr)}}
+  .route{background:var(--ink);color:#F5F4F0;border-radius:2px;padding:22px 20px;display:flex;flex-direction:column}
+  .route .rtag{align-self:flex-start;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#E4A38F;border:1px solid rgba(228,163,143,.45);padding:3px 8px 2px;margin-bottom:14px}
+  .route h3{margin:0 0 5px;font-size:16.5px;letter-spacing:-.015em;line-height:1.32;font-weight:600}
+  .route .rmeta{font-size:11px;color:rgba(245,244,240,.55);margin:0 0 18px;font-variant-numeric:tabular-nums}
+  .steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+  .steps li{position:relative;display:flex;gap:12px;padding:0 0 13px 16px;border-left:1px solid rgba(245,244,240,.16)}
+  .steps li:last-child{padding-bottom:0;border-left-color:transparent}
+  .steps li::before{content:"";position:absolute;left:-3.5px;top:5px;width:6px;height:6px;background:var(--terra)}
+  .steps li:last-child::before{background:rgba(245,244,240,.4)}
+  .steps .st{flex:none;font-size:10px;font-variant-numeric:tabular-nums;color:rgba(245,244,240,.5);width:36px;padding-top:2px;letter-spacing:.04em}
+  .steps .sn{font-size:12px;line-height:1.5;color:rgba(245,244,240,.93)}
+  .steps .sn small{display:block;font-size:10px;color:rgba(245,244,240,.5);margin-top:1px;letter-spacing:.02em}
+
+  /* ── footer ── */
+  .foot{margin-top:52px;border-top:1px solid var(--ink);padding:30px 0 48px}
+  .foot .brand{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:16px}
+  .foot .mark{font-size:20px}
+  .foot .mark i{width:5px;height:5px}
+  .foot .est{font-size:9.5px;letter-spacing:.16em;color:var(--muted);text-align:right;line-height:1.6;text-transform:uppercase;font-weight:600}
+  .foot .coords{font-size:10px;letter-spacing:.1em;color:var(--muted);margin:0 0 6px;font-variant-numeric:tabular-nums;font-weight:600;text-transform:uppercase}
+  .foot .addr{font-size:12.5px;color:var(--ink-soft);margin:0 0 4px;font-weight:600}
+  .foot .fine{font-size:11px;line-height:1.65;color:var(--muted);margin:10px 0 0;max-width:58ch}
+  .foot .top{display:inline-block;margin-top:16px;font-size:11px;font-weight:600;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--hairline);padding-bottom:2px;letter-spacing:.06em;text-transform:uppercase}
+  .hidden{display:none !important}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <a class="mark" href="../" aria-label="normal cabinet."><span>normal</span><span>cabinet<i></i></span></a>
+  <span class="hdr-coords" aria-hidden="true">35.877599° N&nbsp;·&nbsp;128.640262° E</span>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" role="tablist" aria-label="Categories"></nav>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="masthead" aria-hidden="true"><span>Daegu City Guide</span><span>Vol. 01</span></div>
+      <p class="eyebrow" data-i18n="eyebrow">HOTEL NORMAL CABINET · DONGDAEGU · EST 2026</p>
+      <h1 data-i18n-html="h1">역에서 내려,<br><em>대구로.</em></h1>
+      <p class="lede" data-i18n="lede"></p>
+      <ul class="chips" id="chips"></ul>
+    </div>
+    <div class="hero-art">
+      <img src="assets/hero.jpg" width="1000" height="1500" alt="테라코타 벽돌 호텔과 스틸 캐노피, 뒤로 철도 고가 — 노멀캐비넷 동대구역점 큐레이션 일러스트" fetchpriority="high" />
+      <span class="art-cap" data-i18n="artCap">Ordinary objects, better spaces</span>
+    </div>
+    <p class="base">
+      <span data-i18n="baseLabel">기준 숙소</span>
+      <b data-i18n="baseAddr">노멀캐비넷 동대구역점 · 대구 동구 효목로 50</b>
+      <span class="dot" aria-hidden="true"></span>
+      <span data-i18n="baseNote">동대구역 도보 17분 · 1호선 동촌역 방면</span>
+    </p>
+  </section>
+
+  <div id="sections"></div>
+
+  <section class="routes" id="routes">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">R</span>
+        <div class="sec-tt"><h2 data-i18n="routesTitle">추천 동선</h2><p data-i18n="routesSub"></p></div>
+      </div>
+      <div class="routes-art"><img src="assets/map.jpg" width="1600" height="1067" alt="대구 동부 시티 맵 라인아트 — 큐레이션 동선 일러스트" loading="lazy" /></div>
+      <div class="rgrid" id="rgrid"></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="brand">
+        <div class="mark" aria-label="normal cabinet."><span>normal</span><span>cabinet<i></i></span></div>
+        <div class="est">Ordinary objects,<br>better spaces<br>Est. 2026</div>
+      </div>
+      <p class="coords">35.877599° N · 128.640262° E</p>
+      <p class="addr" data-i18n="footAddr">노멀캐비넷 동대구역점 · 대구 동구 효목로 50</p>
+      <p class="fine" data-i18n="footFine"></p>
+      <a class="top" href="#top" data-i18n="toTop">위로</a>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/data.js?v=2026-11-18a"></script>
+<script>
+(function(){
+  "use strict";
+
+  var T = {
+    ko: {
+      title: "대구여행 큐레이션 · 노멀캐비넷 동대구역점",
+      desc: "호텔 노멀캐비넷 동대구역점이 고른 대구 32곳 — 효목동 막창과 시장, 역 뒤 골목 카페, 금호강·신천 러닝, 앞산과 간송, 약국·마트·빨래방까지. 거리·영업시간·지도 링크를 한 장에.",
+      hdrTitle: "대구여행 큐레이션",
+      eyebrow: "HOTEL NORMAL CABINET · DONGDAEGU · EST 2026",
+      h1: "역에서 내려,<br><em>대구로.</em>",
+      lede: "노멀캐비넷 동대구역점이 손님에게 건네는 대구 안내. 효목동 시장 골목에서 시작해 금호강, 동성로, 앞산까지 — 걸어서 갈 수 있는 곳과 차로 십 분인 곳을 구분해 32곳을 골랐습니다. 거리와 영업시간, 지도 링크까지 한 장에 담았습니다.",
+      baseLabel: "기준 숙소",
+      baseAddr: "노멀캐비넷 동대구역점 · 대구 동구 효목로 50",
+      baseNote: "동대구역 도보 17분 · 1호선 동촌역 방면",
+      artCap: "Ordinary objects, better spaces",
+      chips: ["32곳", "5 카테고리", "3개 동선", "지도 링크"],
+      all: "전체", routes: "동선",
+      tabFood: "맛집", tabCafe: "카페·브런치", tabRun: "러닝·산책", tabSpots: "명소·전시", tabEss: "편의·약국·마트",
+      badgeF: "대표 유명", badgeH: "숨은 로컬 픽", badgeP: "생활 편의",
+      hours: "영업", tip: "TIP", naver: "네이버 지도", google: "구글 지도",
+      count: "곳", walkIcon: "이동",
+      routesTitle: "추천 동선",
+      routesSub: "도착일 저녁, 시내 반나절, 달리는 아침 — 세 개의 코스. 각 정차지를 누르면 바로 지도로 이동합니다. 그대로 따라가도 되고, 순서만 바꿔도 됩니다.",
+      footAddr: "노멀캐비넷 동대구역점 · 대구 동구 효목로 50",
+      footFine: "거리·이동 시간과 영업시간은 2026년 11월 18일 지도 조회 기준입니다(도보는 카카오맵, 차는 티맵). 소규모 매장은 임시휴무가 잦으니 방문 당일 네이버 지도나 인스타그램에서 한 번 더 확인해 주세요. 지도 버튼을 누르면 해당 장소의 실제 지도로 이동합니다.",
+      toTop: "위로",
+      openMap: "지도에서 열기"
+    },
+    en: {
+      title: "Daegu Curation · normal cabinet. Dongdaegu",
+      desc: "32 places chosen by normal cabinet. Dongdaegu — Hyomok-dong makchang and market alleys, small cafes behind the station, running on the Geumho and Sincheon, Apsan and Kansong, plus pharmacy, mart and laundry, with distances, hours and map links.",
+      hdrTitle: "Daegu Curation",
+      eyebrow: "HOTEL NORMAL CABINET · DONGDAEGU · EST 2026",
+      h1: "Off the train,<br><em>into Daegu.</em>",
+      lede: "A Daegu guide from normal cabinet. Dongdaegu: 32 places, sorted by what you can walk to and what is ten minutes by car — the market alleys of Hyomok-dong, the Geumho river, Dongseong-ro, Apsan. Distances, hours and map links, all on one page.",
+      baseLabel: "From",
+      baseAddr: "Normal Cabinet Dongdaegu · 50, Hyomok-ro, Dong-gu, Daegu",
+      baseNote: "17 min walk from Dongdaegu Station",
+      artCap: "Ordinary objects, better spaces",
+      chips: ["32 places", "5 categories", "3 routes", "Map links"],
+      all: "All", routes: "Routes",
+      tabFood: "Food", tabCafe: "Cafes & Brunch", tabRun: "Running", tabSpots: "Sights", tabEss: "Convenience & Mart",
+      badgeF: "Signature", badgeH: "Local pick", badgeP: "Everyday",
+      hours: "HOURS", tip: "TIP", naver: "Naver Map", google: "Google Maps",
+      count: "spots", walkIcon: "Getting there",
+      routesTitle: "Suggested routes",
+      routesSub: "The arrival evening, half a day downtown, a running morning — three courses with the walking and driving legs worked in. Tap any stop to open it in the map. Follow them as written or swap the order.",
+      footAddr: "Normal Cabinet Dongdaegu · 50, Hyomok-ro, Dong-gu, Daegu",
+      footFine: "Distances, travel times and hours were checked on maps on 18 November 2026 (Kakao Map for walking, TMAP for driving). Small places close without notice, so check Naver Map or Instagram on the day. Each map button opens the actual location.",
+      toTop: "Back to top",
+      openMap: "Open in map"
+    },
+    zh: {
+      title: "大邱旅行策展 · normal cabinet. 东大邱站店",
+      desc: "normal cabinet. 东大邱站店为住客挑选的大邱32处 — 孝木洞小肠与市场、车站后巷的咖啡、琴湖江与新川跑步、前山与涧松，以及药局、超市、洗衣房，附距离、营业时间与地图链接。",
+      hdrTitle: "大邱旅行策展",
+      eyebrow: "HOTEL NORMAL CABINET · DONGDAEGU · EST 2026",
+      h1: "下车，<br><em>走进大邱。</em>",
+      lede: "这是 normal cabinet. 东大邱站店为住客准备的大邱指南。从孝木洞的市场小巷出发，到琴湖江、东城路、前山——我们把步行可到的地方和车程十分钟的地方分开，选出32处。距离、营业时间与地图链接，一页搞定。",
+      baseLabel: "出发点",
+      baseAddr: "Normal Cabinet 东大邱站店 · 大邱东区孝木路 50",
+      baseNote: "距东大邱站步行17分钟",
+      artCap: "Ordinary objects, better spaces",
+      chips: ["32处", "5个分类", "3条路线", "地图链接"],
+      all: "全部", routes: "路线",
+      tabFood: "美食", tabCafe: "咖啡早午餐", tabRun: "跑步散步", tabSpots: "景点展览", tabEss: "便利店·药局·超市",
+      badgeF: "人气名店", badgeH: "本地私藏", badgeP: "生活便利",
+      hours: "时间", tip: "提示", naver: "Naver 地图", google: "Google 地图",
+      count: "处", walkIcon: "移动",
+      routesTitle: "推荐路线",
+      routesSub: "抵达日晚间、半天市区、跑步的早晨——三条路线，连移动时间都算过。点击每一站即可直接跳转到地图。照着走可以，换个顺序也可以。",
+      footAddr: "Normal Cabinet 东大邱站店 · 大邱东区孝木路 50",
+      footFine: "距离、移动时间与营业时间以2026年11月18日地图信息为准（步行为 Kakao 地图，车程为 TMAP）。小店临时休息较多，建议当天在 Naver 地图或 Instagram 再确认一次。点击地图按钮会打开该地点的实际地图。",
+      toTop: "回到顶部",
+      openMap: "在地图中打开"
+    }
+  };
+
+  var U = window.CURATION, lang = "ko", filter = "all";
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+  var esc = function(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); };
+
+  var pin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>';
+  var foot = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5a2 2 0 1 0 0 .01"/><path d="M9.5 21l1.7-5.2L9 13.6l1-4.6 3.2-1.6 2.4 3.1 2.9.7"/><path d="M10 9l-2.6 1.3L6 14"/></svg>';
+
+  function naverUrl(p){ return "https://map.naver.com/p/search/" + encodeURIComponent(p.n.ko + " 대구"); }
+  function googleUrl(p){ return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(p.n.ko + " " + p.a); }
+
+  function setStatic(){
+    var t = T[lang];
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+    document.title = t.title;
+    var md = document.querySelector('meta[name="description"]'); if (md) md.setAttribute("content", t.desc);
+    var og = document.querySelector('meta[property="og:title"]'); if (og) og.setAttribute("content", t.title);
+    $$("[data-i18n]").forEach(function(el){ var k = el.getAttribute("data-i18n"); if (t[k] != null) el.textContent = t[k]; });
+    $$("[data-i18n-html]").forEach(function(el){ var k = el.getAttribute("data-i18n-html"); if (t[k] != null) el.innerHTML = t[k]; });
+    $("#chips").innerHTML = t.chips.map(function(c){ return "<li>" + esc(c) + "</li>"; }).join("");
+  }
+
+  function buildTabs(){
+    var t = T[lang];
+    var items = [
+      { id: "all", label: t.all, n: U.places.length },
+      { id: "food", label: t.tabFood, n: 8 },
+      { id: "cafe", label: t.tabCafe, n: 6 },
+      { id: "run", label: t.tabRun, n: 5 },
+      { id: "spots", label: t.tabSpots, n: 7 },
+      { id: "ess", label: t.tabEss, n: 6 },
+      { id: "routes", label: t.routes, n: null }
+    ];
+    $("#tabs").innerHTML = items.map(function(it){
+      return '<button type="button" class="tab" role="tab" data-filter="' + it.id + '" aria-selected="' + (filter === it.id) + '">' +
+        esc(it.label) + (it.n != null ? '<span class="n">' + it.n + "</span>" : "") + "</button>";
+    }).join("");
+    $$("#tabs .tab").forEach(function(b){
+      b.addEventListener("click", function(){
+        filter = b.getAttribute("data-filter");
+        $$("#tabs .tab").forEach(function(x){ x.setAttribute("aria-selected", String(x === b)); });
+        b.scrollIntoView({ block: "nearest", inline: "center" });
+        applyFilter(true);
+      });
+    });
+  }
+
+  function card(p){
+    var t = T[lang];
+    var badge = p.c === 5
+      ? '<span class="badge p">' + esc(t.badgeP) + "</span>"
+      : (p.b === "f" ? '<span class="badge f">' + esc(t.badgeF) + "</span>" : '<span class="badge h">' + esc(t.badgeH) + "</span>");
+    return '<article class="card" data-cat="' + p.c + '">' +
+      '<a class="card-link" href="' + esc(naverUrl(p)) + '" target="_blank" rel="noopener" aria-label="' + esc(p.n[lang] + " — " + t.openMap) + '"></a>' +
+      '<div class="card-top">' + badge +
+        '<span class="walk">' + foot + esc(p.w[lang]) + "</span></div>" +
+      "<h3>" + esc(p.n[lang]) + "</h3>" +
+      '<p class="sub">' + esc(typeof p.d === "string" ? p.d : p.d[lang]) + "</p>" +
+      '<p class="desc">' + esc(p.s[lang]) + "</p>" +
+      '<div class="meta">' +
+        '<div class="row"><span class="k">' + esc(t.hours) + '</span><span class="v">' + esc(p.h[lang]) + "</span></div>" +
+      "</div>" +
+      '<p class="tip"><b>' + esc(t.tip) + "</b>" + esc(p.t[lang]) + "</p>" +
+      '<div class="maprow">' +
+        '<a class="mapbtn" href="' + esc(naverUrl(p)) + '" target="_blank" rel="noopener">' + pin + esc(t.naver) + "</a>" +
+        '<a class="mapbtn" href="' + esc(googleUrl(p)) + '" target="_blank" rel="noopener">' + pin + esc(t.google) + "</a>" +
+      "</div></article>";
+  }
+
+  function buildSections(){
+    var t = T[lang], order = ["food","cafe","run","spots","ess"];
+    var html = U.cats.map(function(c, i){
+      var places = U.places.filter(function(p){ return p.c === c.id; });
+      return '<section class="sec" id="cat-' + c.key + '" data-filter="' + order[i] + '">' +
+        '<div class="wrap"><div class="sec-head">' +
+          '<span class="sec-num">' + String(i + 1).padStart(2, "0") + "</span>" +
+          '<div class="sec-tt"><h2>' + esc(c.title[lang]) + "</h2><p>" + esc(c.sub[lang]) + "</p></div>" +
+          '<div class="sec-art"><img src="' + c.img + '" width="720" height="720" alt="" loading="lazy" /></div>' +
+        "</div>" +
+        '<div class="grid">' + places.map(card).join("") + "</div></div></section>";
+    }).join("");
+    $("#sections").innerHTML = html;
+  }
+
+  function buildRoutes(){
+    var t = T[lang];
+    $("#rgrid").innerHTML = U.routes.map(function(r){
+      return '<article class="route">' +
+        '<span class="rtag">' + esc(r.tag[lang]) + "</span>" +
+        "<h3>" + esc(r.title[lang]) + "</h3>" +
+        '<p class="rmeta">' + esc(r.meta[lang]) + "</p>" +
+        '<ol class="steps">' + r.steps.map(function(s){
+          var link = s.q ? '<a href="' + esc("https://map.naver.com/p/search/" + encodeURIComponent(s.q + " 대구")) + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" onmouseover="this.style.color=\'#E4A38F\'" onmouseout="this.style.color=\'inherit\'">' : "";
+          var end = s.q ? "</a>" : "";
+          return "<li><span class=\"st\">" + esc(s.t) + '</span><span class="sn">' + link + esc(s.n[lang]) + end +
+            (s.m ? "<small>" + esc(s.m[lang]) + "</small>" : "") + "</span></li>";
+        }).join("") + "</ol></article>";
+    }).join("");
+  }
+
+  function applyFilter(scroll){
+    var showRoutes = filter === "routes";
+    $$("#sections .sec").forEach(function(sec){
+      sec.classList.toggle("hidden", filter !== "all" && sec.getAttribute("data-filter") !== filter);
+    });
+    var routes = $("#routes");
+    routes.style.display = (filter === "all" || showRoutes) ? "" : "none";
+    if (scroll && !showRoutes) {
+      var first = $("#sections .sec:not(.hidden)");
+      var y = (first ? first.getBoundingClientRect().top + window.pageYOffset : 0) - 112;
+      window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+    }
+  }
+
+  function render(){
+    setStatic(); buildTabs(); buildSections(); buildRoutes(); applyFilter(false);
+    $$(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+  }
+
+  $$(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){
+      lang = b.getAttribute("data-lang");
+      try { localStorage.setItem("nc-curation-lang", lang); } catch(e){}
+      render();
+    });
+  });
+
+  try {
+    var saved = localStorage.getItem("nc-curation-lang");
+    if (saved && T[saved]) lang = saved;
+  } catch(e){}
+  var q = new URLSearchParams(location.search).get("lang");
+  if (q && T[q]) lang = q;
+
+  render();
+  document.getElementById("top") || document.body.insertAdjacentHTML("afterbegin", '<span id="top"></span>');
+})();
+</script>
+</body>
+</html>

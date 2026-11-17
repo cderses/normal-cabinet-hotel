@@ -122,8 +122,8 @@ window.I18N = {
     "guide.lede": "두 지점에서 걸어 나가면 닿는 곳들. 교동은 골목과 시장, 동대구역은 역 너머의 동네 — 지점별 가이드를 준비해 두었습니다.",
     "guide.g1t": "교동점 · 대구여행 큐레이션",
     "guide.g1": "막창·뭉티기·찜갈비부터 카페와 바, 러닝 코스까지 — 교동에서 걸어 나가며 고른 36곳.",
-    "guide.g2t": "동대구역점 · 에어비앤비 가이드북",
-    "guide.g2": "동대구역 주변에서 호스트가 고른 곳 — 막창·고깃집부터 브런치 카페, 떡볶이와 만두 노포까지. 에어비앤비 가이드북에서 바로 확인하세요.",
+    "guide.g2t": "동대구역점 · 대구여행 큐레이션",
+    "guide.g2": "효목동 시장 골목과 막창, 역 뒤 카페부터 금호강·앞산까지 — 동대구역점에서 걸어 나가며 고른 32곳.",
     "guide.open": "가이드 열기 →",
 
     "info.eyebrow": "Good to know",
@@ -154,7 +154,8 @@ window.I18N = {
     "ft.walkin": "교동점 · 빈 방 확인",
     "ft.guideT": "Guide",
     "ft.g1": "교동 큐레이션",
-    "ft.g2": "동대구역점 가이드북",
+    "ft.g2": "동대구역 큐레이션",
+    "ft.g3": "동대구역점 가이드북",
     "ft.kakao": "오픈카카오톡",
 
     "cb.title": "스테이 가이드",
@@ -287,8 +288,8 @@ window.I18N = {
     "guide.lede": "Places within walking distance of both houses — alleys and markets around Gyodong, the neighbourhoods beyond the station at Dongdaegu. One guide for each.",
     "guide.g1t": "Gyodong · Daegu curation",
     "guide.g1": "Makchang, raw beef and braised ribs, cafés and bars, running routes — 36 places picked on foot from Gyodong.",
-    "guide.g2t": "Dongdaegu Station · Airbnb guidebook",
-    "guide.g2": "The host's picks around Dongdaegu Station — makchang and beef joints, a brunch café, tteokbokki and dumpling spots — in the Airbnb guidebook.",
+    "guide.g2t": "Dongdaegu Station · Daegu curation",
+    "guide.g2": "Hyomok-dong's market alleys and makchang, the cafés behind the station, the Geumho river and Apsan — 32 places picked on foot from Dongdaegu.",
     "guide.open": "Open guide →",
 
     "info.eyebrow": "Good to know",
@@ -319,7 +320,8 @@ window.I18N = {
     "ft.walkin": "Gyodong · availability",
     "ft.guideT": "Guide",
     "ft.g1": "Gyodong curation",
-    "ft.g2": "Dongdaegu guidebook",
+    "ft.g2": "Dongdaegu curation",
+    "ft.g3": "Dongdaegu guidebook",
     "ft.kakao": "KakaoTalk",
 
     "cb.title": "Stay guide",
@@ -452,8 +454,8 @@ window.I18N = {
     "guide.lede": "从两处门店步行可达的地方——校洞的巷子与市场，东大邱站周边的街区。每个门店都有一份指南。",
     "guide.g1t": "校洞店 · 大邱旅行精选",
     "guide.g1": "从烤小肠、生牛肉、炖排骨到咖啡馆与酒吧、跑步路线——从校洞步行挑选的 36 个地方。",
-    "guide.g2t": "东大邱站店 · Airbnb 指南",
-    "guide.g2": "房东在东大邱站周边挑选的地方——烤小肠与烤肉店、早午餐咖啡馆、辣炒年糕与饺子老店。可在 Airbnb 指南中直接查看。",
+    "guide.g2t": "东大邱站店 · 大邱旅行精选",
+    "guide.g2": "孝木洞的市场小巷与烤小肠、车站后巷的咖啡，到琴湖江与前山——从东大邱站店步行挑选的 32 个地方。",
     "guide.open": "打开指南 →",
 
     "info.eyebrow": "实用信息",
@@ -484,7 +486,8 @@ window.I18N = {
     "ft.walkin": "校洞店 · 空房",
     "ft.guideT": "指南",
     "ft.g1": "校洞精选",
-    "ft.g2": "东大邱站指南",
+    "ft.g2": "东大邱站精选",
+    "ft.g3": "东大邱站指南",
     "ft.kakao": "KakaoTalk",
 
     "cb.title": "住宿指南",
