@@ -558,6 +558,37 @@ html[lang="en"] .ft-wit .loc { display: none; }
   .cols2 { grid-template-columns: 1fr 1fr; gap: 28px; }
 }
 
+
+/* hero — split editorial layout on desktop */
+@media (min-width: 860px) {
+  .hero {
+    display: grid; grid-template-columns: 47% 53%;
+    background: var(--paper); color: var(--ink); min-height: 100svh;
+  }
+  .hero-media { position: relative; inset: auto; order: 2; z-index: 0; height: 100%; }
+  .hero-media img { object-position: 50% 50%; }
+  .hero-media::after {
+    background: linear-gradient(180deg, rgba(18, 16, 14, 0) 62%, rgba(18, 16, 14, 0.42) 100%);
+  }
+  .hero-inner {
+    order: 1; align-self: center; max-width: none; margin: 0;
+    padding: 96px 34px 48px max(40px, calc((100vw - 1180px) / 2 + 40px));
+  }
+  .hero-mark { color: var(--ink-soft); }
+  .hero-mark::before { background: var(--terra); opacity: 1; }
+  .hero-slogan { color: var(--muted); }
+  .hero h1 { font-size: clamp(46px, 5vw, 74px); max-width: 13ch; }
+  .hero h1 em { color: var(--terra); }
+  .hero-sub { color: var(--ink-soft); max-width: 34ch; }
+  .hero-en { color: var(--terra); }
+  .hero-actions .btn-paper { background: var(--ink); color: var(--paper); }
+  .hero-actions .btn-paper:hover { background: #000; }
+  .hero-actions .btn-ghost { border-color: var(--line); color: var(--ink); }
+  .hero-actions .btn-ghost:hover { background: rgba(30, 30, 30, 0.05); border-color: var(--ink); }
+  .hero-facts { border-top-color: var(--line); color: var(--muted); }
+  .hero-facts b { color: var(--ink); }
+}
+
 @media (min-width: 1180px) {
   .gal { grid-template-columns: repeat(5, 1fr); }
 }
