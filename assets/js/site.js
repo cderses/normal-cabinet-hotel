@@ -288,10 +288,11 @@
     var L = window.L;
     map = L.map(mapEl, {
       scrollWheelZoom: false,
-      zoomControl: true,
+      zoomControl: false,
       attributionControl: true,
       keyboard: true
     });
+    L.control.zoom({ position: "bottomright" }).addTo(map);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
