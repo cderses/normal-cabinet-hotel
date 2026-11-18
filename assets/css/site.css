@@ -256,6 +256,7 @@ i{font-style:normal}
   line-height:1.9;
   color:var(--ink-2);
   max-width:40ch;
+  justify-self:end;
 }
 .std-list{
   list-style:none;
@@ -307,6 +308,7 @@ i{font-style:normal}
   line-height:1.85;
   color:var(--ink-2);
   max-width:38ch;
+  justify-self:end;
 }
 .city-list{
   list-style:none;
@@ -363,6 +365,7 @@ i{font-style:normal}
   line-height:1.85;
   color:var(--ink-2);
   max-width:38ch;
+  justify-self:end;
 }
 .sites-grid{
   display:grid;
@@ -489,6 +492,12 @@ i{font-style:normal}
 .hcm-fig--tall{margin-top:clamp(24px,4.4vw,64px)}
 .hcm-fig--tall img{aspect-ratio:4/5}
 .hcm-fig:hover img{transform:scale(1.02)}
+.hcm-cap{
+  margin-top:12px;
+  font-size:9px;font-weight:500;letter-spacing:.22em;
+  color:var(--muted);
+  text-align:right;
+}
 .hcm-body{
   display:grid;
   grid-template-columns:1.1fr .9fr;
