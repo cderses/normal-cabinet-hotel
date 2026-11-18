@@ -4,6 +4,7 @@
 
   var I18N = {
     ko: {
+      "meta.title": "NORMAL CABINET HOTEL — 노멀캐비넷 호텔",
       "hero.alt": "브러시드 스틸 캐비닛 벽과 테라코타 벨벳 벤치가 이어지는 노멀캐비넷의 복도",
       "plaque.alt": "테라조 바닥 위 브러시드 스틸 명판 — hotel normal cabinet",
 
@@ -39,6 +40,7 @@
     },
 
     en: {
+      "meta.title": "NORMAL CABINET HOTEL — Seoul · Daegu · Ho Chi Minh",
       "hero.alt": "A corridor of brushed-steel cabinets and a terracotta velvet bench at Normal Cabinet",
       "plaque.alt": "A brushed-steel plaque on a terrazzo floor — hotel normal cabinet",
 
@@ -74,6 +76,7 @@
     },
 
     zh: {
+      "meta.title": "NORMAL CABINET HOTEL — 首尔 · 大邱 · 胡志明市",
       "hero.alt": "拉丝钢柜墙与赤陶色天鹅绒长凳相接的 NORMAL CABINET 走廊",
       "plaque.alt": "水磨石地面上的拉丝钢铭牌 —— hotel normal cabinet",
 
@@ -143,6 +146,7 @@
     var dict = I18N[lang];
 
     document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
+    if (dict["meta.title"]) document.title = dict["meta.title"];
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
