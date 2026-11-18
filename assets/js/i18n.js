@@ -8,9 +8,14 @@
       "plaque.alt": "테라조 바닥 위 브러시드 스틸 명판 — hotel normal cabinet",
 
       "st.body": "캐비닛은 물건을 넣어두는 가구입니다. 노멀캐비넷은 그 서랍에 하루를 넣어둡니다. 조명 하나, 잔 하나, 잘 고른 침구 한 벌. 이름은 평범하지만, 그 안의 취향은 그렇지 않습니다.",
-      "st.sub": "대구의 두 채 — 교동과 동대구역.",
+      "st.sub": "서울 · 대구 · 호치민 — 같은 취향의 집.",
 
-      "sites.lead": "같은 취향, 다른 동네. 두 집 모두 프런트 없이 지냅니다.",
+      "cities.lead": "서울과 대구, 그리고 호치민. 도시가 달라도 같은 취향의 집을 둡니다.",
+      "city.seoul": "서울",
+      "city.daegu": "노멀캐비넷 교동점\n노멀캐비넷 동대구역점",
+      "city.hcm": "호치민",
+
+      "sites.lead": "같은 취향, 다른 동네. 두 곳 모두 프런트 없이 지냅니다.",
 
       "g.name": "노멀캐비넷 교동점",
       "g.desc": "동성로와 교동 골목 사이, 테라코타 벽돌 건물 한 채를 통째로 쓰는 스테이. 골목을 나서면 대구에서 가장 오래된 카페와 시장, 서점이 이어집니다.",
@@ -38,9 +43,14 @@
       "plaque.alt": "A brushed-steel plaque on a terrazzo floor — hotel normal cabinet",
 
       "st.body": "A cabinet is furniture for keeping things. We keep a day in its drawers — one lamp, one glass, one well-chosen set of sheets. Ordinary by name, not by nature.",
-      "st.sub": "Two houses in Daegu — Gyodong and Dongdaegu Station.",
+      "st.sub": "Seoul, Daegu and Ho Chi Minh — houses of the same taste.",
 
-      "sites.lead": "The same taste in a different neighbourhood. Both houses run without a front desk.",
+      "cities.lead": "Seoul, Daegu, and Ho Chi Minh. Different cities, houses of the same taste.",
+      "city.seoul": "Seoul",
+      "city.daegu": "NORMAL CABINET GYODONG\nNORMAL CABINET DONGDAEGU STATION",
+      "city.hcm": "Ho Chi Minh City",
+
+      "sites.lead": "The same taste in different neighbourhoods. Neither house has a front desk.",
 
       "g.name": "NORMAL CABINET GYODONG",
       "g.desc": "A terracotta-brick house of its own between Dongseongno and the Gyodong alleys. Step out and Daegu's oldest cafés, market and bookshops follow one another.",
@@ -68,7 +78,12 @@
       "plaque.alt": "水磨石地面上的拉丝钢铭牌 —— hotel normal cabinet",
 
       "st.body": "橱柜是收纳物件的家具。我们把一天收进它的抽屉里——一盏灯、一只杯子、一套用心挑选的床品。名字平凡，品味不然。",
-      "st.sub": "大邱的两处 —— 校洞与东大邱站。",
+      "st.sub": "首尔 · 大邱 · 胡志明市 —— 同一份品味。",
+
+      "cities.lead": "首尔、大邱，以及胡志明市。城市不同，安放着同样品味的家。",
+      "city.seoul": "首尔",
+      "city.daegu": "NORMAL CABINET 校洞店\nNORMAL CABINET 东大邱站店",
+      "city.hcm": "胡志明市",
 
       "sites.lead": "同样的品味，不同的街区。两处都不设前台。",
 
