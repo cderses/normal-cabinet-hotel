@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <title>v9 capture · 390</title>
 <style>
-  html,body{margin:0;background:#F3EFE7}
+  html,body{margin:0;background:#F3EFE7;overflow-x:hidden}
   iframe{display:block;width:390px;height:8200px;border:0;background:#fff}
 </style>
 </head>
@@ -15,11 +15,14 @@ var q = new URLSearchParams(location.search);
 var lang = q.get("lang") || "ko";
 var f = document.getElementById("f");
 f.onload = function () {
-  try {
-    var d = f.contentDocument;
+  var d = f.contentDocument;
+  var st = d.createElement("style");
+  st.textContent = "@media (min-width:760px){.hero{min-height:820px!important}}@media (max-width:759px){.hero{min-height:660px!important}}";
+  d.head.appendChild(st);
+  setTimeout(function () {
     var h = Math.max(d.documentElement.scrollHeight, d.body.scrollHeight);
     f.style.height = h + "px";
-  } catch (e) {}
+  }, 400);
 };
 f.src = "index.html?lang=" + encodeURIComponent(lang);
 </script>
