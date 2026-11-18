@@ -17,6 +17,7 @@
   --terra:#B4553C;
   --max:1240px;
   --pad:clamp(20px,5vw,64px);
+  --hdr-h:58px;
   --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
   --sans:"Inter Tight","Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Apple SD Gothic Neo","Noto Sans KR","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
 }
@@ -104,7 +105,7 @@ i{font-style:normal}
 /* ─────────── hero ─────────── */
 .hero{
   position:relative;
-  min-height:min(92svh,880px);
+  min-height:calc(100svh - var(--hdr-h));
   display:flex;
   align-items:center;
   justify-content:center;
@@ -181,7 +182,7 @@ i{font-style:normal}
 }
 
 /* ─────────── sections ─────────── */
-.sec{padding:clamp(72px,10vw,150px) 0}
+.sec{padding:clamp(72px,10vw,150px) 0;scroll-margin-top:var(--hdr-h)}
 
 /* statement */
 .statement{border-bottom:1px solid var(--line-soft)}
@@ -414,9 +415,10 @@ i{font-style:normal}
 @media (max-width:600px){
   body{font-size:15px}
   .hdr{height:52px}
+  :root{--hdr-h:52px}
   .mark-sub{display:none}
   .lang{gap:12px}
-  .hero{min-height:86svh;max-height:760px}
+  .hero{min-height:calc(100svh - var(--hdr-h))}
   .hero-in{padding:88px 22px 96px}
   .hero-title{font-size:clamp(2.9rem,14.4vw,4.4rem);line-height:.94}
   .hero-title em{font-size:.13em;letter-spacing:.5em;text-indent:.5em}

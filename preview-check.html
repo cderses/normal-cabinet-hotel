@@ -21,6 +21,7 @@
   var H = parseInt(p.get("h") || "844", 10);
   var lang = p.get("lang") || "ko";
   var anchor = p.get("anchor") || "";
+  var offsetY = parseInt(p.get("y") || "0", 10);
 
   var frameBox = document.getElementById("frame");
   frameBox.style.width = W + "px";
@@ -34,7 +35,7 @@
 
   var url = "./index.html?lang=" + encodeURIComponent(lang) + "&pv=" + Date.now() + (anchor ? "#" + anchor : "");
   f.src = url;
-  document.getElementById("meta").textContent = W + "×" + H + " · " + lang + (anchor ? " · #" + anchor : "");
+  document.getElementById("meta").textContent = W + "×" + H + " · " + lang + (anchor ? " · #" + anchor : "") + (offsetY ? " · y" + offsetY : "");
 
   f.addEventListener("load", function () {
     try {
@@ -46,6 +47,7 @@
       win.addEventListener("unhandledrejection", function (e) {
         win.__errs.push("unhandledrejection :: " + e.reason);
       });
+      if (offsetY) win.scrollTo(0, offsetY);
     } catch (e) {}
   });
 
@@ -80,6 +82,7 @@
       }).join(" ");
       var hero = d.querySelector(".hero");
       if (hero) out.heroH = Math.round(hero.getBoundingClientRect().height);
+      out.scrollY = Math.round(win.scrollY);
     } catch (e) {
       out.error = String(e);
     }
