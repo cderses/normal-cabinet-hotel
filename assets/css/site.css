@@ -606,6 +606,7 @@ html.js [data-rv="4"]{transition-delay:.24s}
   .st-fig{max-width:100%;justify-self:start}
   .st-fig img{aspect-ratio:16/10}
   .std-head{grid-template-columns:1fr;align-items:start}
+  .std-lead,.cities-lead,.sites-lead{justify-self:start}
   .sites-head{grid-template-columns:1fr;align-items:start}
   .cities-head{grid-template-columns:1fr;align-items:start}
   .sites-grid{grid-template-columns:1fr;gap:clamp(44px,9vw,64px)}
