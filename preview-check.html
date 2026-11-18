@@ -22,6 +22,7 @@
   var lang = p.get("lang") || "ko";
   var anchor = p.get("anchor") || "";
   var offsetY = parseInt(p.get("y") || "0", 10);
+  var fullMode = p.get("full") === "1";
 
   var frameBox = document.getElementById("frame");
   frameBox.style.width = W + "px";
@@ -48,6 +49,20 @@
         win.__errs.push("unhandledrejection :: " + e.reason);
       });
       if (offsetY) win.scrollTo(0, offsetY);
+      if (fullMode) {
+        var d = f.contentDocument;
+        var hero = d.querySelector(".hero");
+        var heroH = hero ? Math.round(hero.getBoundingClientRect().height) : 0;
+        var st = d.createElement("style");
+        st.textContent = ".hdr{position:static!important}html{scroll-behavior:auto!important}" +
+          (heroH ? ".hero{min-height:" + heroH + "px!important}" : "");
+        d.head.appendChild(st);
+        win.scrollTo(0, 0);
+        var total = d.documentElement.scrollHeight;
+        f.height = total;
+        frameBox.style.height = total + "px";
+        window.__fullHeight = total;
+      }
     } catch (e) {}
   });
 
