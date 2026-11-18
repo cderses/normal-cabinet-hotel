@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>preview check</title>
+<style>
+  html, body { margin: 0; background: #262626; }
+  .frame { background: #fff; margin: 12px auto; box-shadow: 0 10px 40px rgba(0,0,0,.5); overflow: hidden; }
+  iframe { border: 0; display: block; }
+  #meta { position: fixed; left: 8px; bottom: 8px; font: 11px/1.4 monospace; color: #9a9a9a; background: #1c1c1c; padding: 4px 8px; }
+</style>
+</head>
+<body>
+<div class="frame" id="frame"></div>
+<div id="meta"></div>
+<script>
+  var p = new URLSearchParams(location.search);
+  var W = parseInt(p.get("w") || "390", 10);
+  var H = parseInt(p.get("h") || "844", 10);
+  var lang = p.get("lang") || "ko";
+  var anchor = p.get("anchor") || "";
+
+  var frameBox = document.getElementById("frame");
+  frameBox.style.width = W + "px";
+  frameBox.style.height = H + "px";
+
+  var f = document.createElement("iframe");
+  f.width = W;
+  f.height = H;
+  f.title = "preview " + W;
+  frameBox.appendChild(f);
+
+  var url = "./index.html?lang=" + encodeURIComponent(lang) + "&pv=" + Date.now() + (anchor ? "#" + anchor : "");
+  f.src = url;
+  document.getElementById("meta").textContent = W + "×" + H + " · " + lang + (anchor ? " · #" + anchor : "");
+
+  f.addEventListener("load", function () {
+    try {
+      var win = f.contentWindow;
+      win.__errs = [];
+      win.addEventListener("error", function (e) {
+        win.__errs.push((e.message || "error") + " :: " + (e.target && (e.target.src || e.target.href) || ""));
+      });
+      win.addEventListener("unhandledrejection", function (e) {
+        win.__errs.push("unhandledrejection :: " + e.reason);
+      });
+    } catch (e) {}
+  });
+
+  window.__check = function () {
+    var out = { w: W, h: H, lang: lang, anchor: anchor };
+    try {
+      var d = f.contentDocument;
+      var win = f.contentWindow;
+      out.title = d.title;
+      out.htmlLang = d.documentElement.lang;
+      out.innerW = win.innerWidth;
+      out.innerH = win.innerHeight;
+      out.scrollW = d.documentElement.scrollWidth;
+      out.scrollH = d.documentElement.scrollHeight;
+      out.overflowX = d.documentElement.scrollWidth > win.innerWidth + 1;
+      out.images = Array.prototype.map.call(d.images, function (i) {
+        return { file: (i.currentSrc || i.src).split("/").pop(), ok: i.complete && i.naturalWidth > 0, nw: i.naturalWidth };
+      });
+      out.failedResources = win.performance.getEntriesByType("resource")
+        .filter(function (e) { return e.responseStatus && e.responseStatus >= 400; })
+        .map(function (e) { return e.responseStatus + " " + e.name; });
+      out.resourceCount = win.performance.getEntriesByType("resource").length;
+      out.headings = Array.prototype.map.call(d.querySelectorAll("h1,h2,h3"), function (h) {
+        return h.textContent.replace(/\s+/g, " ").trim();
+      });
+      out.names = Array.prototype.map.call(d.querySelectorAll("[data-i18n$='.name'], [data-i18n='f.addr']"), function (n) {
+        return n.textContent.trim();
+      });
+      out.errors = win.__errs || [];
+      out.langBtn = Array.prototype.map.call(d.querySelectorAll("[data-lang]"), function (b) {
+        return b.getAttribute("data-lang") + ":" + b.getAttribute("aria-pressed");
+      }).join(" ");
+      var hero = d.querySelector(".hero");
+      if (hero) out.heroH = Math.round(hero.getBoundingClientRect().height);
+    } catch (e) {
+      out.error = String(e);
+    }
+    return JSON.stringify(out);
+  };
+</script>
+</body>
+</html>
