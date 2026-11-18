@@ -30,7 +30,7 @@
       "d.addr": "대구 동구 효목로 50",
       "d.park": "건물 뒤 노상 공영주차 · 1일 4,000원",
       "d.way": "동대구역 도보 27분 · 동구청역 2번 출구 도보 17분",
-      "d.alt": "LP 플레이어와 바 카운터, 레드 소파가 있는 동대구역점 2층 라운지",
+      "d.alt": "빨간 소파와 메모 조명, 붉은 문이 있는 동대구역점 2층 라운지",
 
       "f.addr": "주소",
       "f.park": "주차",
@@ -66,7 +66,7 @@
       "d.addr": "50, Hyomok-ro, Dong-gu, Daegu",
       "d.park": "Street parking behind the building · ₩4,000 per day",
       "d.way": "Dongdaegu Stn. 27 min on foot · Donggucheong Stn. exit 2, 17 min on foot",
-      "d.alt": "The second-floor lounge at Normal Cabinet Dongdaegu Station, with records, a bar counter and a red sofa",
+      "d.alt": "The second-floor lounge at Normal Cabinet Dongdaegu Station, with a red sofa and a chandelier of handwritten notes",
 
       "f.addr": "ADDRESS",
       "f.park": "PARKING",
@@ -102,7 +102,7 @@
       "d.addr": "大邱东区孝睦路 50",
       "d.park": "建筑后侧路边公共停车 · 每天 4,000 韩元",
       "d.way": "东大邱站步行 27 分钟 · 东区厅站 2 号出口步行 17 分钟",
-      "d.alt": "东大邱站店二层的休息室，有黑胶唱机、吧台与红色沙发",
+      "d.alt": "东大邱站店二层的休息室，有红色沙发与纸条吊灯",
 
       "f.addr": "地址",
       "f.park": "停车",
