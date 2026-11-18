@@ -1,686 +1,156 @@
-/* NORMAL CABINET HOTEL — UI strings (ko / en / zh) · v6 */
-window.I18N = {
-  ko: {
-    "meta.title": "NORMAL CABINET HOTEL · EST. 2026 — 노멀캐비넷 호텔",
-    "meta.desc": "노멀캐비넷 호텔 — 대구 교동점 25실 · 동대구역점 22실. 무인 셀프 체크인, 에어비앤비 예약.",
-    "nav.sites": "지점",
-    "nav.stay": "스테이",
-    "nav.rooms": "객실",
-    "nav.gallery": "갤러리",
-    "nav.guide": "가이드",
-    "nav.info": "안내",
-    "nav.book": "예약",
-
-    "hero.pre": "Ordinary objects,",
-    "hero.t1": "NOT SO",
-    "hero.t2": "NORMAL.",
-    "hero.sub": "평범한 물건으로 만든 두 개의 집. 대구 교동과 동대구역.",
-    "hero.cta1": "지점 둘러보기",
-    "hero.cta2": "캐비닛지기에게 묻기",
-    "hero.cta3": "오픈카카오톡",
-    "hero.scroll": "SCROLL",
-
-    "bb.branch": "지점",
-    "bb.dgd": "동대구역점",
-    "bb.gyo": "교동점",
-    "bb.in": "체크인",
-    "bb.out": "체크아웃",
-    "bb.guests": "인원",
-    "bb.pickDgd": "객실 선택",
-    "bb.goDgd": "객실 선택",
-    "bb.goGyo": "실시간 빈 방 보기",
-    "bb.noteDgd": "22실 중 객실을 고르면 그 날짜로 에어비앤비가 열립니다.",
-    "bb.noteGyo": "교동점 — 실시간 빈 방 페이지에서 오늘·내일 객실을 확인합니다.",
-
-    "statement.quote": "익숙한 도시에, 조금 다른 밤.",
-
-    "brand.lede": "캐비닛은 물건을 넣는 가구입니다. 우리는 그 서랍에 하루를 넣어둡니다.",
-    "brand.story1": "모든 순간이 특별할 필요는 없습니다. 마음에 드는 조명과 기분 좋은 색, 작은 디테일이면 충분합니다.",
-    "brand.story2": "익숙하고 편안한 공간에 우리의 감각을 조금 더합니다. 그 하루가 오래 기억되기를 바랍니다.",
-    "brand.matT": "객실 소재의 비율",
-    "brand.matNote": "어느 하나도 과하지 않게. 우드 50, 뉴트럴 벽면 30, 패브릭 10, 스틸 10.",
-    "key.back": "NOT SO NORMAL.",
-
-    "gyo.name": "교동점",
-    "gyo.addr": "대구광역시 중구 교동2길 29-11",
-    "gyo.desc": "동성로와 교동 골목 사이, 벽돌 건물 한 채를 통째로 쓰는 스테이. 1층부터 4층까지 25개의 작은 방.",
-    "gyo.f1": "중앙로역 3번 출구 도보 10분 · 대구역 도보 10분",
-    "gyo.f2": "25실 · 1∼4층 · 2인 기준, 4인실 3개",
-    "gyo.f3": "건물 내 불가 · 교동공영주차장 도보 1분",
-    "gyo.f4": "동성로 · 교동 골목 · 서문시장",
-    "gyo.r1": "프라이빗 더블",
-    "gyo.r2": "2인 기준",
-    "gyo.r3": "객실별 체크인",
-    "gyo.r4": "최대 4인 · 3실",
-    "gyo.cta1": "실시간 빈 방 · 예약",
-
-    "dgd.name": "동대구역점",
-    "dgd.addr": "대구광역시 동구 효목로 50",
-    "dgd.desc": "동대구역에서 버스로 세 정거장. 2층 라운지 위로 22개의 객실. 퀸, 트윈, 그리고 13:00 체크아웃 객실.",
-    "dgd.f1": "동대구역 도보 27분 · 1호선 1정거장 + 도보 17분",
-    "dgd.f2": "22실 · 2∼4층 · 퀸 · 트윈 · 스튜디오",
-    "dgd.f3": "건물 뒤 노상 공영 · 1일 4,000원",
-    "dgd.f4": "엘리베이터 없음 · 앞 도로 평일 단속",
-    "dgd.r1": "퀸베드룸 · 2인",
-    "dgd.r2": "트윈베드룸 · 2인",
-    "dgd.r3": "13:00 체크아웃",
-    "dgd.r4": "2층 셀프 라운지",
-    "dgd.cta1": "객실 선택 · 22실",
-    "dgd.cta2": "13:00 체크아웃 객실",
-
-    "f.way": "오는 길",
-    "f.rooms": "객실",
-    "f.park": "주차",
-    "f.note": "참고",
-    "f.walk": "걸어서",
-    "cta.map": "네이버지도",
-
-    "next.label": "NEXT",
-    "next.note": "서울 · 부산. 2027.",
-
-    "sites.lede": "같은 마감, 다른 동네. 지점을 바꾸면 사진과 지도, 주차 안내가 함께 바뀝니다.",
-    "locate.lede": "건물 위치, 주차장 진입, 역에서 걷는 시간.",
-    "locate.mapNote": "검정 = 건물, P = 주차장. 지도 © OpenStreetMap 기여자.",
-    "locate.addrT": "ADDRESS",
-    "locate.copy": "주소 복사",
-    "locate.copied": "복사됨",
-    "locate.parkT": "PARKING",
-    "locate.transitT": "GETTING HERE",
-    "map.aria": "노멀캐비넷 지점 위치 지도",
-    "map.fallback": "지도를 불러오지 못했습니다. 아래 주소와 지도 링크로 확인해 주세요.",
-
-    "park.gyoA": "교동공영주차장 · 교동2길 11 · 도보 약 1분",
-    "park.gyoB": "현장 안내 기준 · 유료 공영주차장",
-    "park.gyoC": "골목이 좁습니다. 짐은 건물 앞에서 먼저 내려 주세요.",
-    "park.dgdA": "건물 뒤편 노상 · 앞 도로는 평일 단속",
-    "park.dgdB": "1일 4,000원 · 평일 09:00–17:00 유료, 그 외 무료",
-    "park.dgdC": "정확한 진입 위치는 예약 메시지로 안내드립니다.",
-    "park.where": "위치",
-    "park.fee": "요금",
-    "park.tip": "참고",
-
-    "t.subway": "지하철",
-    "t.rail": "기차",
-    "t.walk": "도보",
-    "gyo.t1": "중앙로역 3번 출구 — 도보 10분",
-    "gyo.t2": "대구역 — 도보 10분",
-    "gyo.t3": "반월당역 — 도보 22분 · 동성로 5분",
-    "dgd.t1": "동구청역 2번 출구 — 도보 17분 (1호선 1정거장)",
-    "dgd.t2": "동대구역 — 도보 27분 (1.7km)",
-    "dgd.t3": "효목시장 — 도보 9분 (0.6km)",
-
-    "link.naver": "네이버지도",
-    "link.kakao": "카카오맵",
-
-    "stay.lede": "키패드 셀프 체크인, 2층 라운지. 필요한 것은 미리, 사람은 최소한으로.",
-    "stay.a1t": "키패드 셀프 체크인",
-    "stay.a1": "출입 비밀번호는 체크인 당일 예약 메시지로 안내드립니다.",
-    "stay.a2t": "2층 셀프 라운지",
-    "stay.a2": "동대구역점 2층 — LP, 커피, 긴 테이블.",
-    "stay.a3t": "초고속 Wi-Fi · 스마트 TV",
-    "stay.a3": "42인치 스마트 TV, 업무용 책상.",
-    "stay.a4t": "호텔식 침구 · 매일 정비",
-    "stay.a4": "침구 교체와 정비는 체크아웃 때마다.",
-    "stay.a5t": "짐 보관",
-    "stay.a5": "동대구역점은 2층 셀프 보관함, 교동점은 예약 메시지로 문의해 주세요.",
-    "stay.a7t": "어메니티",
-    "stay.a7": "샴푸·컨디셔너·바디워시·핸드워시·헤어드라이어·칫솔.",
-    "stay.a9t": "조용한 밤",
-    "stay.a9": "파티 없음. 오후 9시 이후에는 조용히 부탁드립니다.",
-    "stay.a10t": "숙박 전용",
-    "stay.a10": "대실 없이, 밤만 운영합니다.",
-
-    "stairs.k2": "오늘은 어디까지 걸어볼까요.",
-    "stairs.k3": "좋은 대구는 골목 안에 있습니다.",
-    "stairs.k4": "여행은 체크인 이후에도 계속됩니다.",
-    "stairs.cap": "층마다 한 줄. 읽지 않아도 좋고, 읽으면 조금 도움이 되는 정도로.",
-
-    "rooms.lede": "침대, 인원, 욕실, 체크인 시간 — 두 지점을 나란히 적었습니다.",
-    "rt.room": "객실",
-    "rt.sleeps": "최대 인원",
-    "rt.bed": "침대",
-    "rt.bath": "욕실",
-    "rt.time": "체크인 / 아웃",
-    "rt.entry": "출입",
-    "rt.way": "오는 길",
-    "rt.no": "제공하지 않음",
-    "rooms.gyoRoom": "프라이빗 더블 · 2인 기준 · 25실",
-    "rooms.gyoSleeps": "4인 — 그중 3실",
-    "rooms.gyoBed": "퀸사이즈 침대 2개 (4인실)",
-    "rooms.gyoBath": "화장실 1.5개 — 샤워 전용 1 · 변기와 샤워 1 (4인실)",
-    "rooms.gyoTime": "객실마다 다릅니다 · 예약 메시지로 안내",
-    "rooms.gyoSelf": "키패드 셀프 체크인 · 프런트 없음",
-    "rooms.gyoWay": "중앙로역 3번 출구 도보 10분 · 대구역 도보 10분",
-    "rooms.gyoNo": "대실 없음 · 숙박 전용",
-    "rooms.gyoCta": "실시간 워크인 보기",
-    "rooms.dgdRoom": "스튜디오 · 더블 / 퀸 베드 · 1~2인",
-    "rooms.dgdSleeps": "2인",
-    "rooms.dgdBed": "더블 / 퀸 1개",
-    "rooms.dgdBath": "객실마다 전용 욕실",
-    "rooms.dgdTime": "체크인 15:00 · 체크아웃 12:00",
-    "rooms.dgdSelf": "키패드 셀프 체크인 · 프런트 없음",
-    "rooms.dgdWay": "동대구역 도보 27분 · 동구청역 2번 출구 도보 17분",
-    "rooms.dgdNo": "대실 없음 · 엘리베이터 없음",
-    "rooms.dgdCta": "객실 선택 · 22실",
-    "rooms.note": "배치와 소품은 조금씩 다르지만, 무드는 같습니다.",
-
-    "gal.lede": "퀸, 트윈, 그리고 2층 라운지.",
-
-    "guide.lede": "두 지점에서 걸어 닿는 곳들. 지점별 가이드 두 편.",
-    "guide.g1t": "교동점 · 대구여행 큐레이션",
-    "guide.g1": "막창, 뭉티기, 찜갈비, 카페와 바 — 걸어서 고른 36곳.",
-    "guide.g2t": "동대구역점 · 대구여행 큐레이션",
-    "guide.g2": "시장 골목과 막창, 역 뒤 카페부터 금호강까지 — 걸어서 고른 32곳.",
-    "guide.open": "가이드 열기 →",
-
-    "info.lede": "예약 전에 가장 많이 받는 질문들.",
-    "faq.q1": "체크인 · 체크아웃 시간은?",
-    "faq.a1": "동대구역점은 체크인 15:00, 체크아웃 12:00. 교동점은 객실마다 달라 예약 메시지로 안내드립니다.",
-    "faq.q2": "셀프 체크인은 어떻게 하나요?",
-    "faq.a2": "프런트 없이 키패드로 출입합니다. 출입 비밀번호는 체크인 당일 예약 메시지로만 안내드립니다.",
-    "faq.q3": "주차는 어디에 하나요?",
-    "faq.a3": "동대구역점은 건물 뒤편 노상 주차장, 1일 4,000원(평일 09:00–17:00 유료, 그 외 무료). 앞 도로는 평일 단속 구간입니다. 교동점은 건물 내 주차가 안 되고, 옆 교동공영주차장을 쓰시면 됩니다.",
-    "faq.q4": "역에서 어떻게 오나요?",
-    "faq.a4": "교동점은 중앙로역 3번 출구에서 도보 10분. 동대구역점은 동대구역에서 도보 27분, 또는 1호선 한 정거장(동구청역) 후 도보 17분입니다.",
-    "faq.map": "지도 · 주차 안내 보기",
-    "faq.q5": "예약은 어디서 하나요?",
-    "faq.a5": "동대구역점은 에어비앤비에서 객실별로, 교동점은 실시간 빈 방 페이지에서 확인한 뒤 예약합니다.",
-    "faq.q6": "짐 보관과 얼리 체크인은?",
-    "faq.a6": "동대구역점은 2층 셀프 짐 보관함, 교동점은 예약 메시지로 문의해 주세요. 얼리 체크인과 레이트 체크아웃도 같은 방식입니다.",
-
-    "info.askK": "궁금한 것이 있다면",
-    "info.askV": "캐비닛지기가 24시간 자동으로 답합니다. 예약·요금·환불은 예약 메시지로 연결해 드립니다.",
-    "info.chat": "캐비닛지기에게 묻기",
-
-    "pick.title": "객실 선택",
-    "pick.note": "객실을 고르면 그 날짜로 에어비앤비가 열립니다.",
-    "pick.foot": "요금과 잔여 객실은 에어비앤비에서 확인됩니다.",
-    "pick.meta": "{d} · {n}명",
-
-    "ft.sitesT": "SITES",
-    "ft.gyo": "교동점 — 대구 중구 교동2길 29-11",
-    "ft.dgd": "동대구역점 — 대구 동구 효목로 50",
-    "ft.mapT": "지도 · 주차 안내",
-    "ft.bookT": "BOOK",
-    "ft.airbnb": "동대구역점 · 에어비앤비",
-    "ft.walkin": "교동점 · 빈 방 확인",
-    "ft.booking": "예약 바 열기",
-    "ft.guideT": "GUIDE",
-    "ft.g1": "교동 큐레이션",
-    "ft.g2": "동대구역 큐레이션",
-    "ft.g3": "동대구역 가이드북",
-    "ft.keepT": "THE KEEPER",
-    "ft.chat": "캐비닛지기에게 묻기",
-    "ft.kakao": "오픈카카오톡",
-    "ft.note": "24시간 자동 응답 · 예약은 에어비앤비에서",
-
-    "mbar.sites": "지점",
-    "mbar.book": "예약",
-    "mbar.keeper": "캐비닛지기",
-
-    "cb.title": "캐비닛지기",
-    "cb.b1": "교동점",
-    "cb.b2": "동대구역점",
-    "cb.ph": "궁금한 것을 적어 주세요",
-    "cb.note": "24시간 자동 응답 · 예약은 에어비앤비에서",
-    "cb.kakao": "오픈카카오톡"
-  },
-
-  en: {
-    "meta.title": "NORMAL CABINET HOTEL · EST. 2026 — Daegu, Korea",
-    "meta.desc": "Normal Cabinet Hotel — 25 rooms in Gyodong and 22 at Dongdaegu Station, Daegu. Self check-in, book on Airbnb.",
-    "nav.sites": "Sites",
-    "nav.stay": "The stay",
-    "nav.rooms": "Rooms",
-    "nav.gallery": "Gallery",
-    "nav.guide": "Guide",
-    "nav.info": "Good to know",
-    "nav.book": "Book",
-
-    "hero.pre": "Ordinary objects,",
-    "hero.t1": "NOT SO",
-    "hero.t2": "NORMAL.",
-    "hero.sub": "Two houses in Daegu, made of ordinary objects.",
-    "hero.cta1": "See the two houses",
-    "hero.cta2": "Ask the Keeper",
-    "hero.cta3": "KakaoTalk",
-    "hero.scroll": "SCROLL",
-
-    "bb.branch": "Site",
-    "bb.dgd": "Dongdaegu Stn.",
-    "bb.gyo": "Gyodong",
-    "bb.in": "Check in",
-    "bb.out": "Check out",
-    "bb.guests": "Guests",
-    "bb.pickDgd": "Choose a room",
-    "bb.goDgd": "Choose a room",
-    "bb.goGyo": "Live availability",
-    "bb.noteDgd": "Pick one of the 22 rooms and Airbnb opens on your dates.",
-    "bb.noteGyo": "Gyodong — the live page shows what is free tonight and tomorrow.",
-
-    "statement.quote": "A quieter night in a familiar city.",
-
-    "brand.lede": "A cabinet keeps things. We keep a day in its drawers.",
-    "brand.story1": "Not every moment needs to be special. The right lamp, a good colour, one small detail is enough.",
-    "brand.story2": "We add our own sense of things to a familiar, comfortable room, and hope the day stays with you.",
-    "brand.matT": "Material ratio in the rooms",
-    "brand.matNote": "Nothing overdone. Wood 50, neutral walls 30, fabric 10, steel 10.",
-    "key.back": "NOT SO NORMAL.",
-
-    "gyo.name": "Gyodong",
-    "gyo.addr": "29-11, Gyodong 2-gil, Jung-gu, Daegu",
-    "gyo.desc": "A whole brick house between Dongseongno and the alleys of Gyodong. Twenty-five small rooms over four floors.",
-    "gyo.f1": "Jungangno Stn. exit 3 — 10 min walk · Daegu Stn. — 10 min",
-    "gyo.f2": "25 rooms · floors 1–4 · doubles for two, three rooms for four",
-    "gyo.f3": "No parking on site · Gyo-dong public car park, 1 min walk",
-    "gyo.f4": "Dongseongno · Gyodong alleys · Seomun Market",
-    "gyo.r1": "Private double",
-    "gyo.r2": "Sleeps 2",
-    "gyo.r3": "Check-in varies by room",
-    "gyo.r4": "Sleeps 4 · 3 rooms",
-    "gyo.cta1": "Live availability · Book",
-
-    "dgd.name": "Dongdaegu Station",
-    "dgd.addr": "50, Hyomok-ro, Dong-gu, Daegu",
-    "dgd.desc": "Three bus stops from Dongdaegu Station. Twenty-two rooms above the second-floor lounge: queen, twin, and one you can leave at 13:00.",
-    "dgd.f1": "Dongdaegu Stn. — 27 min walk · Line 1 one stop + 17 min walk",
-    "dgd.f2": "22 rooms · floors 2–4 · queen, twin, studio",
-    "dgd.f3": "Public street parking behind the building · ₩4,000 a day",
-    "dgd.f4": "No elevator · weekday tow-away zone at the front",
-    "dgd.r1": "Queen · 2 guests",
-    "dgd.r2": "Twin · 2 guests",
-    "dgd.r3": "13:00 check-out",
-    "dgd.r4": "Second-floor lounge",
-    "dgd.cta1": "Choose a room · 22",
-    "dgd.cta2": "13:00 check-out room",
-
-    "f.way": "Getting here",
-    "f.rooms": "Rooms",
-    "f.park": "Parking",
-    "f.note": "Note",
-    "f.walk": "Walk to",
-    "cta.map": "Naver Map",
-
-    "next.label": "NEXT",
-    "next.note": "Seoul and Busan, 2027.",
-
-    "sites.lede": "Same finishes, another neighbourhood. Switch sites and the photographs, map and parking notes change with it.",
-    "locate.lede": "The building, the way into the car park, the walk from the station.",
-    "locate.mapNote": "Black is the building, P is the parking. Map © OpenStreetMap contributors.",
-    "locate.addrT": "ADDRESS",
-    "locate.copy": "Copy address",
-    "locate.copied": "Copied",
-    "locate.parkT": "PARKING",
-    "locate.transitT": "GETTING HERE",
-    "map.aria": "Normal Cabinet site map",
-    "map.fallback": "The map could not load. Please use the addresses and map links below.",
-
-    "park.gyoA": "Gyo-dong public car park · 11, Gyodong 2-gil · about 1 min on foot",
-    "park.gyoB": "Paid public car park · rates as posted on site",
-    "park.gyoC": "The alley is narrow. Drop your luggage at the door first.",
-    "park.dgdA": "Street bays behind the building · weekday tow-away at the front",
-    "park.dgdB": "₩4,000 a day · paid weekdays 09:00–17:00, free otherwise",
-    "park.dgdC": "The exact entrance comes in your booking message.",
-    "park.where": "Where",
-    "park.fee": "Rate",
-    "park.tip": "Tip",
-
-    "t.subway": "Subway",
-    "t.rail": "Train",
-    "t.walk": "Walk",
-    "gyo.t1": "Jungangno Stn. exit 3 — 10 min walk",
-    "gyo.t2": "Daegu Stn. — 10 min walk",
-    "gyo.t3": "Banwoldang Stn. — 22 min · Dongseongno 5 min",
-    "dgd.t1": "Dong-gu Office Stn. exit 2 — 17 min walk (one stop on Line 1)",
-    "dgd.t2": "Dongdaegu transfer centre — 27 min walk (1.7 km)",
-    "dgd.t3": "Hyomok Market — 9 min walk (0.6 km)",
-
-    "link.naver": "Naver Map",
-    "link.kakao": "Kakao Map",
-
-    "stay.lede": "Keypad self check-in, the second-floor lounge. Everything ready, people kept to a minimum.",
-    "stay.a1t": "Keypad self check-in",
-    "stay.a1": "Your door code arrives in your booking message on the day of check-in.",
-    "stay.a2t": "Second-floor lounge",
-    "stay.a2": "Dongdaegu Station, 2F — records, coffee, one long table.",
-    "stay.a3t": "Fast Wi-Fi · smart TV",
-    "stay.a3": "A 42-inch smart TV, and a desk to work at.",
-    "stay.a4t": "Hotel bedding · daily care",
-    "stay.a4": "Linens changed and the room serviced after every check-out.",
-    "stay.a5t": "Luggage",
-    "stay.a5": "Self-service lockers on 2F at Dongdaegu Station; ask in your booking message for Gyodong.",
-    "stay.a7t": "Amenities",
-    "stay.a7": "Shampoo, conditioner, body wash, hand wash, hairdryer, toothbrush.",
-    "stay.a9t": "Quiet nights",
-    "stay.a9": "No parties. Please keep it quiet after 9 pm.",
-    "stay.a10t": "Stay only",
-    "stay.a10": "No hourly rooms — nights only.",
-
-    "stairs.k2": "How far will you walk today?",
-    "stairs.k3": "The good Daegu is inside the alleys.",
-    "stairs.k4": "The trip continues after check-in.",
-    "stairs.cap": "One line per floor. Nice to read, nicer to ignore.",
-
-    "rooms.lede": "Bed, guests, bathroom, check-in time — the two houses side by side.",
-    "rt.room": "Room",
-    "rt.sleeps": "Max guests",
-    "rt.bed": "Bed",
-    "rt.bath": "Bathroom",
-    "rt.time": "Check-in / out",
-    "rt.entry": "Entry",
-    "rt.way": "Getting here",
-    "rt.no": "Not offered",
-    "rooms.gyoRoom": "Private double · sleeps 2 · 25 rooms",
-    "rooms.gyoSleeps": "4 — in three rooms",
-    "rooms.gyoBed": "Two queen beds (the 4-guest rooms)",
-    "rooms.gyoBath": "1.5 bathrooms — one shower room, one with toilet and shower (4-guest rooms)",
-    "rooms.gyoTime": "Varies by room · sent in your booking message",
-    "rooms.gyoSelf": "Keypad self check-in · no front desk",
-    "rooms.gyoWay": "Jungangno Stn. exit 3 — 10 min walk · Daegu Stn. — 10 min",
-    "rooms.gyoNo": "No hourly rooms · overnight stays only",
-    "rooms.gyoCta": "Live walk-in page",
-    "rooms.dgdRoom": "Studio · double or queen bed · sleeps 1–2",
-    "rooms.dgdSleeps": "2",
-    "rooms.dgdBed": "One double or queen bed",
-    "rooms.dgdBath": "Private bathroom in every room",
-    "rooms.dgdTime": "Check-in 15:00 · check-out 12:00",
-    "rooms.dgdSelf": "Keypad self check-in · no front desk",
-    "rooms.dgdWay": "Dongdaegu Stn. — 27 min walk · Dong-gu Office Stn. exit 2 — 17 min",
-    "rooms.dgdNo": "No hourly rooms · no elevator",
-    "rooms.dgdCta": "Choose a room · 22",
-    "rooms.note": "Layouts and objects differ from room to room. The mood does not.",
-
-    "gal.lede": "Queen, twin, and the second-floor lounge.",
-
-    "guide.lede": "Two walks, one from each door.",
-    "guide.g1t": "Gyodong · Daegu curation",
-    "guide.g1": "Makchang, raw beef, braised ribs, cafés and bars — 36 places picked on foot.",
-    "guide.g2t": "Dongdaegu Station · Daegu curation",
-    "guide.g2": "Market alleys and makchang, the cafés behind the station, the Geumho river — 32 places on foot.",
-    "guide.open": "Open guide →",
-
-    "info.lede": "The questions we get most before a stay.",
-    "faq.q1": "What are the check-in and check-out times?",
-    "faq.a1": "Dongdaegu Station: check-in 15:00, check-out 12:00. Gyodong varies by room — your booking message has the exact times.",
-    "faq.q2": "How does self check-in work?",
-    "faq.a2": "No front desk; you enter with a keypad. The code is sent only in your booking message on the day of arrival.",
-    "faq.q3": "Where do I park?",
-    "faq.a3": "Dongdaegu Station: street parking behind the building, ₩4,000 a day (paid weekdays 09:00–17:00, free outside). The road in front is a weekday tow-away zone. Gyodong has no parking on site; the Gyo-dong public car park is next door.",
-    "faq.q4": "How do I get there from the station?",
-    "faq.a4": "Gyodong is 10 minutes on foot from Jungangno Stn. exit 3. Dongdaegu Station is 27 minutes on foot, or one stop on Line 1 to Dong-gu Office Stn. and 17 minutes from exit 2.",
-    "faq.map": "See the map and parking",
-    "faq.q5": "Where do I book?",
-    "faq.a5": "Dongdaegu Station books room by room on Airbnb; at Gyodong you check live availability first.",
-    "faq.q6": "Luggage and early check-in?",
-    "faq.a6": "Self-service lockers on 2F at Dongdaegu Station; ask in your booking message for Gyodong. Early check-in and late check-out work the same way.",
-
-    "info.askK": "Something you want to ask",
-    "info.askV": "The Keeper answers automatically, 24 hours a day. Bookings, rates and refunds go to your booking message.",
-    "info.chat": "Ask the Keeper",
-
-    "pick.title": "Choose a room",
-    "pick.note": "Pick a room and Airbnb opens on your dates.",
-    "pick.foot": "Rates and remaining rooms are shown on Airbnb.",
-    "pick.meta": "{d} · {n} guests",
-
-    "ft.sitesT": "SITES",
-    "ft.gyo": "Gyodong — 29-11, Gyodong 2-gil, Jung-gu, Daegu",
-    "ft.dgd": "Dongdaegu Station — 50, Hyomok-ro, Dong-gu, Daegu",
-    "ft.mapT": "Map & parking",
-    "ft.bookT": "BOOK",
-    "ft.airbnb": "Dongdaegu Station · Airbnb",
-    "ft.walkin": "Gyodong · availability",
-    "ft.booking": "Open the booking bar",
-    "ft.guideT": "GUIDE",
-    "ft.g1": "Gyodong curation",
-    "ft.g2": "Dongdaegu curation",
-    "ft.g3": "Dongdaegu guidebook",
-    "ft.keepT": "THE KEEPER",
-    "ft.chat": "Ask the Keeper",
-    "ft.kakao": "KakaoTalk",
-    "ft.note": "Automatic replies 24/7 · booking on Airbnb",
-
-    "mbar.sites": "Sites",
-    "mbar.book": "Book",
-    "mbar.keeper": "The Keeper",
-
-    "cb.title": "THE KEEPER",
-    "cb.b1": "Gyodong",
-    "cb.b2": "Dongdaegu Stn.",
-    "cb.ph": "Type your question",
-    "cb.note": "Automatic replies 24/7 · booking on Airbnb",
-    "cb.kakao": "KakaoTalk"
-  },
-
-  zh: {
-    "meta.title": "NORMAL CABINET HOTEL · EST. 2026 — 大邱",
-    "meta.desc": "Normal Cabinet Hotel — 大邱校洞店 25 间客房 · 东大邱站店 22 间客房。自助入住，可在 Airbnb 预订。",
-    "nav.sites": "门店",
-    "nav.stay": "住宿",
-    "nav.rooms": "客房",
-    "nav.gallery": "图库",
-    "nav.guide": "指南",
-    "nav.info": "须知",
-    "nav.book": "预订",
-
-    "hero.pre": "Ordinary objects,",
-    "hero.t1": "NOT SO",
-    "hero.t2": "NORMAL.",
-    "hero.sub": "大邱的两处住宅，由寻常之物构成。",
-    "hero.cta1": "查看两处门店",
-    "hero.cta2": "询问柜管家",
-    "hero.cta3": "KakaoTalk",
-    "hero.scroll": "SCROLL",
-
-    "bb.branch": "门店",
-    "bb.dgd": "东大邱站店",
-    "bb.gyo": "校洞店",
-    "bb.in": "入住",
-    "bb.out": "退房",
-    "bb.guests": "人数",
-    "bb.pickDgd": "选择客房",
-    "bb.goDgd": "选择客房",
-    "bb.goGyo": "实时空房",
-    "bb.noteDgd": "从 22 间中选一间，Airbnb 会按所选日期打开。",
-    "bb.noteGyo": "校洞店 — 实时空房页面可查看今晚与明晚的客房。",
-
-    "statement.quote": "熟悉的城市，安静一点的夜晚。",
-
-    "brand.lede": "柜子用来收东西。我们把一天放进抽屉里。",
-    "brand.story1": "不是每个瞬间都需要特别。喜欢的灯、舒服的颜色、一点小细节，已经足够。",
-    "brand.story2": "在熟悉而舒适的空间里，加入我们的感受。希望这一天能被记得久一些。",
-    "brand.matT": "客房材质比例",
-    "brand.matNote": "不让任何一项过分。木材 50、中性墙面 30、织物 10、金属 10。",
-    "key.back": "NOT SO NORMAL.",
-
-    "gyo.name": "校洞店",
-    "gyo.addr": "大邱中区校洞2街 29-11",
-    "gyo.desc": "位于东城路与校洞巷子之间，整栋砖建筑。一至四层，25 间小巧客房。",
-    "gyo.f1": "中央路站 3 号出口步行 10 分钟 · 大邱站步行 10 分钟",
-    "gyo.f2": "25 间 · 1~4 层 · 双人房，另有 3 间四人房",
-    "gyo.f3": "楼内不可停车 · 校洞公共停车场步行 1 分钟",
-    "gyo.f4": "东城路 · 校洞巷子 · 西门市场",
-    "gyo.r1": "独立双人房",
-    "gyo.r2": "限 2 人",
-    "gyo.r3": "各客房入住时间不同",
-    "gyo.r4": "最多 4 人 · 3 间",
-    "gyo.cta1": "实时空房 · 预订",
-
-    "dgd.name": "东大邱站店",
-    "dgd.addr": "大邱东区孝木路 50",
-    "dgd.desc": "距东大邱站三站公交。二层休息室之上是 22 间客房：大床、双床，以及可 13:00 退房的房间。",
-    "dgd.f1": "东大邱站步行 27 分钟 · 1 号线 1 站 + 步行 17 分钟",
-    "dgd.f2": "22 间 · 2~4 层 · 大床 · 双床 · Studio",
-    "dgd.f3": "楼后路边公共停车场 · 每日 4,000 韩元",
-    "dgd.f4": "无电梯 · 楼前道路平日管制",
-    "dgd.r1": "大床房 · 2 人",
-    "dgd.r2": "双床房 · 2 人",
-    "dgd.r3": "13:00 退房",
-    "dgd.r4": "二层自助休息室",
-    "dgd.cta1": "选择客房 · 22",
-    "dgd.cta2": "13:00 退房客房",
-
-    "f.way": "交通",
-    "f.rooms": "客房",
-    "f.park": "停车",
-    "f.note": "提示",
-    "f.walk": "步行可达",
-    "cta.map": "Naver 地图",
-
-    "next.label": "NEXT",
-    "next.note": "首尔 · 釜山，2027。",
-
-    "sites.lede": "相同的质感，另一个街区。切换门店，照片、地图与停车说明一起切换。",
-    "locate.lede": "楼的位置，停车场的入口，从车站走过来的时间。",
-    "locate.mapNote": "黑色为建筑，P 为停车场。地图 © OpenStreetMap 贡献者。",
-    "locate.addrT": "ADDRESS",
-    "locate.copy": "复制地址",
-    "locate.copied": "已复制",
-    "locate.parkT": "PARKING",
-    "locate.transitT": "GETTING HERE",
-    "map.aria": "Normal Cabinet 门店位置地图",
-    "map.fallback": "地图未能加载。请使用下方地址与地图链接确认。",
-
-    "park.gyoA": "校洞公共停车场 · 校洞2街 11 · 步行约 1 分钟",
-    "park.gyoB": "收费公共停车场 · 以现场公示为准",
-    "park.gyoC": "巷子较窄，请先在楼前卸下行李。",
-    "park.dgdA": "楼后路边 · 楼前道路平日管制",
-    "park.dgdB": "每日 4,000 韩元 · 平日 09:00–17:00 收费，其余免费",
-    "park.dgdC": "确切入口会在预订消息中告知。",
-    "park.where": "位置",
-    "park.fee": "费用",
-    "park.tip": "提示",
-
-    "t.subway": "地铁",
-    "t.rail": "火车",
-    "t.walk": "步行",
-    "gyo.t1": "中央路站 3 号出口 — 步行 10 分钟",
-    "gyo.t2": "大邱站 — 步行 10 分钟",
-    "gyo.t3": "半月堂站 — 步行 22 分钟 · 东城路 5 分钟",
-    "dgd.t1": "东区厅站 2 号出口 — 步行 17 分钟（1 号线 1 站）",
-    "dgd.t2": "东大邱站 — 步行 27 分钟（1.7 公里）",
-    "dgd.t3": "孝木市场 — 步行 9 分钟（0.6 公里）",
-
-    "link.naver": "Naver 地图",
-    "link.kakao": "Kakao 地图",
-
-    "stay.lede": "密码锁自助入住，二层休息室。需要的都提前准备，人尽量少。",
-    "stay.a1t": "密码锁自助入住",
-    "stay.a1": "门锁密码将在入住当天通过预订消息发送给您。",
-    "stay.a2t": "二层自助休息室",
-    "stay.a2": "东大邱站店二层 — 黑胶、咖啡、一张长桌。",
-    "stay.a3t": "高速 Wi-Fi · 智能电视",
-    "stay.a3": "42 英寸智能电视，以及办公书桌。",
-    "stay.a4t": "酒店级床品 · 每日整理",
-    "stay.a4": "每次退房后整理客房并更换床品。",
-    "stay.a5t": "行李寄存",
-    "stay.a5": "东大邱站店二层设有自助行李柜；校洞店请通过预订消息咨询。",
-    "stay.a7t": "客房用品",
-    "stay.a7": "洗发水、护发素、沐浴露、洗手液、吹风机、牙刷。",
-    "stay.a9t": "安静的夜晚",
-    "stay.a9": "禁止聚会。21:00 后请保持安静。",
-    "stay.a10t": "仅限住宿",
-    "stay.a10": "不做钟点房，只做整晚住宿。",
-
-    "stairs.k2": "今天想走到哪里？",
-    "stairs.k3": "好的大邱藏在巷子里。",
-    "stairs.k4": "旅行在入住之后继续。",
-    "stairs.cap": "每层一行。不读也好看，读了有一点用。",
-
-    "rooms.lede": "床位、人数、浴室、入住时间——两处门店并排。",
-    "rt.room": "客房",
-    "rt.sleeps": "最多人数",
-    "rt.bed": "床位",
-    "rt.bath": "浴室",
-    "rt.time": "入住 / 退房",
-    "rt.entry": "出入",
-    "rt.way": "交通",
-    "rt.no": "不提供",
-    "rooms.gyoRoom": "独立双人房 · 限 2 人 · 25 间",
-    "rooms.gyoSleeps": "4 人 — 共 3 间",
-    "rooms.gyoBed": "两张 queen 床（4 人房）",
-    "rooms.gyoBath": "1.5 个卫生间 — 一间仅淋浴，一间含马桶与淋浴（4 人房）",
-    "rooms.gyoTime": "因客房而异 · 预订消息中告知",
-    "rooms.gyoSelf": "密码锁自助入住 · 无前台",
-    "rooms.gyoWay": "中央路站 3 号出口步行 10 分钟 · 大邱站步行 10 分钟",
-    "rooms.gyoNo": "无钟点房 · 仅限整晚住宿",
-    "rooms.gyoCta": "实时空房页面",
-    "rooms.dgdRoom": "Studio · 双人床 / queen 床 · 1~2 人",
-    "rooms.dgdSleeps": "2 人",
-    "rooms.dgdBed": "一张双人床或 queen 床",
-    "rooms.dgdBath": "每间客房均设独立浴室",
-    "rooms.dgdTime": "入住 15:00 · 退房 12:00",
-    "rooms.dgdSelf": "密码锁自助入住 · 无前台",
-    "rooms.dgdWay": "东大邱站步行 27 分钟 · 东区厅站 2 号出口步行 17 分钟",
-    "rooms.dgdNo": "无钟点房 · 无电梯",
-    "rooms.dgdCta": "选择客房 · 22",
-    "rooms.note": "每间客房的布局与小物件略有不同，氛围是一样的。",
-
-    "gal.lede": "大床、双床，以及二层休息室。",
-
-    "guide.lede": "从两处门店步行可达的地方，各一份指南。",
-    "guide.g1t": "校洞店 · 大邱旅行精选",
-    "guide.g1": "烤小肠、生牛肉、炖排骨、咖啡馆与酒吧——步行挑选的 36 个地方。",
-    "guide.g2t": "东大邱站店 · 大邱旅行精选",
-    "guide.g2": "市场小巷与烤小肠、站后咖啡，到琴湖江——步行挑选的 32 个地方。",
-    "guide.open": "打开指南 →",
-
-    "info.lede": "入住前最常被问到的问题。",
-    "faq.q1": "入住与退房时间是？",
-    "faq.a1": "东大邱站店入住 15:00、退房 12:00；校洞店各客房不同，确切时间见预订消息。",
-    "faq.q2": "如何自助入住？",
-    "faq.a2": "没有前台，使用密码锁进出。密码仅在入住当天通过预订消息发送。",
-    "faq.q3": "在哪里停车？",
-    "faq.a3": "东大邱站店使用楼后路边停车场，每日 4,000 韩元（平日 09:00–17:00 收费，其余免费），楼前道路平日为管制路段。校洞店楼内不可停车，隔壁即校洞公共停车场。",
-    "faq.q4": "从车站怎么走？",
-    "faq.a4": "校洞店从中央路站 3 号出口步行 10 分钟。东大邱站店从东大邱站步行 27 分钟，或乘 1 号线一站到东区厅站后步行 17 分钟。",
-    "faq.map": "查看地图与停车",
-    "faq.q5": "在哪里预订？",
-    "faq.a5": "东大邱站店在 Airbnb 按客房预订；校洞店请先在实时空房页面确认。",
-    "faq.q6": "行李寄存与提前入住？",
-    "faq.a6": "东大邱站店二层有自助行李柜；校洞店请通过预订消息咨询。提前入住与延迟退房同样方式确认。",
-
-    "info.askK": "如果有想问的事",
-    "info.askV": "柜管家 24 小时自动回复。预订、房价、退款会转接到您的预订消息。",
-    "info.chat": "询问柜管家",
-
-    "pick.title": "选择客房",
-    "pick.note": "选一间客房，Airbnb 会按所选日期打开。",
-    "pick.foot": "房价与剩余客房请在 Airbnb 确认。",
-    "pick.meta": "{d} · {n} 人",
-
-    "ft.sitesT": "SITES",
-    "ft.gyo": "校洞店 — 大邱中区校洞2街 29-11",
-    "ft.dgd": "东大邱站店 — 大邱东区孝木路 50",
-    "ft.mapT": "地图 · 停车说明",
-    "ft.bookT": "BOOK",
-    "ft.airbnb": "东大邱站店 · Airbnb",
-    "ft.walkin": "校洞店 · 空房",
-    "ft.booking": "打开预订栏",
-    "ft.guideT": "GUIDE",
-    "ft.g1": "校洞精选",
-    "ft.g2": "东大邱站精选",
-    "ft.g3": "东大邱站指南",
-    "ft.keepT": "THE KEEPER",
-    "ft.chat": "询问柜管家",
-    "ft.kakao": "KakaoTalk",
-    "ft.note": "24 小时自动回复 · 预订请使用 Airbnb",
-
-    "mbar.sites": "门店",
-    "mbar.book": "预订",
-    "mbar.keeper": "柜管家",
-
-    "cb.title": "柜管家",
-    "cb.b1": "校洞店",
-    "cb.b2": "东大邱站店",
-    "cb.ph": "请输入您的问题",
-    "cb.note": "24 小时自动回复 · 预订请使用 Airbnb",
-    "cb.kakao": "KakaoTalk"
+/* NORMAL CABINET HOTEL — v7 language layer (KO / EN / 中文) */
+(function () {
+  "use strict";
+
+  var I18N = {
+    ko: {
+      "hero.alt": "브러시드 스틸 캐비닛 벽과 테라코타 벨벳 벤치가 이어지는 노멀캐비넷의 복도",
+      "plaque.alt": "테라조 바닥 위 브러시드 스틸 명판 — hotel normal cabinet",
+
+      "st.body": "캐비닛은 물건을 넣어두는 가구입니다. 노멀캐비넷은 그 서랍에 하루를 넣어둡니다. 조명 하나, 잔 하나, 잘 고른 침구 한 벌. 이름은 평범하지만, 그 안의 취향은 그렇지 않습니다.",
+      "st.sub": "대구의 두 채 — 교동과 동대구역.",
+
+      "sites.lead": "같은 취향, 다른 동네. 두 집 모두 프런트 없이 지냅니다.",
+
+      "g.name": "노멀캐비넷 교동점",
+      "g.desc": "동성로와 교동 골목 사이, 테라코타 벽돌 건물 한 채를 통째로 쓰는 스테이. 골목을 나서면 대구에서 가장 오래된 카페와 시장, 서점이 이어집니다.",
+      "g.addr": "대구 중구 교동2길 29-11",
+      "g.park": "건물 내 주차 불가 · 교동공영주차장 도보 1분",
+      "g.way": "중앙로역 3번 출구 도보 10분 · 대구역 도보 10분",
+      "g.alt": "테라코타 벽돌 외관과 브러시드 스틸 간판 — 노멀캐비넷 교동점",
+
+      "d.name": "노멀캐비넷 동대구역점",
+      "d.desc": "동대구역에서 버스로 세 정거장. 2층에는 LP와 커피가 있는 라운지, 그 위층에는 조용한 방들이 있습니다.",
+      "d.addr": "대구 동구 효목로 50",
+      "d.park": "건물 뒤 노상 공영주차 · 1일 4,000원",
+      "d.way": "동대구역 도보 27분 · 동구청역 2번 출구 도보 17분",
+      "d.alt": "LP 플레이어와 바 카운터, 레드 소파가 있는 동대구역점 2층 라운지",
+
+      "f.addr": "주소",
+      "f.park": "주차",
+      "f.way": "오는 길",
+      "f.curation": "여행 큐레이션",
+      "f.map": "지도"
+    },
+
+    en: {
+      "hero.alt": "A corridor of brushed-steel cabinets and a terracotta velvet bench at Normal Cabinet",
+      "plaque.alt": "A brushed-steel plaque on a terrazzo floor — hotel normal cabinet",
+
+      "st.body": "A cabinet is furniture for keeping things. We keep a day in its drawers — one lamp, one glass, one well-chosen set of sheets. Ordinary by name, not by nature.",
+      "st.sub": "Two houses in Daegu — Gyodong and Dongdaegu Station.",
+
+      "sites.lead": "The same taste in a different neighbourhood. Both houses run without a front desk.",
+
+      "g.name": "NORMAL CABINET GYODONG",
+      "g.desc": "A terracotta-brick house of its own between Dongseongno and the Gyodong alleys. Step out and Daegu's oldest cafés, market and bookshops follow one another.",
+      "g.addr": "29-11, Gyodong 2-gil, Jung-gu, Daegu",
+      "g.park": "No parking on site · Gyodong public car park, 1 min on foot",
+      "g.way": "Jungangno Stn. exit 3, 10 min on foot · Daegu Stn. 10 min on foot",
+      "g.alt": "Terracotta brick facade and brushed-steel sign — Normal Cabinet Gyodong",
+
+      "d.name": "NORMAL CABINET DONGDAEGU STATION",
+      "d.desc": "Three bus stops from Dongdaegu Station. A lounge of records and coffee on the second floor, quiet rooms above it.",
+      "d.addr": "50, Hyomok-ro, Dong-gu, Daegu",
+      "d.park": "Street parking behind the building · ₩4,000 per day",
+      "d.way": "Dongdaegu Stn. 27 min on foot · Donggucheong Stn. exit 2, 17 min on foot",
+      "d.alt": "The second-floor lounge at Normal Cabinet Dongdaegu Station, with records, a bar counter and a red sofa",
+
+      "f.addr": "ADDRESS",
+      "f.park": "PARKING",
+      "f.way": "GETTING HERE",
+      "f.curation": "TRAVEL GUIDE",
+      "f.map": "MAP"
+    },
+
+    zh: {
+      "hero.alt": "拉丝钢柜墙与赤陶色天鹅绒长凳相接的 NORMAL CABINET 走廊",
+      "plaque.alt": "水磨石地面上的拉丝钢铭牌 —— hotel normal cabinet",
+
+      "st.body": "橱柜是收纳物件的家具。我们把一天收进它的抽屉里——一盏灯、一只杯子、一套用心挑选的床品。名字平凡，品味不然。",
+      "st.sub": "大邱的两处 —— 校洞与东大邱站。",
+
+      "sites.lead": "同样的品味，不同的街区。两处都不设前台。",
+
+      "g.name": "NORMAL CABINET 校洞店",
+      "g.desc": "位于东城路与校洞小巷之间，独用一栋赤陶砖建筑。走出巷口，大邱最老的咖啡馆、市场与书店依次相连。",
+      "g.addr": "大邱中区校洞2街 29-11",
+      "g.park": "建筑内不可停车 · 校洞公共停车场步行 1 分钟",
+      "g.way": "中央路站 3 号出口步行 10 分钟 · 大邱站步行 10 分钟",
+      "g.alt": "赤陶砖外墙与拉丝钢招牌 —— NORMAL CABINET 校洞店",
+
+      "d.name": "NORMAL CABINET 东大邱站店",
+      "d.desc": "距东大邱站三站公交。二层是放着黑胶与咖啡的休息室，楼上是安静的房间。",
+      "d.addr": "大邱东区孝睦路 50",
+      "d.park": "建筑后侧路边公共停车 · 每天 4,000 韩元",
+      "d.way": "东大邱站步行 27 分钟 · 东区厅站 2 号出口步行 17 分钟",
+      "d.alt": "东大邱站店二层的休息室，有黑胶唱机、吧台与红色沙发",
+
+      "f.addr": "地址",
+      "f.park": "停车",
+      "f.way": "交通",
+      "f.curation": "旅行指南",
+      "f.map": "地图"
+    }
+  };
+
+  var STORE_KEY = "nc-lang";
+  var SUPPORTED = ["ko", "en", "zh"];
+
+  function normalize(value) {
+    if (!value) return null;
+    var v = String(value).toLowerCase();
+    if (v.indexOf("zh") === 0) return "zh";
+    if (v.indexOf("en") === 0) return "en";
+    if (v.indexOf("ko") === 0) return "ko";
+    return null;
   }
-};
 
-/* Contact configuration — paste the Open KakaoTalk room URL here (one line).
-   While empty, KakaoTalk buttons stay hidden everywhere on the page. */
-window.SITE_CONFIG = {
-  kakaoUrl: ""
-};
+  function initial() {
+    var fromUrl = null;
+    try {
+      fromUrl = normalize(new URLSearchParams(window.location.search).get("lang"));
+    } catch (e) {}
+    if (fromUrl) return fromUrl;
+
+    var stored = null;
+    try { stored = normalize(window.localStorage.getItem(STORE_KEY)); } catch (e) {}
+    if (stored) return stored;
+
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    var guess = normalize(nav);
+    if (guess === "en" || guess === "zh") return guess;
+    return "ko";
+  }
+
+  function apply(lang) {
+    if (SUPPORTED.indexOf(lang) < 0) lang = "ko";
+    var dict = I18N[lang];
+
+    document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
+
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (dict[key] != null) el.textContent = dict[key];
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-alt");
+      if (dict[key] != null) el.setAttribute("alt", dict[key]);
+    });
+
+    document.querySelectorAll("[data-lang]").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
+    });
+
+    try { window.localStorage.setItem(STORE_KEY, lang); } catch (e) {}
+  }
+
+  document.addEventListener("click", function (event) {
+    var btn = event.target.closest("[data-lang]");
+    if (!btn) return;
+    apply(btn.getAttribute("data-lang"));
+  });
+
+  apply(initial());
+})();
