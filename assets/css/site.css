@@ -50,7 +50,11 @@ i{font-style:normal}
 
 html[lang="zh-Hans"] body,
 html[lang="zh-Hans"] .mark,
-html[lang="zh-Hans"] input{font-family:"Inter Tight","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
+html[lang="zh-Hans"] input{
+  font-family:"Inter Tight","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  word-break:normal;
+  line-break:strict;
+}
 
 .skip{
   position:absolute;left:-9999px;top:0;z-index:100;
