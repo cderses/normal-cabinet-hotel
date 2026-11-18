@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>v9 capture · 390</title>
+<style>
+  html,body{margin:0;background:#F3EFE7}
+  iframe{display:block;width:390px;height:8200px;border:0;background:#fff}
+</style>
+</head>
+<body>
+<iframe id="f" scrolling="no" title="capture"></iframe>
+<script>
+var q = new URLSearchParams(location.search);
+var lang = q.get("lang") || "ko";
+var f = document.getElementById("f");
+f.onload = function () {
+  try {
+    var d = f.contentDocument;
+    var h = Math.max(d.documentElement.scrollHeight, d.body.scrollHeight);
+    f.style.height = h + "px";
+  } catch (e) {}
+};
+f.src = "index.html?lang=" + encodeURIComponent(lang);
+</script>
+</body>
+</html>
