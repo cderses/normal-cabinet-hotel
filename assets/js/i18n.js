@@ -1,4 +1,4 @@
-/* NORMAL CABINET HOTEL — v7 language layer (KO / EN / 中文) */
+/* NORMAL CABINET HOTEL — v8 language layer (KO / EN / 中文) */
 (function () {
   "use strict";
 
@@ -8,15 +8,15 @@
       "hero.alt": "브러시드 스틸 캐비닛 벽과 테라코타 벨벳 벤치가 이어지는 노멀캐비넷의 복도",
       "plaque.alt": "테라조 바닥 위 브러시드 스틸 명판 — hotel normal cabinet",
 
-      "st.body": "캐비닛은 물건을 넣어두는 가구입니다. 노멀캐비넷은 그 서랍에 하루를 넣어둡니다. 조명 하나, 잔 하나, 잘 고른 침구 한 벌. 이름은 평범하지만, 그 안의 취향은 그렇지 않습니다.",
-      "st.sub": "서울 · 대구 · 호치민 — 같은 취향의 집.",
+      "st.body": "캐비닛은 물건을 넣어두는 가구입니다. 노멀캐비넷은 그 안에 하루를 넣어둡니다. 좋은 공간은 대개 특별한 것에서 시작하지 않습니다. 잘 고른 조명 하나, 오래 쓰는 잔 하나, 손이 편한 침구 한 벌. 평범한 물건을 같은 기준으로 고르고 제자리에 두는 일 — 이 집들이 하는 일은 그 정도입니다.",
+      "st.sub": "서울 · 대구 · 호치민 — 세 도시, 일곱 채의 집.",
 
-      "cities.lead": "서울과 대구, 그리고 호치민. 도시가 달라도 같은 취향의 집을 둡니다.",
-      "city.seoul": "서울",
+      "cities.lead": "서울 네 곳, 대구 두 곳, 호치민 한 곳. 도시가 달라도 물건을 고르는 기준은 같습니다.",
+      "city.seoul": "노멀캐비넷 홍대점\n노멀캐비넷 신촌점\n노멀캐비넷 상수점\n노멀캐비넷 합정점",
       "city.daegu": "노멀캐비넷 교동점\n노멀캐비넷 동대구역점",
-      "city.hcm": "호치민",
+      "city.hcm": "베트남 · 노멀캐비넷 호치민점",
 
-      "sites.lead": "같은 취향, 다른 동네. 두 곳 모두 프런트 없이 지냅니다.",
+      "sites.lead": "같은 기준, 다른 동네. 두 곳 모두 프런트 없이 지냅니다.",
 
       "g.name": "노멀캐비넷 교동점",
       "g.desc": "동성로와 교동 골목 사이, 테라코타 벽돌 건물 한 채를 통째로 쓰는 스테이. 골목을 나서면 대구에서 가장 오래된 카페와 시장, 서점이 이어집니다.",
@@ -32,9 +32,28 @@
       "d.way": "동대구역 도보 27분 · 동구청역 2번 출구 도보 17분",
       "d.alt": "빨간 소파와 메모 조명, 붉은 문이 있는 동대구역점 2층 라운지",
 
+      "hcm.lead": "빛이 드는 큰 창과 종이 등, 화분 몇 개. 사이공의 하루는 이 방에서 조금 느리게 흐릅니다.",
+      "hcm.name": "노멀캐비넷 호치민점",
+      "hcm.desc": "벤반돈, 4군의 오래된 골목에 있는 집. 큰 창을 열어두면 도시의 소리가 들어오고, 종이 등과 화분이 방의 온도를 정합니다. 관광지보다 동네 쪽에 가까운 하루를 지내기 좋은 곳입니다.",
+      "hcm.where": "베트남 호치민 4군, 벤반돈",
+      "hcm.near": "1군 중심가까지 강 하나 건너 · 4군 로컬 식당가 가까이",
+      "hcm.alt1": "열린 창과 종이 등, 야자와 몬스테라가 놓인 호치민점의 방",
+      "hcm.alt2": "몬스테라와 등 하나, 창밖 골목이 보이는 호치민점의 방",
+
+      "seoul.hongdae": "노멀캐비넷 홍대점",
+      "seoul.shinchon": "노멀캐비넷 신촌점",
+      "seoul.sangsu": "노멀캐비넷 상수점",
+      "seoul.hapjeong": "노멀캐비넷 합정점",
+      "seoul.note": "사진과 소개는 준비 중입니다.",
+
+      "ft.hcm": "베트남 호치민 4군, 벤반돈",
+      "ft.seoul": "홍대 · 신촌 · 상수 · 합정",
+
       "f.addr": "주소",
       "f.park": "주차",
       "f.way": "오는 길",
+      "f.where": "위치",
+      "f.near": "주변",
       "f.curation": "여행 큐레이션",
       "f.map": "지도"
     },
@@ -44,15 +63,15 @@
       "hero.alt": "A corridor of brushed-steel cabinets and a terracotta velvet bench at Normal Cabinet",
       "plaque.alt": "A brushed-steel plaque on a terrazzo floor — hotel normal cabinet",
 
-      "st.body": "A cabinet is furniture for keeping things. We keep a day in its drawers — one lamp, one glass, one well-chosen set of sheets. Ordinary by name, not by nature.",
-      "st.sub": "Seoul, Daegu and Ho Chi Minh — houses of the same taste.",
+      "st.body": "A cabinet is furniture for keeping things. Ours keeps a day in its drawers. Good rooms rarely begin with something special: a well-chosen lamp, a glass we keep reaching for, sheets that feel right. Choosing ordinary things by the same standard, and putting each one where it belongs — that is about all these houses do.",
+      "st.sub": "Seoul, Daegu and Ho Chi Minh — three cities, seven houses.",
 
-      "cities.lead": "Seoul, Daegu, and Ho Chi Minh. Different cities, houses of the same taste.",
-      "city.seoul": "Seoul",
+      "cities.lead": "Four houses in Seoul, two in Daegu, one in Ho Chi Minh. Different cities, the same standard for what goes inside.",
+      "city.seoul": "NORMAL CABINET HONGDAE\nNORMAL CABINET SHINCHON\nNORMAL CABINET SANGSU\nNORMAL CABINET HAPJEONG",
       "city.daegu": "NORMAL CABINET GYODONG\nNORMAL CABINET DONGDAEGU STATION",
-      "city.hcm": "Ho Chi Minh City",
+      "city.hcm": "VIETNAM · NORMAL CABINET HO CHI MINH",
 
-      "sites.lead": "The same taste in different neighbourhoods. Neither house has a front desk.",
+      "sites.lead": "The same standard, different neighbourhoods. Neither house has a front desk.",
 
       "g.name": "NORMAL CABINET GYODONG",
       "g.desc": "A terracotta-brick house of its own between Dongseongno and the Gyodong alleys. Step out and Daegu's oldest cafés, market and bookshops follow one another.",
@@ -68,9 +87,28 @@
       "d.way": "Dongdaegu Stn. 27 min on foot · Donggucheong Stn. exit 2, 17 min on foot",
       "d.alt": "The second-floor lounge at Normal Cabinet Dongdaegu Station, with a red sofa and a chandelier of handwritten notes",
 
+      "hcm.lead": "Tall windows that let the light in, paper lanterns, a few plants. In this room Saigon runs a little slower.",
+      "hcm.name": "NORMAL CABINET HO CHI MINH",
+      "hcm.desc": "A house in an old alley off Bến Vân Đồn, District 4. Leave the tall windows open and the city comes in; paper lanterns and plants set the temperature of the room. A good base for days spent in the neighbourhood rather than at the sights.",
+      "hcm.where": "Bến Vân Đồn, District 4, Ho Chi Minh City, Vietnam",
+      "hcm.near": "One canal away from District 1 · District 4's local restaurants within easy reach",
+      "hcm.alt1": "A room at Normal Cabinet Ho Chi Minh with open windows, a paper lantern, a palm and a monstera",
+      "hcm.alt2": "A room at Normal Cabinet Ho Chi Minh with a monstera and a lantern, an alley visible through the window",
+
+      "seoul.hongdae": "NORMAL CABINET HONGDAE",
+      "seoul.shinchon": "NORMAL CABINET SHINCHON",
+      "seoul.sangsu": "NORMAL CABINET SANGSU",
+      "seoul.hapjeong": "NORMAL CABINET HAPJEONG",
+      "seoul.note": "Photographs and introductions are being prepared.",
+
+      "ft.hcm": "Bến Vân Đồn, District 4, Ho Chi Minh City",
+      "ft.seoul": "Hongdae · Shinchon · Sangsu · Hapjeong",
+
       "f.addr": "ADDRESS",
       "f.park": "PARKING",
       "f.way": "GETTING HERE",
+      "f.where": "LOCATION",
+      "f.near": "NEARBY",
       "f.curation": "TRAVEL GUIDE",
       "f.map": "MAP"
     },
@@ -80,15 +118,15 @@
       "hero.alt": "拉丝钢柜墙与赤陶色天鹅绒长凳相接的 NORMAL CABINET 走廊",
       "plaque.alt": "水磨石地面上的拉丝钢铭牌 —— hotel normal cabinet",
 
-      "st.body": "橱柜是收纳物件的家具。我们把一天收进它的抽屉里——一盏灯、一只杯子、一套用心挑选的床品。名字平凡，品味不然。",
-      "st.sub": "首尔 · 大邱 · 胡志明市 —— 同一份品味。",
+      "st.body": "橱柜是收纳物件的家具。我们把一天收进它的抽屉里。好的空间往往并非始于特别之物：一盏选得好的灯、一只久用的杯子、一套贴合的床品。以同一把尺挑选平凡之物，并把它们各放其位——这些房子所做的，大致如此。",
+      "st.sub": "首尔 · 大邱 · 胡志明市 —— 三座城市，七间房子。",
 
-      "cities.lead": "首尔、大邱，以及胡志明市。城市不同，安放着同样品味的家。",
-      "city.seoul": "首尔",
+      "cities.lead": "首尔四间、大邱两间、胡志明市一间。城市不同，挑选物件的标准相同。",
+      "city.seoul": "NORMAL CABINET 弘大店\nNORMAL CABINET 新村店\nNORMAL CABINET 上水店\nNORMAL CABINET 合井店",
       "city.daegu": "NORMAL CABINET 校洞店\nNORMAL CABINET 东大邱站店",
-      "city.hcm": "胡志明市",
+      "city.hcm": "越南 · NORMAL CABINET 胡志明店",
 
-      "sites.lead": "同样的品味，不同的街区。两处都不设前台。",
+      "sites.lead": "同样的标准，不同的街区。两处都不设前台。",
 
       "g.name": "NORMAL CABINET 校洞店",
       "g.desc": "位于东城路与校洞小巷之间，独用一栋赤陶砖建筑。走出巷口，大邱最老的咖啡馆、市场与书店依次相连。",
@@ -104,9 +142,28 @@
       "d.way": "东大邱站步行 27 分钟 · 东区厅站 2 号出口步行 17 分钟",
       "d.alt": "东大邱站店二层的休息室，有红色沙发与纸条吊灯",
 
+      "hcm.lead": "引进光线的大窗、纸灯，还有几盆植物。在这间房里，西贡的一天慢一些。",
+      "hcm.name": "NORMAL CABINET 胡志明店",
+      "hcm.desc": "位于第四郡 Bến Vân Đồn 老街巷中的一间房子。把大窗开着，城市的声音就进来了；纸灯与植物决定房间的温度。适合把日子过在街区里，而不是赶在景点之间。",
+      "hcm.where": "越南 胡志明市 第四郡 Bến Vân Đồn",
+      "hcm.near": "与第一郡一河之隔 · 第四郡本地餐馆近在步行范围",
+      "hcm.alt1": "胡志明店的房间，敞开的窗、纸灯、棕榈与龟背竹",
+      "hcm.alt2": "胡志明店的房间，龟背竹与灯，窗外可见巷子",
+
+      "seoul.hongdae": "NORMAL CABINET 弘大店",
+      "seoul.shinchon": "NORMAL CABINET 新村店",
+      "seoul.sangsu": "NORMAL CABINET 上水店",
+      "seoul.hapjeong": "NORMAL CABINET 合井店",
+      "seoul.note": "照片与介绍正在准备中。",
+
+      "ft.hcm": "越南 胡志明市 第四郡 Bến Vân Đồn",
+      "ft.seoul": "弘大 · 新村 · 上水 · 合井",
+
       "f.addr": "地址",
       "f.park": "停车",
       "f.way": "交通",
+      "f.where": "位置",
+      "f.near": "周边",
       "f.curation": "旅行指南",
       "f.map": "地图"
     }
