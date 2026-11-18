@@ -105,6 +105,7 @@ i{font-style:normal}
 /* ─────────── hero ─────────── */
 .hero{
   position:relative;
+  min-height:calc(100vh - var(--hdr-h));
   min-height:calc(100svh - var(--hdr-h));
   display:flex;
   align-items:center;
@@ -484,7 +485,7 @@ i{font-style:normal}
   :root{--hdr-h:52px}
   .mark-sub{display:none}
   .lang{gap:12px}
-  .hero{min-height:calc(100svh - var(--hdr-h))}
+  .hero{min-height:calc(100vh - var(--hdr-h));min-height:calc(100svh - var(--hdr-h))}
   .hero-in{padding:88px 22px 96px}
   .hero-title{font-size:clamp(2.9rem,14.4vw,4.4rem);line-height:.94}
   .hero-title em{font-size:.13em;letter-spacing:.5em;text-indent:.5em}
